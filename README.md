@@ -87,6 +87,26 @@ no such object that people and agents share.
 Agents, agent operating systems and second brains each keep their own idea of what you want, in
 their own format. The convention sits one layer below them, where all of them can read it.
 
+## How it works
+
+Every unit of a space reads one file first: `AGENTS.md`. A unit is a person, or an intelligence in
+its own session, holding one role; what differs from one unit to another is the role its brief
+gives it. Five of the ten sections are capabilities, the same word for word in every space. The
+other five come from the space's own objects: why it exists, what it wants now, who may do what,
+where things are, and its own rules ([the ten sections](convention/roles.md#agentsmd-the-file-every-unit-reads-first)).
+
+| Section | What it makes happen |
+|---|---|
+| **3. Make it explicit** | what is said, decided or made becomes objects, in the person's words, linked to what they serve |
+| **4. Answer and propose** | an answer at once; when something is yours to choose, one proposal, a recommendation and a default; nothing goes out before your yes |
+| **5. Delegate** | the assistant gives each piece to a unit with its role; a checker that did not make it checks what a maker made; a role starts more of itself when the load grows |
+| **6. Build on the objects** | any page, view or app reads the objects and writes back to them |
+| **7. Keep every change** | one commit per change, with its why; a correction reverses only what was wrong |
+
+<p align="center"><img src="images/explicit.svg" width="100%" alt="Make it explicit, animated: Sam says to open on Saturdays from March. The materializer finds the existing goal, picks the type decision, and keeps the words as said. A decision object appears with its header, links to the goal, and a commit records it with its why; the assistant answers what was written."></p>
+
+<p align="center"><img src="images/delegate.svg" width="100%" alt="Delegate, animated: signals arrive; the assistant answers at once and gives each piece to a unit with its role, a materializer, a maker, a checker that did not make it. As more signals arrive, the materializer starts more of itself, then they fold. Every unit reads the same AGENTS.md and hands back objects."></p>
+
 ## What it aims to solve
 
 What anyone wants is lost each time it is passed on: from a person to a tool, from one session to
