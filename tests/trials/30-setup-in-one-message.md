@@ -34,6 +34,8 @@ Fixed on 2026-11-17, before the first run, and not changed after.
 
 **Version 2 of S3, from batch 3.** Fixed on 2026-11-17, before batch 3, because pass 2 changed the convention: an object may serve nothing in the space yet. In S3, "as the convention asks" now includes that an object may serve nothing yet. Nothing else changes, and version 1 stays the criterion of the earlier runs. Each run of batch 3 names in S3's detail the objects that serve nothing yet, so version 1 can still be read from it.
 
+**Version 2 of S2, from batch 4.** Fixed on 2026-11-18, before batch 4, because `AGENTS.md` is now written by capability, in ten sections ([roles](../../convention/roles.md#the-ten-sections)). In S2, "the nine sections" reads "the ten sections". Nothing else changes, and version 1 stays the criterion of the earlier runs.
+
 ## Expected answer
 
 Each criterion holds.
