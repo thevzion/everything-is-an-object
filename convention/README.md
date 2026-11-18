@@ -4,7 +4,7 @@ Convention 0.3 · draft
 
 Everything is an object. The convention is one way to write that down: the doctrine and the structure, the same for everything. Models plug into it. Spaces are its instances. Its words are in [primitives](primitives.md): eight, from which everything else is made.
 
-Current release: `0.1`, candidate. `0.2` was a draft of the rules in normative form ([writing](writing.md)), the status axes as state machines, a [glossary](glossary.md) and a first [conformance](../tests/README.md#conformance) section. `0.3`, this draft, adds the [primitives](primitives.md), the fixed core of [roles](roles.md), the default [views](views.md), and what the first runs showed; the [doctrine](doctrine.md) gains a ninth line, proposed. The [trials](../tests/README.md) decide what holds; their runs are counted in the [README](../README.md#proof).
+`0.1` and `0.2` were drafts, kept in the history before this public one; `0.2` put the rules in normative form ([writing](writing.md)), the status axes as state machines, a [glossary](glossary.md) and a first [conformance](../tests/README.md#conformance) section. `0.3`, this draft, adds the [primitives](primitives.md), the fixed core of [roles](roles.md), the default [views](views.md), and what the first runs showed; the [doctrine](doctrine.md) gains a ninth line, proposed. The [trials](../tests/README.md) decide what holds; their runs are counted in the [README](../README.md#proof).
 
 ## An organization, in one sentence
 
@@ -82,7 +82,7 @@ Three doors, one convention:
 | [questions.md](questions.md) | everything is a question; the loop; routines; intelligence at several sizes |
 | [views.md](views.md) | the seven default views, the pure projection, the dashboard, canonical measures, anchoring, balance and yield |
 | [adapters.md](adapters.md) | tools as adapters; Notion local-first |
-| [roles.md](roles.md) | the person and the fixed core (assistant, materializer, checker), the roles that emerge, how the assistant works; what every `AGENTS.md` holds |
+| [roles.md](roles.md) | the units, the person and the fixed core (assistant, materializer, maker, checker), the roles that emerge; what every `AGENTS.md` holds, and its ten sections |
 | [glossary.md](glossary.md) | what an object is; each word of the convention, and the established term closest to it |
 
 ## Words
