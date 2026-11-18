@@ -1,10 +1,11 @@
 # Everything is an object.
 
-**[Simple](#twelve-words)** · **[Yours](#try-it)** · **[Readable](tests/runs/03-resume/)** · **[Linked](tests/runs/05-two-spaces/)** · **[Kept](tests/runs/README.md#each-check)** · **[Open](#license)**
+**[Simple](#twelve-words)** · **[Yours](#try-it)** · **[Readable](tests/runs/03-resume/)** · **[Kept](tests/runs/README.md#each-check)** · **[Open](#license)**
 
-An object is a short text that answers one question, in the words of whoever said it. A few header
-lines say which question it answers, what it serves, who said it, and where it stands. Everything
-else is a link, a view or a change.
+An object is anything made explicit that answers one question: what someone said, decided or
+wants, and what was made for it, a plan, a page, code. A few header lines say which question it
+answers, what it serves, who said or made it, and where it stands. What a person said keeps their
+words. Everything else is a link, a view or a change.
 
 ```markdown
 ---
@@ -21,13 +22,65 @@ date: 2026-11-15
 Repair fifty bikes a month by June. We will know when the logbook shows fifty for three months in a row.
 ```
 
+What is made is an object too. A page, with its files, is a folder whose `README.md` carries the
+header:
+
+```
+objects/deliverables/landing/
+├─ README.md     the header, and what the page is for
+└─ index.html    the page itself
+```
+
+```markdown
+---
+type: deliverable
+model: work@0.1
+question: What comes out, and is it done?
+serves: objects/projects/website.md
+source: inferred
+lifecycle: review
+evidence: open
+date: 2026-11-18
+---
+
+The landing page, in `index.html` beside this file. Done when a visitor can say in one sentence what we do.
+```
+
 That is the idea. This repository is **the Convention**: one way to write it down, so that people
 and agents read and act on the same things. As "everything is a file" is an idea and POSIX one way
 to encode it, "everything is an object" is the idea, and the convention one encoding of it.
 
-See it run: [the convention, live](https://thevzion.com/convention/). <!-- the route /convention/ was chosen by the founder; the page is not published yet, and the site still serves its earlier version -->
+Convention 0.3, draft · setup prompt 3.1, draft
 
-Convention 0.3, draft · setup prompt 3.0, draft
+## Bring your intelligence. Bring your application.
+
+The convention fixes the middle: `AGENTS.md` and `objects/`, plain files in a folder you own. Both
+ends stay open.
+
+- **Your intelligence.** Any assistant that can read and write files in a folder. It reads
+  `AGENTS.md` first, then works from the objects. Change assistants, or use several: they read the
+  same objects, so none starts from zero. Tested so far with one model, Claude Sonnet; other
+  providers are [a hypothesis](https://github.com/thevzion/source/blob/main/objects/hypotheses/the-prompt-works-with-any-agent.md).
+- **Your application.** Anything that reads files can show the objects and write changes back: the
+  folder itself, GitHub, Notion through an adapter, or an app your assistant builds on them. An app
+  is views of the objects plus the yeses you give; the files stay the source. The adapters
+  beyond git and Notion are in a kit, not published yet.
+
+## What it solves
+
+The root cause: what anyone wants is lost every time it is passed on, from a person to a tool,
+from one session to the next, from one agent to another, so it is rebuilt again and again
+([the problem](https://github.com/thevzion/source/blob/main/objects/problem.md)). Written once as
+objects, it is kept, and everyone reads the same thing.
+
+| Problem | What changes | Shown by |
+|---|---|---|
+| **Continuity**: each new session, tool or person starts from zero | anyone resumes from the folder alone | [another session resumes from the source](tests/runs/03-resume/) |
+| **Shared meaning**: each tool keeps its own idea of what you want | a type is a question, word for word, and a repeated want enriches the object already there | [a repeated signal enriches the existing object](tests/runs/02-reuse/) |
+| **Authorship**: what you said and what was guessed look the same | every object says `source: from-me` or `source: inferred` | [the inferred is marked, quotes are exact](tests/runs/15-quotes/) |
+| **Delegation**: you repeat yourself and watch the agent work | work goes out with a brief that stands alone, comes back as objects, and nothing leaves before your yes | [what goes out waits for a yes](tests/runs/10-goes-out/) |
+| **Verification**: you review everything, or nothing | every change keeps its reason, and a correction touches only what was wrong | [a correction keeps the history](tests/runs/29-correction/) |
+| **The commons**: what one space learns stays there | a local type returns across spaces, becomes a seed, then a model others install | not tested yet |
 
 ## Twelve words
 
@@ -38,8 +91,8 @@ Everything is made of twelve primitives. Each one has an effect you can point at
 |---|---|---|
 | **person** | the one who wants, and says yes; not a role | `source: from-me` on what you said; nothing goes out before your yes |
 | **signal** | anything said or sent, not yet turned into objects | your words, kept as you said them |
-| **object** | a short text that answers one question | one file in `objects/`, or one page |
-| **link** | `serves`, `draws-on`, answers, replaces, contradicts | a header line that points to a path or a URI |
+| **object** | anything made explicit that answers one question: said, decided or made | one file in `objects/`, a folder for a made thing with files of its own, or one page |
+| **link** | `serves`, `draws-on`, `delivers`, answers, replaces, contradicts | a header line that points to a path or a URI |
 | **question** | the fixed question of a type, word for word | the `question:` line of every header |
 | **space** | a source with its own authority | `space.md`: its URI, its models, who decides |
 | **role** | a function: what it turns into what, and what it answers for | section 4 of `AGENTS.md` |
@@ -56,6 +109,7 @@ trigger.
 Three roles are fixed, beside the person: the **assistant**, who answers at once and says what is
 pending; the **materializer**, who turns what was said into objects; the **checker**, who checks
 what others made. Every other role emerges when the work needs it ([roles](convention/roles.md)).
+What a role makes, a plan, a page, code, is written as an object where the work is done.
 
 ## Try it
 
@@ -152,7 +206,8 @@ project tried version 2 of the prompt and stopped after a long wait
 ([the result](https://github.com/thevzion/source/blob/main/objects/results/first-run-outside.md));
 since version 2.1, the prompt asks everything in one message.
 
-**Not tested yet**: a person, rather than an agent, setting up a space; agents from other
+**Not tested yet**: a person, rather than an agent, setting up a space; that what an agent makes is
+kept as an object, and line 9 of the doctrine (both proposed in this version, no trial yet); agents from other
 providers ([any assistant is a hypothesis](https://github.com/thevzion/source/blob/main/objects/hypotheses/the-prompt-works-with-any-agent.md));
 the Notion adapter beyond [one partial run](tests/trials/04-notion-adapter.md); the other trials
 of [`tests/`](tests/README.md). Small samples show what happened in these runs; they do not
