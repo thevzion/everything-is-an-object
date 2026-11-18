@@ -63,7 +63,10 @@ ends stay open.
   features differ from one tool to another, such as starting other units; the rules are the same.
 - **Your application.** Any assistant can build the apps and views you want on the objects: a page,
   a board, a widget, a dashboard. Each reads the objects and writes back as changes to them; the
-  files stay the source, so any app can be thrown away and built again.
+  files stay the source, so any app can be thrown away and built again. The objects can also live
+  elsewhere, through an adapter: git keeps every change with its reason, offline and without an
+  account, and is the default; Notion shows the same objects as pages, on your phone
+  ([adapters](convention/adapters.md)).
 
 ## A layer below
 
@@ -117,36 +120,6 @@ at the source, in files that any intelligence reads, a person included.
 
 **Not tested yet**: the same facts given to two agents, one as objects and one as the conversation
 they came from, comparing what each answers and what each spends.
-
-## Twelve words
-
-Everything is made of twelve primitives. Each one has an effect you can point at
-([primitives](convention/primitives.md)).
-
-| Primitive | What it is | What you see |
-|---|---|---|
-| **person** | the one who wants, and says yes; not a role | `source: from-me` on what you said; nothing goes out before your yes |
-| **signal** | anything said or sent, not yet turned into objects | your words, kept as you said them |
-| **object** | anything made explicit that answers one question: said, decided or made | one file in `objects/`, a folder for a made thing with files of its own, or one page |
-| **link** | `serves`, `draws-on`, `delivers`, answers, replaces, contradicts | a header line that points to a path or a URI |
-| **question** | the fixed question of a type, word for word | the `question:` line of every header |
-| **space** | a source with its own authority | `space.md`: its URI, its models, who decides |
-| **role** | a function: what it turns into what, and what it answers for | section 5 of `AGENTS.md`, Delegate |
-| **binding** | a role held on an object, under a mandate | a mandate; "notify me" on an object |
-| **trigger** | what wakes a role: a change, or a time | a routine's "when" |
-| **action** | work handed over with a brief that stands alone | the brief, and what comes back: result, evidence, limits |
-| **view** | a question asked of objects, read-only | Board, Decisions, Measures, stamped with their commit |
-| **history** | every change, with its author and its why | `git log`, each commit ending in `Why:` and `Source:` |
-
-What looks like a thirteenth word is made of these: a model is a set of questions, an app is views
-plus signals and yeses, Decisions is a view of what waits for a yes, Auto is a role with a time
-trigger.
-
-Four roles are fixed, beside the person: the **assistant**, who answers at once and says what is
-pending; the **materializer**, who turns what was said into objects; a **maker**, who makes what a
-brief asks; a **checker**, who checks what others made. Every other role emerges when the work
-needs it ([roles](convention/roles.md)). What a role makes, a plan, a page, code, is written as an
-object where the work is done.
 
 ## Where it goes
 
@@ -227,56 +200,34 @@ counts the runs that met every criterion. Each run is an object, with its trace.
 - **Batch 3, read by version 1 of the header criteria**, which asked for `serves` on every object but a root: 09-placement 0/5.
 <!-- proof:end -->
 
-**What the batches show**, read in the traces:
-
-- **Batch 3 ran after pass 2**, which changed four things the earlier runs pointed to: an object
-  may serve nothing yet; section 8 of `AGENTS.md` lists the operations; section 4 says what the
-  first words hold; the sentence that names the doctrine's source sits inside its block. A
-  correction went from 2/5 to 5/5, answer first from 2/5 to 5/5, the setup from 3/5 to 4/5, a
-  local type from 3/5 to 5/5 (5/5 in batch 2 as well, read by the written criterion of L4).
-- **Two spaces, 0/5, from 5/5**: every agent proposed the change in the workshop and decided
-  nothing there, but none linked the home goal to the workshop's goal, as the person asked: each
-  waited for Lea's decision first ("When Lea decides, I can add the link"). Why this changed since
-  batch 2 is not known. One reading, inferred: the new rule that an object may serve nothing
-  "until it does" reads as a reason to wait.
-- **Scale, 3/5, 3/5 and 1/5, from 4/5, 5/5 and 5/5**: the agents find the existing cargo-bike
-  project and name it in the decision they write, but in its text; its `serves` points to the
-  goal instead, and the check reads the links of the header.
-- **Placement, 1/5**: `serves` no longer fails it (read by the first version of its criterion,
-  0/5). Four times, a task or a question the agent rephrased is marked as the person's own words.
-- **The setup, 4/5**: once, `AGENTS.md` was written without the `## <n>.` headings.
-
-Every batch is shown. In batch 1, the sandbox denied a shell command that chained a file write,
-`git add` and `git commit`, so about ten runs committed nothing; batches 2 and 3 tell the agent to
-give the shell one command per call. The smoke runs, made before the sandbox was settled, are kept
-in [the runs](tests/runs/README.md) and are not a batch.
+What each batch shows, read in its traces, and the runs before this version:
+[the reading of the batches](tests/README.md#what-the-batches-show).
 
 How it runs: [`tests/runner`](tests/runner/), in Rust; `convention-trials run all` replays every
 trial, and `convention-trials table` regenerates this table from the run objects in
 [`tests/runs/`](tests/runs/README.md).
 
-**Before this version.** On 15 Nov 2026, ten runs of the setup prompt 2.2 went end to end, with
-Claude Opus and Claude Sonnet ([status](setup/README.md)). On 13 Nov 2026, someone outside the
-project tried version 2 of the prompt and stopped after a long wait
-([the result](https://github.com/thevzion/source/blob/main/objects/results/first-run-outside.md));
-since version 2.1, the prompt asks everything in one message.
-
 **Not tested yet**: a person, rather than an agent, setting up a space; that what an agent makes is
-kept as an object, and line 9 of the doctrine (both proposed in this version, no trial yet);
+kept as an object, and line 9 of the doctrine; the units of section 5 of `AGENTS.md`, and what is
+built on the objects (all proposed in this version, no trial yet);
 the Notion adapter beyond [one partial run](tests/trials/04-notion-adapter.md); the other trials
 of [`tests/`](tests/README.md). Small samples show what happened in these runs; they do not
 promise what happens in yours.
 
-## Optional adapters
+## Twelve words
 
-Nothing is required but text an agent can follow, and a folder or a page. The rest is comfort,
-chosen by your agent when it fits ([adapters](convention/adapters.md)):
+Everything is made of twelve primitives, each with an effect you can point at: **person**,
+**signal**, **object**, **link**, **question**, **space**, **role**, **binding**, **trigger**,
+**action**, **view**, **history** ([what each one is, and what you see of it](convention/primitives.md#the-twelve)).
+What looks like a thirteenth word is made of these: a model is a set of questions, an app is views
+plus signals and yeses, Decisions is a view of what waits for a yes, Auto is a role with a time
+trigger.
 
-| Adapter | What it adds |
-|---|---|
-| git | every change with its reason, offline, without an account; the default |
-| Notion | the same objects as pages, on your phone; the default views as pages |
-| an app or a view your assistant builds on the objects | reading and saying yes without the chat |
+Four roles are fixed, beside the person: the **assistant**, who answers at once and says what is
+pending; the **materializer**, who turns what was said into objects; a **maker**, who makes what a
+brief asks; a **checker**, who checks what others made. Every other role emerges when the work
+needs it ([roles](convention/roles.md)). What a role makes, a plan, a page, code, is written as an
+object where the work is done.
 
 ## What is here
 
@@ -289,12 +240,10 @@ chosen by your agent when it fits ([adapters](convention/adapters.md)):
 | [`CHANGELOG.md`](CHANGELOG.md) | what changed, version by version |
 | `git log` | every change, with its `Why:` and `Source:` |
 
-## Around it
+Around it: [TheVZion's source](https://github.com/thevzion/source), the first space written with the
+convention, with its problem, why, goals, decisions, hypotheses and open questions; and
+[thevzion.com](https://thevzion.com), the organization's site.
 
-| | What it is | Where |
-|---|---|---|
-| **the source** | TheVZion's own space, the first written with the convention: its problem, why, goals, decisions, hypotheses and open questions | [thevzion/source](https://github.com/thevzion/source) |
-| **the site** | the organization's site | [thevzion.com](https://thevzion.com) |
 
 ## Contribute
 

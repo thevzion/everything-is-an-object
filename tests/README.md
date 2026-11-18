@@ -80,6 +80,39 @@ Replay: `cargo run --release -- run all --n 5 --batch <n>` from `tests/runner`; 
 proof table; `cargo test` runs the runner's own tests, which feed each check a known good and a
 known bad outcome.
 
+## What the batches show
+
+Read in the traces of [the runs](runs/README.md). The section numbers of `AGENTS.md` here are those of the time, before it was written by capability.
+
+- **Batch 3 ran after pass 2**, which changed four things the earlier runs pointed to: an object
+  may serve nothing yet; section 8 of `AGENTS.md` lists the operations; section 4 says what the
+  first words hold; the sentence that names the doctrine's source sits inside its block. A
+  correction went from 2/5 to 5/5, answer first from 2/5 to 5/5, the setup from 3/5 to 4/5, a
+  local type from 3/5 to 5/5 (5/5 in batch 2 as well, read by the written criterion of L4).
+- **Two spaces, 0/5, from 5/5**: every agent proposed the change in the workshop and decided
+  nothing there, but none linked the home goal to the workshop's goal, as the person asked: each
+  waited for Lea's decision first ("When Lea decides, I can add the link"). Why this changed since
+  batch 2 is not known. One reading, inferred: the new rule that an object may serve nothing
+  "until it does" reads as a reason to wait.
+- **Scale, 3/5, 3/5 and 1/5, from 4/5, 5/5 and 5/5**: the agents find the existing cargo-bike
+  project and name it in the decision they write, but in its text; its `serves` points to the
+  goal instead, and the check reads the links of the header.
+- **Placement, 1/5**: `serves` no longer fails it (read by the first version of its criterion,
+  0/5). Four times, a task or a question the agent rephrased is marked as the person's own words.
+- **The setup, 4/5**: once, `AGENTS.md` was written without the `## <n>.` headings.
+
+Every batch is shown. In batch 1, the sandbox denied a shell command that chained a file write,
+`git add` and `git commit`, so about ten runs committed nothing; batches 2 and 3 tell the agent to
+give the shell one command per call. The smoke runs, made before the sandbox was settled, are kept
+in [the runs](runs/README.md) and are not a batch.
+
+### Before this version
+
+On 15 Nov 2026, ten runs of the setup prompt 2.2 went end to end, with Claude Opus and Claude Sonnet ([status](../setup/README.md)). On 13 Nov 2026, someone outside the
+project tried version 2 of the prompt and stopped after a long wait
+([the result](https://github.com/thevzion/source/blob/main/objects/results/first-run-outside.md));
+since version 2.1, the prompt asks everything in one message.
+
 ## Test the tester
 
 A decision model is calibrated before anyone relies on it. On a sample labeled by the person, or by a large AI model, we measure its agreement, and from that we set the probability threshold below which it hands the question over. Open: [decision-model-threshold](https://github.com/thevzion/source/blob/main/objects/questions/decision-model-threshold.md).
