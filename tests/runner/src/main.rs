@@ -282,7 +282,7 @@ fn one_run(
 }
 
 /// Appended to the agent's instructions in every run, after the space's `AGENTS.md`.
-pub const REFERENCE_NOTE: &str = "This session has no network access, and nobody can approve a command: one that needs approval is denied. The convention and its models, as published at https://github.com/thevzion/convention, are copied at `../convention-ref/` (`convention/`, `models/`, `setup/`): read them there. Give the shell one simple command per call: write and edit files with the file tools, not the shell; then `git add <files>` in one call, and `git commit -F - <<'EOF'` with the message in the next. A command that chains several here-documents, a command substitution such as `$(...)`, and a `cd` out of this folder need approval, so they are denied: use paths instead.";
+pub const REFERENCE_NOTE: &str = "This session has no network access, and nobody can approve a command: one that needs approval is denied. The convention and its models, as published at https://github.com/thevzion/everything-is-an-object, are copied at `../convention-ref/` (`convention/`, `models/`, `setup/`): read them there. Give the shell one simple command per call: write and edit files with the file tools, not the shell; then `git add <files>` in one call, and `git commit -F - <<'EOF'` with the message in the next. A command that chains several here-documents, a command substitution such as `$(...)`, and a `cd` out of this folder need approval, so they are denied: use paths instead.";
 
 fn copy_dir(from: &Path, to: &Path) -> Res<()> {
     for rel in walk(from, from) {

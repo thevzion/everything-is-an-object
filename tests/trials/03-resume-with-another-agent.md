@@ -34,7 +34,7 @@ From [measures](../../convention/views.md): context, reuse.
 
 ## Before this trial
 
-Version 1 of the setup prompt was tried once, on 2026-11-11, with a fictional person: an agent from a second provider resumed a space written by the first and found the four things of question 2. That run used the version 1 layout ([from version 1 to version 2](https://github.com/thevzion/convention/blob/fd9a5ff/setup/prompt.md#from-version-1-to-version-2)), so it does not count for this trial.
+Version 1 of the setup prompt was tried once, on 2026-11-11, with a fictional person: an agent from a second provider resumed a space written by the first and found the four things of question 2. That run used the version 1 layout ([from version 1 to version 2](../../setup/prompt.md)), so it does not count for this trial.
 
 ## Canonical run
 

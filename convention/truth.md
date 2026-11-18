@@ -22,7 +22,7 @@ Each place plays one role for each type of object.
 | Place | Role |
 |---|---|
 | [thevzion/source](https://github.com/thevzion/source): TheVZion's space | Source |
-| [thevzion/convention](https://github.com/thevzion/convention), this repository: the convention and the models | Source |
+| [thevzion/everything-is-an-object](https://github.com/thevzion/everything-is-an-object), this repository: the convention and the models | Source |
 | the collective's workspace, for operations (members only) | Source |
 | thevzion.com, `llms.txt`, `structure.json`, the public Notion template | Projections |
 | `objects/sites/`, the pointer files | Pointers |

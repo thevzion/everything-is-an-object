@@ -137,7 +137,7 @@ What you do serves one of these goals; if it serves none, say so.
 *Why: a history with reasons lets anyone correct precisely, and see who did what, and why.*
 
 - Keep every change, with its reason. Correct precisely: reverse the one object or link that is wrong, and keep why. Nothing is rewritten.
-- Before you write: `space.md`, what this space declares; the structure, https://github.com/thevzion/convention/blob/main/convention/structure.md; and the model of the type you write and those it includes, `models/<id>/model.md` in https://github.com/thevzion/convention.
+- Before you write: `space.md`, what this space declares; the structure, https://github.com/thevzion/everything-is-an-object/blob/main/convention/structure.md; and the model of the type you write and those it includes, `models/<id>/model.md` in https://github.com/thevzion/everything-is-an-object.
 - Links are paths from the space's root; a link outside the space is its URI or URL.
 - One change per commit:
 

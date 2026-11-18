@@ -10,7 +10,7 @@ Copy everything below the line and give it to an agent that works in a folder. T
 
 Set up my space with the Convention, version 0.3 (draft): everything is an object.
 
-A space is what I want, written as small typed objects that people and agents can read and act on, where every change is kept with its reason. The convention is in `convention/` and the models are in `models/` at https://github.com/thevzion/convention. This text is enough to start; read the convention when a question comes up. Where they differ, the convention wins.
+A space is what I want, written as small typed objects that people and agents can read and act on, where every change is kept with its reason. The convention is in `convention/` and the models are in `models/` at https://github.com/thevzion/everything-is-an-object. This text is enough to start; read the convention when a question comes up. Where they differ, the convention wins.
 
 One structure, two paths:
 
@@ -106,7 +106,7 @@ In Notion:
 
 Each page of Objects has the properties URI, Type, Question, Serves, Source, Lifecycle, Evidence, Date. Each row of Changes has Date, Who, Objects, Operation, Why, Source, Status, and Commit when a folder is the source.
 
-Then give the space the seven default [views](https://github.com/thevzion/convention/blob/main/convention/views.md#the-default-views-proposed), one page each, each a view of Objects or Changes that answers its question: Board, Decisions, Intents, Ground, Purpose, Knowledge, Measures. They are projections: nothing is written in them.
+Then give the space the seven default [views](https://github.com/thevzion/everything-is-an-object/blob/main/convention/views.md#the-default-views-proposed), one page each, each a view of Objects or Changes that answers its question: Board, Decisions, Intents, Ground, Purpose, Knowledge, Measures. They are projections: nothing is written in them.
 
 ## 3. Write space.md and AGENTS.md
 
@@ -145,7 +145,7 @@ adapters:
 - For a home: `space: home`, `uri: <handle>/home`, `models: - home@0.1`, and Access names only me unless I say otherwise.
 - Access has three verbs: read, propose, decide.
 
-`AGENTS.md` is a projection, in the ten sections of [`convention/roles.md`](https://github.com/thevzion/convention/blob/main/convention/roles.md), in their order. The whole file, with the norm texts in place and braces for what comes from this space, is [`setup/AGENTS.template.md`](https://github.com/thevzion/convention/blob/main/setup/AGENTS.template.md). Copy its norm texts word for word, in English; write the rest from this space's objects, in the language I write to you in, each line naming its object. Regenerate it when its sources change; do not edit it by hand. If the folder already has an `AGENTS.md` or another agent file, keep what it says, add the ten sections after it, and tell me.
+`AGENTS.md` is a projection, in the ten sections of [`convention/roles.md`](https://github.com/thevzion/everything-is-an-object/blob/main/convention/roles.md), in their order. The whole file, with the norm texts in place and braces for what comes from this space, is [`setup/AGENTS.template.md`](https://github.com/thevzion/everything-is-an-object/blob/main/setup/AGENTS.template.md). Copy its norm texts word for word, in English; write the rest from this space's objects, in the language I write to you in, each line naming its object. Regenerate it when its sources change; do not edit it by hand. If the folder already has an `AGENTS.md` or another agent file, keep what it says, add the ten sections after it, and tell me.
 
 The first commit is `space(add): set up the space`, with `space.md`, `AGENTS.md` and `.gitignore`.
 

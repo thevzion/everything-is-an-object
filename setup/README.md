@@ -13,7 +13,7 @@ Three doors, one convention: everything is an object. Each ends in the same thin
 For any agent that can read a web page:
 
 ```
-Read https://raw.githubusercontent.com/thevzion/convention/main/setup/prompt.md and do what it says below the line: set up my space in this folder.
+Read https://raw.githubusercontent.com/thevzion/everything-is-an-object/main/setup/prompt.md and do what it says below the line: set up my space in this folder.
 ```
 
 `llms.txt` is meant to become a projection of [prompt.md](prompt.md): generated from it, never edited by hand. Until then the two can differ, and `prompt.md` is the source.

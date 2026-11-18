@@ -166,7 +166,7 @@ It is a testbed that already works: [try it](#try-it), break it, and [propose wh
 Open a folder with an assistant that can read and write files there. Give it this:
 
 ```text
-Read https://raw.githubusercontent.com/thevzion/convention/main/setup/prompt.md
+Read https://raw.githubusercontent.com/thevzion/everything-is-an-object/main/setup/prompt.md
 and do what it says below the line: set up my space in this folder.
 ```
 
@@ -272,12 +272,12 @@ convention, with its problem, why, goals, decisions, hypotheses and open questio
 
 Everything here is a candidate. Open an issue, and leave out anything private:
 
-- [What didn't fit](https://github.com/thevzion/convention/issues/new), when you tried it.
-- [Propose a change](https://github.com/thevzion/convention/issues/new?template=propose-a-change.md):
+- [What didn't fit](https://github.com/thevzion/everything-is-an-object/issues/new), when you tried it.
+- [Propose a change](https://github.com/thevzion/everything-is-an-object/issues/new?template=propose-a-change.md):
   the convention, a model or a test should say something else.
-- [Propose a type or a model](https://github.com/thevzion/convention/issues/new?template=propose-a-type-or-model.md):
+- [Propose a type or a model](https://github.com/thevzion/everything-is-an-object/issues/new?template=propose-a-type-or-model.md):
   a question no installed type asks.
-- [Report an ambiguous question](https://github.com/thevzion/convention/issues/new?template=ambiguous-question.md):
+- [Report an ambiguous question](https://github.com/thevzion/everything-is-an-object/issues/new?template=ambiguous-question.md):
   a type's question reads two ways.
 
 Issues are the inbox: a proposal becomes true only by a decision. TheVZion records the decision in
