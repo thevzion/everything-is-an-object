@@ -157,6 +157,6 @@ The operations: `add`, `revise`, `remove`, `rename`, `split`, `merge`, `test`, `
 
 Write at the source, read everywhere. A proposal becomes true only by a decision.
 
-### Example
+### The template
 
-TheVZion's own file, generated this way: [`AGENTS.md`](https://github.com/thevzion/source/blob/main/AGENTS.md) in its source.
+The whole file, generated from this one: [`setup/AGENTS.template.md`](../setup/AGENTS.template.md). The norm texts are in place; what is in braces comes from the space's own objects. A self-test of the runner keeps the two in sync.
