@@ -194,10 +194,7 @@ counts the runs that met every criterion. Each run is an object, with its trace.
 - **Batch 3**: 70 runs, 2026-11-17; claude-sonnet-5-5; convention 0.3 at 5cc56b8; $8.40 at API prices as the CLI reports them.
 - **Batch 2**: 70 runs, 2026-11-17; claude-sonnet-5-5; convention 0.3 at 9845a31; $10.64 at API prices as the CLI reports them.
 - **Batch 1**: 70 runs, 2026-11-17; claude-sonnet-5-5; convention 0.3 at e5cbf4e; $8.31 at API prices as the CLI reports them.
-- **Commit ids**: batches 1 to 3 cite commits of the history written before publication, which the founder keeps; the public history starts at Convention 0.3, draft. Batch 3 ran against the same text (`convention/`, `setup/`, `models/`, `AGENTS.md`) as the first public commit, apart from three lines of `convention/README.md` that drop the earlier name.
-- **Header criteria**: batches 1 and 2 are checked by version 1, which asks for `serves` on every object but a root; from batch 3, by version 2, fixed before batch 3 ran, where an object may serve nothing yet. Version 1 stays computable from every run, and is read again below where it differs.
-- **31-local-type, read by the written criterion of L4**, which the code exceeded until pass 2 by also asking for `serves`: 5/5 in batch 1, 5/5 in batch 2.
-- **Batch 3, read by version 1 of the header criteria**, which asked for `serves` on every object but a root: 09-placement 0/5.
+- **Reading the counts**: the commit ids, the versions of the criteria, and the counts read again are in [the runs](tests/runs/README.md#reading-the-counts).
 <!-- proof:end -->
 
 What each batch shows, read in its traces, and the runs before this version:

@@ -73,10 +73,12 @@ How many runs passed each check, out of the runs that reached it, batch by batch
 - **28-answer-first**: batch 3: F1 5/5, F2 5/5, F3 5/5, F4 5/5, F5 5/5, F6 5/5; batch 2: F1 5/5, F2 2/5, F3 5/5, F4 5/5, F5 5/5, F6 5/5; batch 1: F1 5/5, F2 4/5, F3 5/5, F4 4/5, F5 5/5, F6 5/5
 - **05-two-spaces**: batch 3: X1 5/5, X2 5/5, X3 0/5, X4 0/5; batch 2: X1 5/5, X2 5/5, X3 5/5, X4 5/5; batch 1: X1 5/5, X2 4/5, X3 4/5, X4 4/5
 
-## Read again
+## Reading the counts
 
-From what each run recorded, without changing it.
+What to know before comparing the batches. The counts read again come from what each run recorded, without changing it.
 
+- **Commit ids**: batches 1 to 3 cite commits of the history written before publication, which the founder keeps; the public history starts at Convention 0.3, draft. Batch 3 ran against the same text (`convention/`, `setup/`, `models/`, `AGENTS.md`) as the first public commit, apart from three lines of `convention/README.md` that drop the earlier name.
+- **Header criteria**: batches 1 and 2 are checked by version 1, which asks for `serves` on every object but a root; from batch 3, by version 2, fixed before batch 3 ran, where an object may serve nothing yet. Version 1 stays computable from every run, and is read again below where it differs.
 - **31-local-type, read by the written criterion of L4**, which the code exceeded until pass 2 by also asking for `serves`: 5/5 in batch 1, 5/5 in batch 2.
 - **Batch 3, read by version 1 of the header criteria**, which asked for `serves` on every object but a root: 09-placement 0/5.
 
