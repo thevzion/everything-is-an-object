@@ -2,6 +2,22 @@
 
 What changed, version by version. Every change is also in `git log`, with its `Why:` and `Source:`.
 
+## Proposed after the first public commit
+
+- **An object is anything made explicit**: what someone said, decided or wants, and what was made
+  for it, a plan, a page, code. What a person said keeps their words. The README gives a second
+  example, a page made as an object ([primitives](convention/primitives.md#an-object)).
+- **What is made is an object**: a text is one file; a made thing with files of its own is a folder,
+  `objects/deliverables/<name>/`, its header in `README.md` ([structure](convention/structure.md#layout-one-object-one-file-one-page)).
+  `delivers` joins the links.
+- **Doctrine line 9**, the founder's rule: "Every request becomes an object, and so does what is
+  done for it; the answer says what was written." In the doctrine, `roles.md`, the setup prompt
+  and `AGENTS.md`.
+- **Setup prompt 3.1**, draft: line 9, and what is made kept as an object. No run yet.
+- **The README** says what the convention fixes and what stays open, bring your intelligence and
+  bring your application, and what it solves, each problem linked to what shows it. The word
+  "Linked" leaves the line under the headline: its trial, two spaces, gave 0/5 in batch 3.
+
 ## Convention 0.3, draft (2026-11-18, the first version of this public history)
 
 Everything is an object: the README opens on the idea, and presents the convention as one way to
