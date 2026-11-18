@@ -111,7 +111,7 @@ fn fixture_agents_md_carries_the_norm_texts() {
         assert!(s.instructions.contains(&format!("## {i}. ")), "section {i}");
     }
     assert!(s.instructions.contains("the materializer"));
-    assert!(!s.instructions.contains("\n9. "), "the doctrine has eight lines");
+    assert!(s.instructions.contains("\n9. Every request becomes an object"), "the doctrine has its line 9");
 }
 
 #[test]

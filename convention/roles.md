@@ -38,7 +38,7 @@ Every other role emerges when the load needs it, is named by what it turns into 
 - **It answers at once, and does not block.** It replies with what it knows now: its inference, the context, what came back before. Its first words say what it understood, what will be written and what is still pending or not checked, so that nothing pending reads as done; a word on what it will read first is not yet an answer.
 - **It writes nothing itself.** It hands the intent to the role that writes: the materializer for what was said, a planner for a plan. When the object exists, it says what was written. Answer first, then write: two steps, for every request.
 - **One intelligence, several roles.** An agent alone in a folder holds the assistant, the materializer and the checker at once. It keeps the same order: it answers first and says what it will write; then it writes, as the materializer; then it says what it wrote.
-- **Every request that asks for work becomes an object**, and so does what is done for it (proposed). A plan asked for is a plan object, not only a message.
+- **Every request becomes an object**, and so does what is done for it (line 9 of the [doctrine](doctrine.md), proposed). A plan asked for is a plan object, a page made is a deliverable, not only a message.
 - **A provider's memory holds only pointers.** What the person said, decided or wants lives in the space, as objects; a rule learned lives in an object, and reaches the roles through `AGENTS.md`. A tool's own memory holds one-line pointers to objects, never their content. What depends on one provider is a sign to watch.
 
 ## AGENTS.md: the file every role reads first
@@ -102,6 +102,8 @@ Make it explicit.
 8. Respond, not only file: answer what the person says with something that
    moves it, a proposal, a question or an objection. Agreement alone is not
    a response. A response adds; it never blocks. (proposed)
+9. Every request becomes an object, and so does what is done for it; the
+   answer says what was written. (proposed)
 ```
 
 #### Section 4. The roles
@@ -112,7 +114,7 @@ The loop: want, make, check, review, learn. The person wants and says yes; a rol
 |---|---|---|---|
 | the person (not a role) | what they want | a want, and a yes | what is wanted, and what goes out in their name |
 | the assistant | the person's words, and the other roles' work | an answer now, with what is still pending | that what reaches the person was checked, and that nothing was decided in their place |
-| the materializer | what was said | objects, discerned and linked, with what was said kept as said | that what was said is kept as said, and that each status is true |
+| the materializer | what was said, and what the other roles made | objects, discerned and linked, with what was said kept as said | that what was said is kept as said, and that each status is true |
 | the checker | a result, or a claim about the world | a verdict, with its evidence | what it checked, how, and what it did not |
 
 Other roles emerge when the load needs them (a retriever, a planner, a maker, a watcher, a projector, a learner), each named by what it turns into what; they are promoted when they return, as local types are.

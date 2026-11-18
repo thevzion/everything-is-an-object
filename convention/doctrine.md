@@ -23,13 +23,15 @@ Make it explicit.
 8. Respond, not only file: answer what the person says with something that
    moves it, a proposal, a question or an objection. Agreement alone is not
    a response. A response adds; it never blocks. (proposed)
+9. Every request becomes an object, and so does what is done for it; the
+   answer says what was written. (proposed)
 ```
 
 ## Notes
 
 - **Two roles.** Intelligence files (it writes, links and marks) and it responds. Filing alone makes a filing cabinet; the response is what becomes the person's next signal. A turn has three parts: the person says, intelligence responds, the person ratifies, revises or drops. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-response.md))
 
-- **Every request for work leaves an object** (proposed, in the [roles](roles.md#how-the-assistant-works-proposed), not in the doctrine). A plan, a summary, a check: what was asked and what was done for it are written as objects of the type that fits, dated and linked to what they serve, and the answer names them. A question the source already answers stays in the conversation, as line 6 says. One intelligence alone keeps the two steps of the [roles](roles.md#how-the-assistant-works-proposed): it answers first, then writes, then says what it wrote.
+- **Every request becomes an object** (line 9, proposed: the founder's rule, word for word). The request is kept in the person's words; what is done for it, a plan, a check, a page, code, is written as objects of the type that fits, dated and linked to what they serve, and the answer names them. One intelligence alone keeps the two steps of the [roles](roles.md#how-the-assistant-works-proposed): it answers first, then writes, then says what it wrote.
 
 - **Explicit mistakes are cheap.** An explicit mistake gets corrected; an implicit one spreads. In a conversation you do not know what intelligence understood. Written as objects, it is visible, and you point at exactly what is wrong: one object, one type, one link.
 - **Review, don't watch.** Watching is following the work as it happens. Reviewing is reading what was written, when you choose. "Don't watch the agent work. Read what it wrote." Review moments are a ritual (the Rituals field of a schedule, in the [Work model](../models/work/model.md)), not a rule.

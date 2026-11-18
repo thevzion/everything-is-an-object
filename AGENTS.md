@@ -32,6 +32,8 @@ Make it explicit.
 8. Respond, not only file: answer what the person says with something that
    moves it, a proposal, a question or an objection. Agreement alone is not
    a response. A response adds; it never blocks. (proposed)
+9. Every request becomes an object, and so does what is done for it; the
+   answer says what was written. (proposed)
 ```
 
 ## Mandates in this repository
