@@ -13,10 +13,21 @@ What changed, version by version. Every change is also in `git log`, with its `W
 - **Doctrine line 9**, the founder's rule: "Every request becomes an object, and so does what is
   done for it; the answer says what was written." In the doctrine, `roles.md`, the setup prompt
   and `AGENTS.md`.
-- **Setup prompt 3.1**, draft: line 9, and what is made kept as an object. No run yet.
-- **The README** says what the convention fixes and what stays open, bring your intelligence and
-  bring your application, and what it solves, each problem linked to what shows it. The word
-  "Linked" leaves the line under the headline: its trial, two spaces, gave 0/5 in batch 3.
+- **Eight primitives, from twelve**: object, question, link, change, signal, person, role,
+  space. Since every request, and what is done for it, is an object, view, action, binding and
+  trigger are compositions; the history is the changes in order, and its atom, change, is the
+  primitive ([primitives](convention/primitives.md)).
+- **`AGENTS.md` in ten sections, one per capability**, each opened by its reason: make it
+  explicit, answer and propose, delegate, build on the objects, keep every change. A maker joins
+  the fixed core; every unit reads the same file, the assistant gives the roles, and a role starts
+  another unit of itself when the load grows ([roles](convention/roles.md)).
+- **Setup prompt 3.1**, draft: line 9, what is made kept as an object, the ten sections, and the
+  core roles given to the tool as agent definitions. No run yet.
+- **The README** opens on a hero image and says why objects, what the convention fixes and what
+  stays open, what it aims to solve as hypotheses, why it may work, and what it makes possible,
+  from what is tested to what is not built yet. The detail moves one link away: the reading of the
+  batches to `tests/`, what came before to `convention/README.md`. The word "Linked" leaves the
+  line under the headline: its trial, two spaces, gave 0/5 in batch 3.
 
 ## Convention 0.3, draft (2026-11-18, the first version of this public history)
 
