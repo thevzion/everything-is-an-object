@@ -1,6 +1,6 @@
 # Models
 
-Status: candidate, untested. Every model here is at version `0.1`.
+Status: candidate. Every model here is at version `0.1`. The seven types to start with are tested by [trial 9](../tests/trials/09-placement.md); the rest of the library has no trial yet.
 
 ## What a model is
 
@@ -94,7 +94,7 @@ precious: the explicit makes contradictions detectable.
 ## Migrations
 
 A migration is a change (`migrate`), proposed by the agent and accepted by the person, because it is
-wide: from `local:supplier` to `work@0.4:vendor`, twelve objects, and why.
+wide: from `local:supplier` to `work@0.2:vendor`, twelve objects, and why.
 
 - History stays whole; the current state lives in the new model.
 - Upgrading an installed model's version takes the same path ([model-version-migration](https://github.com/thevzion/source/blob/main/objects/questions/model-version-migration.md)).
