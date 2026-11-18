@@ -70,7 +70,9 @@ ends stay open.
 Agents, agent operating systems, second brains, note apps, frameworks: each keeps its own idea of
 what you want, in its own format, and it is lost when you change tools. The convention sits one
 layer below them, at the source: plain files in a folder you own, each with a header that says what
-it is. None of it is new: files, a header, git, and a convention rather than a configuration. The
+it is. A second brain lets each person file in their own way, so only its owner, or its own app,
+can read it. Here everything is an object with the same header, so any person, any intelligence and
+any app can read any space. None of it is new: files, a header, git, and a convention rather than a configuration. The
 foundations are plain on purpose, so that anything can be brought onto them and anyone can read
 them: a person, any intelligence, any app. It grows as files and git grow; the trials run at 100,
 1,000 and 10,000 objects ([proof](#proof)).
@@ -145,6 +147,24 @@ pending; the **materializer**, who turns what was said into objects; a **maker**
 brief asks; a **checker**, who checks what others made. Every other role emerges when the work
 needs it ([roles](convention/roles.md)). What a role makes, a plan, a page, code, is written as an
 object where the work is done.
+
+## Where it goes
+
+What a common format makes possible, and what we want to build on it. None of it is built yet.
+
+- **An app you download.** A desktop app that opens any space: point it at your folder, and it
+  shows your objects, the views, and what waits for your yes, with no account and no copy of your
+  files. One app can read every space, because every space has the same shape; an app made for one
+  second brain reads only that one.
+- **Interoperability.** Every tool that reads the format reads your space and writes back to the
+  same objects: an assistant, an app, Notion, a script. Change tools, and nothing is converted or
+  lost.
+- **A network of spaces.** A space points to another's objects by their URI, proposes a change
+  there, and receives the answer as an object ([two spaces](tests/runs/05-two-spaces/)). A type
+  that returns across many spaces becomes a model anyone installs: the commons.
+
+The convention is the part that has to come first. The apps, the adapters and the network can come
+from anyone, and they all read the same spaces.
 
 ## Try it
 
