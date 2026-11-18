@@ -3,33 +3,31 @@
   <desc id="d">A graph of a bike workshop's space. A goal, fifty repairs a month, serves a problem, which serves a why. A decision and two projects serve the goal; a task serves one project, a deliverable delivers the other, and a result answers the goal. One project draws on a local type, a supplier. Below, the history runs from 1 to 18 November; replayed on 12 November, the task and the deliverable, written later, are not there yet.</desc>
   <defs>
     <style>
-      .sans{font-family:Saira,'Segoe UI','Helvetica Neue',Arial,sans-serif}
-      .mono{font-family:'Geist Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace}
-      .node{fill:#0a1426;stroke:#1d2c47;stroke-width:1.2}
-      .later{fill:#0a1426;stroke:#26385a;stroke-width:1.2;stroke-dasharray:5 4}
+      .sans{font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif}
+      .mono{font-family:'IBM Plex Mono','SFMono-Regular',Menlo,Consolas,monospace}
+      .node{fill:#fbfaf6;stroke:#d8d2c4;stroke-width:1.2}
+      .later{fill:#fbfaf6;stroke:#bdb5a4;stroke-width:1.2;stroke-dasharray:5 4}
       .kind{font-size:10.5px;letter-spacing:1.2px}
-      .text{font-size:14px;fill:#eaf1fb}
-      .edge{stroke:#3a5280;stroke-width:1.5;fill:none}
-      .label{font-size:10px;fill:#8195b3}
+      .text{font-size:14px;fill:#1a1814}
+      .edge{stroke:#8c8577;stroke-width:1.5;fill:none}
+      .label{font-size:10px;fill:#6f6a60}
     </style>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#0d1a30" stroke-width="1"/>
     </pattern>
     <radialGradient id="glow" cx="455" cy="220" r="520" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#2563eb" stop-opacity=".18"/>
-      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+      <stop offset="0" stop-color="#1a1814" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#1a1814" stop-opacity="0"/>
     </radialGradient>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0L10 5L0 10z" fill="#3a5280"/>
+      <path d="M0 0L10 5L0 10z" fill="#8c8577"/>
     </marker>
   </defs>
 
-  <rect width="1200" height="560" rx="24" fill="#060d1a"/>
-  <rect width="1200" height="560" rx="24" fill="url(#grid)"/>
-  <rect width="1200" height="560" rx="24" fill="url(#glow)"/>
+  <rect width="1200" height="560" rx="24" fill="#f6f3ec" stroke="#d8d2c4" stroke-width="1"/>
 
-  <text x="60" y="40" class="mono" font-size="11" letter-spacing="1.6" fill="#7fd3ff">A SPACE, DRAWN FROM ITS LINKS</text>
-  <text x="1140" y="40" class="mono" font-size="11" fill="#5d7090" text-anchor="end">a view: read-only, regenerated, stamped with its commit</text>
+  <text x="60" y="40" class="mono" font-size="11" letter-spacing="1.6" fill="#1a1814">A SPACE, DRAWN FROM ITS LINKS</text>
+  <text x="1140" y="40" class="mono" font-size="11" fill="#8c8577" text-anchor="end">a view: read-only, regenerated, stamped with its commit</text>
 
   <!-- edges -->
   <line x1="350" y1="208" x2="272" y2="158" class="edge" marker-end="url(#arrow)"/>
@@ -53,63 +51,63 @@
 
   <!-- why -->
   <rect x="60" y="260" width="210" height="50" rx="12" class="node"/>
-  <text x="76" y="279" class="mono kind" fill="#a3b3ca">WHY</text>
+  <text x="76" y="279" class="mono kind" fill="#4a453c">WHY</text>
   <text x="76" y="299" class="sans text">Keep bikes on the road</text>
   <!-- problem -->
   <rect x="60" y="130" width="210" height="50" rx="12" class="node"/>
-  <text x="76" y="149" class="mono kind" fill="#a3b3ca">PROBLEM</text>
+  <text x="76" y="149" class="mono kind" fill="#4a453c">PROBLEM</text>
   <text x="76" y="169" class="sans text">Bikes wait three weeks</text>
   <!-- result -->
   <rect x="60" y="370" width="210" height="50" rx="12" class="node"/>
-  <text x="76" y="389" class="mono kind" fill="#e3b341">RESULT</text>
+  <text x="76" y="389" class="mono kind" fill="#1a1814">RESULT</text>
   <text x="76" y="409" class="sans text">41 repairs in October</text>
   <!-- goal -->
-  <rect x="350" y="195" width="210" height="50" rx="12" fill="#0b1a33" stroke="#6b97ff" stroke-width="1.4"/>
-  <text x="366" y="214" class="mono kind" fill="#6b97ff">GOAL</text>
+  <rect x="350" y="195" width="210" height="50" rx="12" fill="#fbfaf6" stroke="#1a1814" stroke-width="1.4"/>
+  <text x="366" y="214" class="mono kind" fill="#1a1814">GOAL</text>
   <text x="366" y="234" class="sans text">Fifty repairs a month</text>
   <!-- decision -->
   <rect x="350" y="320" width="210" height="50" rx="12" class="node"/>
-  <text x="366" y="339" class="mono kind" fill="#3fbf8a">DECISION</text>
+  <text x="366" y="339" class="mono kind" fill="#1a1814">DECISION</text>
   <text x="366" y="359" class="sans text">Open on Saturdays</text>
   <!-- supplier -->
   <rect x="350" y="70" width="210" height="50" rx="12" class="node"/>
-  <text x="366" y="89" class="mono kind" fill="#e58fc0">SUPPLIER · LOCAL TYPE</text>
+  <text x="366" y="89" class="mono kind" fill="#1a1814">SUPPLIER · LOCAL TYPE</text>
   <text x="366" y="109" class="sans text">Velo Parts, in Lyon</text>
   <!-- projects -->
   <rect x="640" y="115" width="210" height="50" rx="12" class="node"/>
-  <text x="656" y="134" class="mono kind" fill="#25bcdd">PROJECT</text>
+  <text x="656" y="134" class="mono kind" fill="#1a1814">PROJECT</text>
   <text x="656" y="154" class="sans text">Saturday shifts</text>
   <rect x="640" y="265" width="210" height="50" rx="12" class="node"/>
-  <text x="656" y="284" class="mono kind" fill="#25bcdd">PROJECT</text>
+  <text x="656" y="284" class="mono kind" fill="#1a1814">PROJECT</text>
   <text x="656" y="304" class="sans text">The website</text>
   <!-- written after 12 Nov: not there yet in the replay -->
   <g opacity=".45">
     <rect x="930" y="70" width="210" height="50" rx="12" class="later"/>
-    <text x="946" y="89" class="mono kind" fill="#25bcdd">TASK · 15 NOV</text>
+    <text x="946" y="89" class="mono kind" fill="#1a1814">TASK · 15 NOV</text>
     <text x="946" y="109" class="sans text">Train two volunteers</text>
     <rect x="930" y="200" width="210" height="50" rx="12" class="later"/>
-    <text x="946" y="219" class="mono kind" fill="#25bcdd">DELIVERABLE · 18 NOV</text>
+    <text x="946" y="219" class="mono kind" fill="#1a1814">DELIVERABLE · 18 NOV</text>
     <text x="946" y="239" class="sans text">The landing page</text>
   </g>
-  <text x="930" y="282" class="mono" font-size="11" fill="#8195b3">dashed: written after 12 Nov,</text>
-  <text x="930" y="298" class="mono" font-size="11" fill="#8195b3">so not there in the replay</text>
+  <text x="930" y="282" class="mono" font-size="11" fill="#6f6a60">dashed: written after 12 Nov,</text>
+  <text x="930" y="298" class="mono" font-size="11" fill="#6f6a60">so not there in the replay</text>
 
   <!-- history, replayed -->
-  <text x="60" y="462" class="mono" font-size="11" letter-spacing="1.6" fill="#e3b341">HISTORY</text>
-  <line x1="60" y1="492" x2="1140" y2="492" stroke="#26385a" stroke-width="1.4"/>
-  <line x1="60" y1="492" x2="758" y2="492" stroke="#2563eb" stroke-width="2"/>
-  <circle cx="123" cy="492" r="4.5" fill="#a3b3ca"/>
-  <circle cx="187" cy="492" r="4.5" fill="#a3b3ca"/>
-  <circle cx="314" cy="492" r="4.5" fill="#6b97ff"/>
-  <circle cx="505" cy="492" r="4.5" fill="#3fbf8a"/>
-  <circle cx="568" cy="492" r="4.5" fill="#e58fc0"/>
-  <circle cx="695" cy="492" r="4.5" fill="#25bcdd"/>
-  <circle cx="949" cy="492" r="4.5" fill="#25bcdd" opacity=".45"/>
-  <circle cx="1140" cy="492" r="4.5" fill="#25bcdd" opacity=".45"/>
-  <line x1="758" y1="470" x2="758" y2="514" stroke="#7fd3ff" stroke-width="2"/>
-  <circle cx="758" cy="492" r="8" fill="#060d1a" stroke="#7fd3ff" stroke-width="2"/>
-  <text x="774" y="474" class="mono" font-size="12" fill="#7fd3ff">replayed on 12 Nov: the space as it was</text>
-  <text x="60" y="520" class="mono" font-size="11" fill="#5d7090">1 Nov</text>
-  <text x="1140" y="520" class="mono" font-size="11" fill="#5d7090" text-anchor="end">18 Nov</text>
-  <text x="600" y="544" class="mono" font-size="11" fill="#5d7090" text-anchor="middle">every change keeps who made it, when and why: trace any object back, or replay the whole space</text>
+  <text x="60" y="462" class="mono" font-size="11" letter-spacing="1.6" fill="#1a1814">HISTORY</text>
+  <line x1="60" y1="492" x2="1140" y2="492" stroke="#bdb5a4" stroke-width="1.4"/>
+  <line x1="60" y1="492" x2="758" y2="492" stroke="#1a1814" stroke-width="2"/>
+  <circle cx="123" cy="492" r="4.5" fill="#4a453c"/>
+  <circle cx="187" cy="492" r="4.5" fill="#4a453c"/>
+  <circle cx="314" cy="492" r="4.5" fill="#1a1814"/>
+  <circle cx="505" cy="492" r="4.5" fill="#1a1814"/>
+  <circle cx="568" cy="492" r="4.5" fill="#1a1814"/>
+  <circle cx="695" cy="492" r="4.5" fill="#1a1814"/>
+  <circle cx="949" cy="492" r="4.5" fill="#1a1814" opacity=".45"/>
+  <circle cx="1140" cy="492" r="4.5" fill="#1a1814" opacity=".45"/>
+  <line x1="758" y1="470" x2="758" y2="514" stroke="#1a1814" stroke-width="2"/>
+  <circle cx="758" cy="492" r="8" fill="#f6f3ec" stroke="#1a1814" stroke-width="2"/>
+  <text x="774" y="474" class="mono" font-size="12" fill="#1a1814">replayed on 12 Nov: the space as it was</text>
+  <text x="60" y="520" class="mono" font-size="11" fill="#8c8577">1 Nov</text>
+  <text x="1140" y="520" class="mono" font-size="11" fill="#8c8577" text-anchor="end">18 Nov</text>
+  <text x="600" y="544" class="mono" font-size="11" fill="#8c8577" text-anchor="middle">every change keeps who made it, when and why: trace any object back, or replay the whole space</text>
 </svg>

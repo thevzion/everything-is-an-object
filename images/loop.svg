@@ -3,26 +3,25 @@
   <desc id="d">A loop in three steps. One: an agent reads objects already discerned, one question each, with their source. Two: it discerns what exists, what fits, what was said and what was guessed. Three: it writes objects discerned in turn. The next reader, a person or an agent, starts from a cleaner source. Not tested yet.</desc>
   <defs>
     <style>
-      .sans{font-family:Saira,'Segoe UI','Helvetica Neue',Arial,sans-serif}
-      .mono{font-family:'Geist Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace}
-      .box{fill:#0a1426;stroke:#1d2c47;stroke-width:1.2}
-      .num{font-size:13px;fill:#25bcdd}
-      .title{font-size:21px;fill:#eaf1fb}
-      .sub{font-size:14px;fill:#a3b3ca}
+      .sans{font-family:'Iowan Old Style','Palatino Linotype',Georgia,serif}
+      .mono{font-family:'IBM Plex Mono','SFMono-Regular',Menlo,Consolas,monospace}
+      .box{fill:#fbfaf6;stroke:#d8d2c4;stroke-width:1.2}
+      .num{font-size:13px;fill:#1a1814}
+      .title{font-size:21px;fill:#1a1814}
+      .sub{font-size:14px;fill:#4a453c}
     </style>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="#0d1a30" stroke-width="1"/>
     </pattern>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M0 0L10 5L0 10z" fill="#25bcdd"/>
+      <path d="M0 0L10 5L0 10z" fill="#1a1814"/>
     </marker>
   </defs>
 
-  <rect width="1200" height="300" rx="24" fill="#060d1a"/>
-  <rect width="1200" height="300" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="300" rx="24" fill="#f6f3ec" stroke="#d8d2c4" stroke-width="1"/>
 
-  <text x="60" y="40" class="mono" font-size="11" letter-spacing="1.6" fill="#e3b341">A HYPOTHESIS</text>
-  <text x="1140" y="40" class="mono" font-size="11" fill="#5d7090" text-anchor="end">not tested yet</text>
+  <text x="60" y="40" class="mono" font-size="11" letter-spacing="1.6" fill="#1a1814">A HYPOTHESIS</text>
+  <text x="1140" y="40" class="mono" font-size="11" fill="#8c8577" text-anchor="end">not tested yet</text>
 
   <rect x="60" y="60" width="300" height="120" rx="14" class="box"/>
   <text x="84" y="92" class="mono num">01</text>
@@ -42,8 +41,8 @@
   <text x="864" y="148" class="sans sub">objects discerned in turn,</text>
   <text x="864" y="166" class="sans sub">dated, linked, kept as said</text>
 
-  <line x1="364" y1="120" x2="444" y2="120" stroke="#25bcdd" stroke-width="1.6" marker-end="url(#arrow)"/>
-  <line x1="754" y1="120" x2="834" y2="120" stroke="#25bcdd" stroke-width="1.6" marker-end="url(#arrow)"/>
-  <path d="M990 184C990 262 210 262 210 186" fill="none" stroke="#25bcdd" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
-  <text x="600" y="276" class="mono" font-size="12" fill="#8195b3" text-anchor="middle">the next reader, a person or an agent, starts from a cleaner source</text>
+  <line x1="364" y1="120" x2="444" y2="120" stroke="#1a1814" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="754" y1="120" x2="834" y2="120" stroke="#1a1814" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M990 184C990 262 210 262 210 186" fill="none" stroke="#1a1814" stroke-width="1.6" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+  <text x="600" y="276" class="mono" font-size="12" fill="#6f6a60" text-anchor="middle">the next reader, a person or an agent, starts from a cleaner source</text>
 </svg>
