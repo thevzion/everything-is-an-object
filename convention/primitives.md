@@ -38,10 +38,10 @@ Repair fifty bikes a month by June. We will know when the logbook shows fifty fo
 | **link** | a relation between two objects: `serves`, `draws-on`, `delivers`, answers, replaces, contradicts, or a local kind | a header line that points to a path or a URI; the graph drawn from them | [structure](structure.md#three-sets), [trace](trace.md) |
 | **question** | the fixed question of a type, word for word. A type is its question | the `question:` line of every header; a local type named by its question | [questions](questions.md) |
 | **space** | a source with its own authority: a folder or a page, its objects and their history | `space.md`: its URI, the convention version, its models, truth and access | [spaces](spaces.md) |
-| **role** | a function held by a person or an intelligence: what it turns into what, and what it answers for | section 4 of every `AGENTS.md`; the author of each change | [roles](roles.md) |
+| **role** | a function held by a person or an intelligence: what it turns into what, and what it answers for | section 5 of every `AGENTS.md`, Delegate; the author of each change | [roles](roles.md) |
 | **binding** | a role held on an object or a set of objects, under a mandate: who writes it, who checks it, who is told | a mandate; the access table; "notify me" on an object | [roles](roles.md), [spaces](spaces.md) |
 | **trigger** | what wakes a role: a change (a header takes a value, a file changes) or a time | a routine's "when"; a hook; a schedule's rituals | [questions](questions.md#routines-the-loop-that-runs-alone-candidate) |
-| **action** | work handed over with a brief that stands alone: for whom, what for, where, within which limits, what done looks like | the brief; the hand-back: Serves, Result, Evidence, Limits, Learned, Next | [roles](roles.md#section-5-between-us) |
+| **action** | work handed over with a brief that stands alone: for whom, what for, where, within which limits, what done looks like | the brief; the hand-back: Serves, Result, Evidence, Limits, Learned, Next | [roles](roles.md#section-5-delegate) |
 | **view** | a question asked of objects, read-only, regenerated and never edited | a page or a table stamped with the commit it comes from: Board, Decisions, Measures | [views](views.md) |
 | **history** | every change, with its author and its why, append-only | `git log`, each commit ending in `Why:` and `Source:`; or the Changes database | [changes](changes.md) |
 

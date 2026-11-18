@@ -107,11 +107,12 @@ fn fixture_agents_md_carries_the_norm_texts() {
     let e = env("agentsmd");
     let t = trial("02-reuse");
     let s = build(&e, &t, "x");
-    for i in 1..=9 {
+    for i in 1..=10 {
         assert!(s.instructions.contains(&format!("## {i}. ")), "section {i}");
     }
     assert!(s.instructions.contains("the materializer"));
-    assert!(s.instructions.contains("\n9. Every request becomes an object"), "the doctrine has its line 9");
+    assert!(s.instructions.contains("## 10. This space's own rules"));
+    assert!(s.instructions.contains("Every request becomes an object, and so does what is done for it"), "the doctrine's line 9, in section 3");
 }
 
 #[test]

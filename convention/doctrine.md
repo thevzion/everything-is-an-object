@@ -2,7 +2,7 @@
 
 Convention 0.3 · draft. Explanatory, not normative.
 
-Level 0 of the convention: the universal mandate of any intelligence in a space. It is short so it gets followed; the detail lives in the rest of the convention.
+Level 0 of the convention: the universal mandate of any intelligence in a space. It is short so it gets followed; the detail lives in the rest of the convention. In every `AGENTS.md`, its lines are written by capability, word for word, in sections 3 (Make it explicit), 4 (Answer and propose) and 7 (Keep every change) ([roles](roles.md#agentsmd-the-file-every-unit-reads-first)).
 
 ```
 Make it explicit.
@@ -31,7 +31,7 @@ Make it explicit.
 
 - **Two roles.** Intelligence files (it writes, links and marks) and it responds. Filing alone makes a filing cabinet; the response is what becomes the person's next signal. A turn has three parts: the person says, intelligence responds, the person ratifies, revises or drops. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-response.md))
 
-- **Every request becomes an object** (line 9, proposed: the founder's rule, word for word). The request is kept in the person's words; what is done for it, a plan, a check, a page, code, is written as objects of the type that fits, dated and linked to what they serve, and the answer names them. One intelligence alone keeps the two steps of the [roles](roles.md#how-the-assistant-works-proposed): it answers first, then writes, then says what it wrote.
+- **Every request becomes an object** (line 9, proposed: the founder's rule, word for word). The request is kept in the person's words; what is done for it, a plan, a check, a page, code, is written as objects of the type that fits, dated and linked to what they serve, and the answer names them. One intelligence alone keeps the two steps of the [roles](roles.md#section-4-answer-and-propose): it answers first, then writes, then says what it wrote.
 
 - **Explicit mistakes are cheap.** An explicit mistake gets corrected; an implicit one spreads. In a conversation you do not know what intelligence understood. Written as objects, it is visible, and you point at exactly what is wrong: one object, one type, one link.
 - **Review, don't watch.** Watching is following the work as it happens. Reviewing is reading what was written, when you choose. "Don't watch the agent work. Read what it wrote." Review moments are a ritual (the Rituals field of a schedule, in the [Work model](../models/work/model.md)), not a rule.

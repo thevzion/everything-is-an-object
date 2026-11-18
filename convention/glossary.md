@@ -30,7 +30,7 @@ The established term nearest to it: a record, or a row, whose schema is a questi
 | Decisions, the view | a review queue, an approvals inbox | [views](views.md#the-default-views-proposed) |
 | the materializer (proposed) | a parser that writes; it turns what was said into records. It was called the note-taker | [roles](roles.md) |
 | the checker (proposed) | a reviewer, a verifier, a fact-checker: it checks a result, or a claim about the world against a source, and never ratifies a want. It absorbs what was called the verifier | [roles](roles.md), [structure](structure.md#when-an-inference-is-enough-proposed) |
-| answer first, then write (proposed) | eventual consistency: the answer is right for what is known now, and the source catches up; asynchronous writes | [roles](roles.md#how-the-assistant-works-proposed) |
+| answer first, then write (proposed) | eventual consistency: the answer is right for what is known now, and the source catches up; asynchronous writes | [roles](roles.md#section-4-answer-and-propose) |
 | a role that emerges, promotion | desire paths, paved; a local type promoted to a model | [roles](roles.md#roles-that-emerge), [models](../models/README.md#local-types-and-links) |
 | a convention | a convention, as in "convention over configuration": an agreed way of doing, adopted by use rather than imposed | [README](README.md) |
 | a want, with how we'll know | a desired state, with acceptance criteria | [structure](structure.md), the Goals model |

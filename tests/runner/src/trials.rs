@@ -473,20 +473,20 @@ fn check_setup(ctx: &Ctx, d: &RunData, _: usize) -> (Vec<Check>, Measures) {
     let agents = read(&sp.join("AGENTS.md"));
     let mut faults = Vec::new();
     let mut last = 0;
-    for i in 1..=9 {
+    for i in 1..=10 {
         match agents.find(&format!("## {i}. ")) {
             Some(p) if p >= last => last = p,
             _ => faults.push(format!("section {i} missing or out of order")),
         }
     }
     let aw = norm(&agents);
-    for key in ["Section 3. How we work", "Section 4. The roles", "Section 5. Between us", "Section 8. Writing and recording", "The frame sentence, after the title"] {
+    for key in ["Section 3. Make it explicit", "Section 4. Answer and propose", "Section 5. Delegate", "Section 6. Build on the objects", "Section 7. Keep every change", "The frame sentence, after the title"] {
         let n = norm(ctx.c.norms.get(key).map(|s| s.as_str()).unwrap_or(""));
         if !aw.contains(&n) {
             faults.push(format!("norm text '{key}' not word for word"));
         }
     }
-    out.push(check("S2", "AGENTS.md: the nine sections in order, the norm texts word for word", faults.is_empty(), if faults.is_empty() { "yes".into() } else { faults.join("; ") }));
+    out.push(check("S2", "AGENTS.md: the ten sections in order, the norm texts word for word", faults.is_empty(), if faults.is_empty() { "yes".into() } else { faults.join("; ") }));
     let objs = objects(sp);
     let has_goal = objs.iter().any(|o| first(&o.header, "type") == "goal");
     let has_problem = objs.iter().any(|o| first(&o.header, "type") == "problem");

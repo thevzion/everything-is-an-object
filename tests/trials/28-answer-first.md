@@ -18,7 +18,7 @@ A home (`home@0.1`) for Sam Rivera, a fictional person, handle `sam-rivera`: `sp
 
 > Make me a plan for the next two weeks to get ready for the Lyon 10K.
 
-One agent holds every role here: the assistant, the materializer and the checker ([roles](../../convention/roles.md#how-the-assistant-works-proposed)).
+One agent holds every role here: the assistant, the materializer and the checker ([roles](../../convention/roles.md#section-5-delegate)).
 
 ## Fixed before the trial
 

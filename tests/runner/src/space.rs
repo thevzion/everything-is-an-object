@@ -26,11 +26,12 @@ impl Convention {
         for key in [
             "The frame sentence, after the title",
             "The last sentence of section 2",
-            "Section 3. How we work",
-            "Section 4. The roles",
-            "Section 5. Between us",
-            "The last sentence of section 7",
-            "Section 8. Writing and recording",
+            "Section 3. Make it explicit",
+            "Section 4. Answer and propose",
+            "Section 5. Delegate",
+            "Section 6. Build on the objects",
+            "Section 7. Keep every change",
+            "The last sentence of section 9",
         ] {
             let text = section(&roles, &format!("#### {key}")).ok_or(format!("no norm text '{key}' in roles.md"))?;
             norms.insert(key.to_string(), text);
@@ -181,7 +182,7 @@ impl Convention {
         m
     }
 
-    /// The nine sections, as `convention/roles.md` defines them, with its norm texts word for word.
+    /// The ten sections, as `convention/roles.md` defines them, with its norm texts word for word.
     pub fn agents_md(&self, s: &SpaceInfo) -> String {
         let n = |k: &str| self.norms.get(k).cloned().unwrap_or_default();
         let mut a = format!(
@@ -202,20 +203,25 @@ impl Convention {
             a.push_str(&format!("{}. {text} (`{path}`)\n", i + 1));
         }
         a.push_str(&format!("\n{}\n\n", n("The last sentence of section 2")));
-        a.push_str(&format!("## 3. How we work\n<!-- How does any intelligence behave here? · convention -->\n\n{}\n\n", n("Section 3. How we work")));
-        a.push_str(&format!("## 4. The roles\n<!-- Who does what in the loop? · convention -->\n\n{}\n\n", n("Section 4. The roles")));
-        a.push_str(&format!("## 5. Between us\n<!-- How do units hand work over and render account? · convention -->\n\n{}\n\n", n("Section 5. Between us")));
+        for (n, heading, question) in [
+            (3, "Make it explicit", "How does what is said, decided and made become objects?"),
+            (4, "Answer and propose", "How do we answer, propose, and wait for a yes?"),
+            (5, "Delegate", "Who does what, and how is work handed over?"),
+            (6, "Build on the objects", "How does what is built here stay on the source?"),
+            (7, "Keep every change", "How is a change recorded, and corrected?"),
+        ] {
+            a.push_str(&format!("## {n}. {heading}\n<!-- {question} · convention -->\n\n{}\n\n", self.norms.get(&format!("Section {n}. {heading}")).cloned().unwrap_or_default()));
+        }
         a.push_str(&format!(
-            "## 6. Who may do what\n<!-- Who may read, propose, decide, and act for whom? · space.md -->\n\n| Verb | Who |\n|---|---|\n| read | {} |\n| propose | {} |\n| decide | {} |\n\n",
+            "## 8. Who may do what\n<!-- Who may read, propose, decide, and act for whom? · space.md -->\n\n| Verb | Who |\n|---|---|\n| read | {} |\n| propose | {} |\n| decide | {} |\n\n",
             s.members, s.proposers, s.deciders
         ));
-        a.push_str("## 7. Where things are\n<!-- Where is the source, and what is a copy? · space.md -->\n\n- Source: this folder, `space.md` and `objects/`.\n- Projection: this file.\n");
+        a.push_str("## 9. Where things are\n<!-- Where is the source, and what is a copy? · space.md -->\n\n- Source: this folder, `space.md` and `objects/`.\n- Projection: this file.\n");
         for (name, path) in &s.sites {
             a.push_str(&format!("- Site: {name} (`{path}`).\n"));
         }
-        a.push_str(&format!("\n{}\n\n", n("The last sentence of section 7")));
-        a.push_str(&format!("## 8. Writing and recording\n<!-- How is an object written, and a change recorded? · convention -->\n\n{}\n\n", n("Section 8. Writing and recording")));
-        a.push_str("## 9. This space's own rules\n<!-- What does this space add? · objects/decisions/, objects/principles/ -->\n\nNone yet.\n");
+        a.push_str(&format!("\n{}\n\n", n("The last sentence of section 9")));
+        a.push_str("## 10. This space's own rules\n<!-- What does this space add? · objects/decisions/, objects/principles/, objects/rules/ -->\n\nNone yet.\n");
         a
     }
 
