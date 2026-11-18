@@ -103,7 +103,7 @@ where things are, and its own rules ([the ten sections](convention/roles.md#agen
 | **6. Build on the objects** | any page, view or app reads the objects and writes back to them |
 | **7. Keep every change** | one commit per change, with its why; a correction reverses only what was wrong |
 
-Each capability is written in the eight words, so it can be drawn, followed and tested. Below,
+Each capability is written in the eight words, so it can be drawn, followed and tested (proposed). Below,
 sections 3 and 5, drawn from their own lines. A rule that cannot be drawn is rewritten until it can
 ([writing](convention/writing.md#a-rule-can-be-drawn-proposed)). The whole file, as every space
 starts from it: [`setup/AGENTS.template.md`](setup/AGENTS.template.md).
@@ -123,7 +123,7 @@ shows what a few agents did in a fictional space.
 |---|---|---|
 | **Continuity**: each new session, tool or person starts from zero | anyone resumes from the folder alone | [another session resumes from the source](tests/runs/03-resume/) |
 | **Shared meaning**: each tool keeps its own idea of what you want | a type is a question, word for word, and a repeated want enriches the object already there | [a repeated signal enriches the existing object](tests/runs/02-reuse/) |
-| **Authorship**: what you said and what was guessed look the same | every object says `source: from-me` or `source: inferred` | [the inferred is marked, quotes are exact](tests/runs/15-quotes/) |
+| **Authorship**: what you said and what was guessed look the same | every object says `source: from-me` or `source: inferred` | [the inferred is marked, quotes are exact](tests/runs/15-quotes/); but [placement](tests/runs/09-placement/), 1/5 in batch 3, still marks words the agent rephrased as the person's |
 | **Delegation**: you repeat yourself and watch the agent work | work goes out with a brief that stands alone, comes back as objects, and nothing leaves before your yes | [what goes out waits for a yes](tests/runs/10-goes-out/) |
 | **Verification**: you review everything, or nothing | every change keeps its reason, and a correction touches only what was wrong | [a correction keeps the history](tests/runs/29-correction/) |
 | **The commons**: what one space learns stays there | a local type returns across spaces, becomes a seed, then a model others install | not tested yet |
@@ -147,15 +147,15 @@ From what works today to what we want to build, each with where it stands.
 
 | What you can do | Where it stands |
 |---|---|
-| **Resume anywhere.** Any session, tool or person picks up from the folder alone, with no briefing | tested ([trace](tests/runs/03-resume/)) |
+| **Resume anywhere.** Any session, tool or person picks up from the folder alone, with no briefing | tested for another session of the same agent: 5/5 in each batch ([trace](tests/runs/03-resume/)); another tool or a person, no trial yet |
 | **Ask why.** "What did we decide about Saturdays, and why?" returns the object, its reason and its author | partly tested: quotes exact, the inferred marked ([trace](tests/runs/15-quotes/)) |
 | **Delegate.** Work goes out with a brief and comes back as objects; nothing leaves before your yes | partly tested: what goes out waits for a yes ([trace](tests/runs/10-goes-out/)); handing work to other units, no trial yet |
-| **Correct one thing.** Reverse the one object that is wrong, and keep the rest and the reason | tested ([trace](tests/runs/29-correction/)) |
+| **Correct one thing.** Reverse the one object that is wrong, and keep the rest and the reason | tested: 5/5 in batch 3, after 0/5 and 2/5 ([trace](tests/runs/29-correction/)) |
 | **Trace and replay.** Follow any object back to who said it, when and why it changed; replay the whole space as it was on any date | works with git; no trial yet |
 | **See it drawn.** A graph of what serves what, a board of goals, what waits for your yes | the views are specified ([views](convention/views.md)); any assistant can build them; no trial yet |
 | **Open it anywhere.** The same space in a folder, in git, in Notion, in any app that reads the format | git, in every trial; Notion, [one partial run](tests/trials/04-notion-adapter.md) |
 | **An app you download.** Point it at a folder and see your objects, the views and what waits for your yes, with no account | not built yet |
-| **A network of spaces.** Spaces link to each other's objects and propose changes to each other; a type that returns across many becomes a model anyone installs | [two spaces](tests/runs/05-two-spaces/), in a trial; the commons, not built yet |
+| **A network of spaces.** Spaces link to each other's objects and propose changes to each other; a type that returns across many becomes a model anyone installs | [two spaces](tests/runs/05-two-spaces/), in a trial: 5/5 in batch 2, 0/5 in batch 3; the commons, not built yet |
 | **An operating system for intelligence.** Roles as processes, objects as files, triggers as the scheduler, your yes as the permission: units that wake, work and hand back, on any space | an ambition |
 
 The convention comes first. The apps, the adapters, the network and the rest can come from anyone.
@@ -218,16 +218,22 @@ with its trace.
 - **Reading the counts**: the commit ids, the versions of the criteria, and the counts read again are in [the runs](tests/runs/README.md#reading-the-counts).
 <!-- proof:end -->
 
-Batches 1 to 3 ran on the text of the first public commit: `AGENTS.md` in its earlier nine sections, before it was
-written by capability, and the models at `0.1`. They stay true of that text; batch 4 will run on this one.
+Batch 3 ran on the text of the first public commit, batches 1 and 2 on earlier drafts of 0.3. All three ran
+with `AGENTS.md` in its earlier nine sections, before it was written by capability, and the models at `0.1`.
+They stay true of those texts; batch 4 will run on this one.
 What each batch shows: [the reading of the batches](tests/README.md#what-the-batches-show). Replay
 them: [`tests/runner`](tests/runner/), in Rust.
 
-**Not tested yet**: a person, rather than an agent, setting up a space; that what an agent makes is
-kept as an object, and line 9 of the doctrine; the units of section 5 of `AGENTS.md`, and what is
-built on the objects (all proposed in this version, no trial yet);
-the Notion adapter beyond [one partial run](tests/trials/04-notion-adapter.md); the other trials
-of [`tests/`](tests/README.md). Small samples show what happened in these runs; they do not
+**Not tested yet**:
+
+- a person, rather than an agent, setting up a space;
+- what this version proposes: line 9 of the doctrine, what an agent makes kept as an object, the
+  units of section 5 of `AGENTS.md`, and what is built on the objects;
+- another model or another tool than the one that ran;
+- the Notion adapter beyond [one partial run](tests/trials/04-notion-adapter.md), and the other
+  trials of [`tests/`](tests/README.md).
+
+ Small samples show what happened in these runs; they do not
 promise what happens in yours.
 
 ## Eight words
@@ -249,7 +255,7 @@ object where the work is done.
 
 | Path | What it holds |
 |---|---|
-| [`convention/`](convention/README.md) | the primitives, the doctrine, the structure, roles, views, spaces, changes, truth, trace, adapters, the glossary, and how the rules are written |
+| [`convention/`](convention/README.md) | the primitives, the doctrine, the structure, questions, roles, views, spaces, changes, truth, trace, adapters, the glossary, and how the rules are written |
 | [`models/`](models/README.md) | the library of types, each a question: Purpose, Goals, Work, Loop, Knowledge, Agreements, Capital, and Organization and Home, which assemble them; seeds; how a local type is promoted |
 | [`setup/`](setup/README.md) | the setup prompt, the template of every `AGENTS.md`, and the other ways to start |
 | [`tests/`](tests/README.md) | the trials, each a question with its criteria; [`tests/runner/`](tests/runner/), the runner; [`tests/runs/`](tests/runs/README.md), every run as an object |
