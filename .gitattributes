@@ -1,0 +1,4 @@
+# Text files keep LF line endings on every platform: the runner reads the doctrine and the
+# norm texts byte for byte, and a Windows checkout would otherwise turn them into CRLF.
+* text=auto eol=lf
+*.png binary

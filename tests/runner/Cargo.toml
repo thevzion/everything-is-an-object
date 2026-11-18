@@ -1,0 +1,13 @@
+[package]
+name = "convention-trials"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Runs the Convention's canonical trials with real agents, checks each run deterministically, and writes each run as an object."
+publish = false
+
+[dependencies]
+serde_json = "1"
+
+[profile.release]
+debug = false

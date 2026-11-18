@@ -1,0 +1,5 @@
+# Machine-specific state: never committed (convention/structure.md, the reduced tree)
+.local/
+
+# The runner's build output (tests/runner)
+tests/runner/target/

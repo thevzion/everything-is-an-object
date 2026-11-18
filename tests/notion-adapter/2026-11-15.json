@@ -1,0 +1,1008 @@
+{
+  "run": "2026-11-15",
+  "standard_commit": "62edcd41a72879fc04ccafcb109ae35ce0b56514",
+  "criteria_commit": "be03196",
+  "operator": "Codex; exact model identifier not exposed",
+  "model": "organization@0.1",
+  "normalization": "LF line endings, trailing whitespace per line, outer whitespace only",
+  "baseline": [
+    {
+      "path": "objects/decisions/missing-is-unknown.md",
+      "content": "---\ntype: \"decision\"\nmodel: \"loop@0.1\"\nquestion: \"What did we choose, why, and who answers for it?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"by-construction\"\ndate: \"2026-11-15\"\nserves: \"objects/goals/no-waste.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Proposed choice\n\nKeep an absent tally as unknown, because zero would claim an observation.\n\n- Chosen by: the trial agent, as a proposal.\n- Answers for it: the fictional bakery owner, if adopted.\n- Affected: the fictional bakery's reporting.\n\n**Not accepted by a real person.**\n",
+      "notion_body": "## Proposed choice\n\nKeep an absent tally as unknown, because zero would claim an observation.\n\n- Chosen by: the trial agent, as a proposal.\n- Answers for it: the fictional bakery owner, if adopted.\n- Affected: the fictional bakery's reporting.\n\n<b>Not accepted by a real person.</b>",
+      "notion_properties": {
+        "Evidence": "by-construction",
+        "Lifecycle": "proposed",
+        "Model": "loop@0.1",
+        "Name": "Keep missing counts unknown",
+        "Question": "What did we choose, why, and who answers for it?",
+        "Serves": [
+          "objects/goals/no-waste.md"
+        ],
+        "Serves provenance": "inferred; standard@0.2-draft",
+        "Source": "inferred",
+        "Type": "decision",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15"
+      }
+    },
+    {
+      "path": "objects/goals/no-waste.md",
+      "content": "---\ntype: \"goal\"\nmodel: \"goals@0.1\"\nquestion: \"What do we want now, and how will we know?\"\nsource: \"inferred\"\nlifecycle: \"active\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/vision.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Want\n\n> my bakery to throw no bread away.\n\n## How we will know\n\nProposed measure: a daily tally records zero loaves discarded. A missing tally is unknown, not zero. The observation period remains to be chosen.\n",
+      "notion_body": "## Want\n\n> my bakery to throw no bread away.\n\n## How we will know\n\nProposed measure: a daily tally records zero loaves discarded. A missing tally is unknown, not zero. The observation period remains to be chosen.",
+      "notion_properties": {
+        "Evidence": "open",
+        "Lifecycle": "active",
+        "Model": "goals@0.1",
+        "Name": "No bread thrown away",
+        "Question": "What do we want now, and how will we know?",
+        "Serves": [
+          "objects/vision.md"
+        ],
+        "Serves provenance": "inferred; standard@0.2-draft",
+        "Source": "inferred",
+        "Type": "goal",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15"
+      }
+    },
+    {
+      "path": "objects/problem.md",
+      "content": "---\ntype: \"problem\"\nmodel: \"purpose@0.1\"\nquestion: \"What is wrong today, and for whom?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"hypothesis\"\ndate: \"2026-11-15\"\n---\n\n## Suspected problem\n\nThe bakery may discard bread and leave customer questions unanswered. These are inferred concerns from the supplied wants, not observed facts.\n",
+      "notion_body": "## Suspected problem\n\nThe bakery may discard bread and leave customer questions unanswered. These are inferred concerns from the supplied wants, not observed facts.",
+      "notion_properties": {
+        "Evidence": "hypothesis",
+        "Lifecycle": "proposed",
+        "Model": "purpose@0.1",
+        "Name": "Bread waste and unanswered customers",
+        "Question": "What is wrong today, and for whom?",
+        "Serves provenance": "",
+        "Source": "inferred",
+        "Type": "problem",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15",
+        "Serves": []
+      }
+    },
+    {
+      "path": "objects/projects/bread-tally.md",
+      "content": "---\ntype: \"project\"\nmodel: \"work@0.1\"\nquestion: \"What are we building for it?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/goals/no-waste.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Proposed tally\n\nA small daily record of baked, sold, reused and discarded loaves.\n\n| Field | Meaning |\n| --- | --- |\n| discarded | Loaves thrown away |\n| missing | No observation recorded |\n\nThis is a proposed means, not a business commitment.\n",
+      "notion_body": "## Proposed tally\n\nA small daily record of baked, sold, reused and discarded loaves.\n\n| Field | Meaning |\n| --- | --- |\n| discarded | Loaves thrown away |\n| missing | No observation recorded |\n\nThis is a proposed means, not a business commitment.",
+      "notion_properties": {
+        "Evidence": "open",
+        "Lifecycle": "proposed",
+        "Model": "work@0.1",
+        "Name": "A daily bread tally",
+        "Question": "What are we building for it?",
+        "Serves": [
+          "objects/goals/no-waste.md"
+        ],
+        "Serves provenance": "inferred; standard@0.2-draft",
+        "Source": "inferred",
+        "Type": "project",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15"
+      }
+    },
+    {
+      "path": "objects/tasks/count-loaves.md",
+      "content": "---\ntype: \"task\"\nmodel: \"work@0.1\"\nquestion: \"What are we doing next?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/projects/bread-tally.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Next step\n\n- [ ] Count leftover loaves at closing.\n- [ ] Record their destination.\n\n```text\ndiscarded = counted loaves thrown away\n```\n\nNo measurement has been performed.\n",
+      "notion_body": "## Next step\n\n- [ ] Count leftover loaves at closing.\n- [ ] Record their destination.\n\n```txt\ndiscarded = counted loaves thrown away\n```\n\nNo measurement has been performed.",
+      "notion_properties": {
+        "Evidence": "open",
+        "Lifecycle": "proposed",
+        "Model": "work@0.1",
+        "Name": "Count leftover loaves",
+        "Question": "What are we doing next?",
+        "Serves": [
+          "objects/projects/bread-tally.md"
+        ],
+        "Serves provenance": "inferred; standard@0.2-draft",
+        "Source": "inferred",
+        "Type": "task",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15"
+      }
+    },
+    {
+      "path": "objects/vision.md",
+      "content": "---\ntype: \"vision\"\nmodel: \"purpose@0.1\"\nquestion: \"What does the world look like if we succeed?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/why.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n# A bakery the street can rely on\n\nThe street has good bread each morning. Bread finds a use, and every customer gets an answer that day.\n\nThis vision is inferred from the supplied wants.\n",
+      "notion_body": "The street has good bread each morning. Bread finds a use, and every customer gets an answer that day.\n\nThis vision is inferred from the supplied wants.",
+      "notion_properties": {
+        "Evidence": "open",
+        "Lifecycle": "proposed",
+        "Model": "purpose@0.1",
+        "Name": "A bakery the street can rely on",
+        "Question": "What does the world look like if we succeed?",
+        "Serves": [
+          "objects/why.md"
+        ],
+        "Serves provenance": "inferred; standard@0.2-draft",
+        "Source": "inferred",
+        "Type": "vision",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15"
+      }
+    },
+    {
+      "path": "objects/why.md",
+      "content": "---\ntype: \"why\"\nmodel: \"purpose@0.1\"\nquestion: \"Why do we exist?\"\nsource: \"from-me\"\nlifecycle: \"active\"\nevidence: \"by-construction\"\ndate: \"2026-11-15\"\n---\n\nGood bread for the street, every morning.\n",
+      "notion_body": "Good bread for the street, every morning.",
+      "notion_properties": {
+        "Evidence": "by-construction",
+        "Lifecycle": "active",
+        "Model": "purpose@0.1",
+        "Name": "Good bread every morning",
+        "Question": "Why do we exist?",
+        "Serves provenance": "",
+        "Source": "from-me",
+        "Type": "why",
+        "date:Date:is_datetime": 0,
+        "date:Date:start": "2026-11-15",
+        "Serves": []
+      }
+    }
+  ],
+  "final_files": [
+    {
+      "path": ".gitignore",
+      "content": ".local/\n"
+    },
+    {
+      "path": "AGENTS.md",
+      "content": "# Trial mandate\n\nRead space.md, then the declared model and the relevant objects. Use Standard 0.2 draft from the source commit named in space.md.\n\nMake it explicit. Reuse an object before adding one. Keep one object per question, preserve the supplied words, mark inferred content and link provenance. Keep every change with its reason. Never decide what a real person wants.\n\nThis is a fictional adapter trial. Its operator may create fixtures and controlled divergence inside this test only. It may not share, publish, send messages or push Git. A remote conflict must remain unresolved as evidence. Read capture is not installed; never manufacture observed Read links.\n\nEvery change uses <object>(<operation>): <summary>, then Why: and Source: trailers. Never amend, rebase or rewrite history.\n"
+    },
+    {
+      "path": "objects/decisions/missing-is-unknown.md",
+      "content": "---\ntype: \"decision\"\nmodel: \"loop@0.1\"\nquestion: \"What did we choose, why, and who answers for it?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"by-construction\"\ndate: \"2026-11-15\"\nserves: \"objects/goals/no-waste.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Proposed choice\n\nKeep an absent tally as unknown, because zero would claim an observation.\n\n- Chosen by: the trial agent, as a proposal.\n- Answers for it: the fictional bakery owner, if adopted.\n- Affected: the fictional bakery's reporting.\n\n**Not accepted by a real person.**\n"
+    },
+    {
+      "path": "objects/goals/no-waste.md",
+      "content": "---\ntype: \"goal\"\nmodel: \"goals@0.1\"\nquestion: \"What do we want now, and how will we know?\"\nsource: \"inferred\"\nlifecycle: \"active\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/vision.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Want\n\n> my bakery to throw no bread away.\n\n## How we will know\n\nProposed measure: a daily tally records zero loaves discarded. A missing tally is unknown, not zero. The observation period remains to be chosen.\n"
+    },
+    {
+      "path": "objects/goals/same-day-answers.md",
+      "content": "---\ntype: \"goal\"\nmodel: \"goals@0.1\"\nquestion: \"What do we want now, and how will we know?\"\nsource: \"inferred\"\nlifecycle: \"active\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/vision.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Want\n\n> every customer answered the same day.\n\n## How we will know\n\nProposed measure: compare each fictional inquiry's received date with its first answer date. Every pair must match. No customer records are collected in this trial.\n"
+    },
+    {
+      "path": "objects/problem.md",
+      "content": "---\ntype: \"problem\"\nmodel: \"purpose@0.1\"\nquestion: \"What is wrong today, and for whom?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"hypothesis\"\ndate: \"2026-11-15\"\n---\n\n## Suspected problem\n\nThe bakery may discard bread and leave customer questions unanswered. These are inferred concerns from the supplied wants, not observed facts.\n"
+    },
+    {
+      "path": "objects/projects/bread-tally.md",
+      "content": "---\ntype: \"project\"\nmodel: \"work@0.1\"\nquestion: \"What are we building for it?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/goals/no-waste.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Proposed tally\n\nA small daily record of baked, sold, reused and discarded loaves.\n\n| Field | Meaning |\n| --- | --- |\n| discarded | Loaves thrown away |\n| missing | No observation recorded |\n\nThis is a proposed means, not a business commitment.\n"
+    },
+    {
+      "path": "objects/tasks/count-loaves.md",
+      "content": "---\ntype: \"task\"\nmodel: \"work@0.1\"\nquestion: \"What are we doing next?\"\nsource: \"inferred\"\nlifecycle: \"active\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/projects/bread-tally.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n## Next step\n\n- [ ] Count leftover loaves at closing.\n- [ ] Record their destination.\n\n```text\ndiscarded = counted loaves thrown away\n```\n\nNo measurement has been performed.\n"
+    },
+    {
+      "path": "objects/vision.md",
+      "content": "---\ntype: \"vision\"\nmodel: \"purpose@0.1\"\nquestion: \"What does the world look like if we succeed?\"\nsource: \"inferred\"\nlifecycle: \"proposed\"\nevidence: \"open\"\ndate: \"2026-11-15\"\nserves: \"objects/why.md\"\nserves-source: \"inferred\"\nserves-model: \"standard@0.2-draft\"\n---\n\n# A bakery the street can rely on\n\nThe street has good bread each morning. Bread finds a use, and every customer gets an answer that day.\n\nThis vision is inferred from the supplied wants.\n"
+    },
+    {
+      "path": "objects/why.md",
+      "content": "---\ntype: \"why\"\nmodel: \"purpose@0.1\"\nquestion: \"Why do we exist?\"\nsource: \"from-me\"\nlifecycle: \"active\"\nevidence: \"by-construction\"\ndate: \"2026-11-15\"\n---\n\nGood bread for the street, every morning.\n"
+    },
+    {
+      "path": "space.md",
+      "content": "---\nspace: street-bakery-trial\nuri: street-bakery-trial\nstandard: 0.2-draft\nmodels:\n  - organization@0.1\nadapters:\n  - folder+git\n  - notion\n---\n\n# Street bakery trial\n\nA fictional fixture. Standard 0.2 draft at 62edcd41a72879fc04ccafcb109ae35ce0b56514; Organization 0.1 includes Purpose, Goals, Work, Loop and Agreements 0.1.\n\n## Truth\n\nLocal Markdown is Source for all object types. Notion bodies and properties are Projections; remote property edits enter as proposals on notion/main. Git records Changes. AGENTS.md is a projection of the doctrine and this mandate. Bodies flow to Notion only.\n\n## Access\n\nRead, propose and decide within this fictional test: the trial operator. No external commitments, sharing, publishing or Git push. No real people or customer data.\n\n## Sync\n\nThe last pushed commit is recorded as a Git ref. A property pull starts there on notion/main, then merges. Conflicts stop without overwrite. Private mapping and receipts stay in .local, never committed. No routine is active.\n"
+    }
+  ],
+  "commits": [
+    {
+      "hash": "705bbd2be5a551cefc5d7377b092906320344898",
+      "message": "space(add): set up the fictional bakery",
+      "why": "isolate the authorized Notion adapter trial",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:27+01:00",
+      "author": "Trial Agent",
+      "files": [
+        ".gitignore",
+        "AGENTS.md",
+        "space.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/.gitignore b/.gitignore\nnew file mode 100644\nindex 0000000..abbab6b\n--- /dev/null\n+++ b/.gitignore\n@@ -0,0 +1,2 @@\n+.local/\n+\ndiff --git a/AGENTS.md b/AGENTS.md\nnew file mode 100644\nindex 0000000..17e661a\n--- /dev/null\n+++ b/AGENTS.md\n@@ -0,0 +1,10 @@\n+# Trial mandate\n+\n+Read space.md, then the declared model and the relevant objects. Use Standard 0.2 draft from the source commit named in space.md.\n+\n+Make it explicit. Reuse an object before adding one. Keep one object per question, preserve the supplied words, mark inferred content and link provenance. Keep every change with its reason. Never decide what a real person wants.\n+\n+This is a fictional adapter trial. Its operator may create fixtures and controlled divergence inside this test only. It may not share, publish, send messages or push Git. A remote conflict must remain unresolved as evidence. Read capture is not installed; never manufacture observed Read links.\n+\n+Every change uses <object>(<operation>): <summary>, then Why: and Source: trailers. Never amend, rebase or rewrite history.\n+\ndiff --git a/space.md b/space.md\nnew file mode 100644\nindex 0000000..49ec4d2\n--- /dev/null\n+++ b/space.md\n@@ -0,0 +1,27 @@\n+---\n+space: street-bakery-trial\n+uri: street-bakery-trial\n+standard: 0.2-draft\n+models:\n+  - organization@0.1\n+adapters:\n+  - folder+git\n+  - notion\n+---\n+\n+# Street bakery trial\n+\n+A fictional fixture. Standard 0.2 draft at 62edcd41a72879fc04ccafcb109ae35ce0b56514; Organization 0.1 includes Purpose, Goals, Work, Loop and Agreements 0.1.\n+\n+## Truth\n+\n+Local Markdown is Source for all object types. Notion bodies and properties are Projections; remote property edits enter as proposals on notion/main. Git records Changes. AGENTS.md is a projection of the doctrine and this mandate. Bodies flow to Notion only.\n+\n+## Access\n+\n+Read, propose and decide within this fictional test: the trial operator. No external commitments, sharing, publishing or Git push. No real people or customer data.\n+\n+## Sync\n+\n+The last pushed commit is recorded as a Git ref. A property pull starts there on notion/main, then merges. Conflicts stop without overwrite. Private mapping and receipts stay in .local, never committed. No routine is active.\n+"
+    },
+    {
+      "hash": "f356d2184366d4421701e9d830736e4a33bbfa9f",
+      "message": "why(add): keep the supplied purpose",
+      "why": "preserve the fixture wording",
+      "source": "from-me",
+      "date": "2026-11-15T17:25:27+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/why.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/why.md b/objects/why.md\nnew file mode 100644\nindex 0000000..af8d383\n--- /dev/null\n+++ b/objects/why.md\n@@ -0,0 +1,12 @@\n+---\n+type: \"why\"\n+model: \"purpose@0.1\"\n+question: \"Why do we exist?\"\n+source: \"from-me\"\n+lifecycle: \"active\"\n+evidence: \"by-construction\"\n+date: \"2026-11-15\"\n+---\n+\n+Good bread for the street, every morning.\n+"
+    },
+    {
+      "hash": "e4bbe623fe0cea4a95645ae1514f08646da07bb7",
+      "message": "problem(add): name the suspected concerns",
+      "why": "make the inferred problem reviewable",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:27+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/problem.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/problem.md b/objects/problem.md\nnew file mode 100644\nindex 0000000..cc94b6c\n--- /dev/null\n+++ b/objects/problem.md\n@@ -0,0 +1,14 @@\n+---\n+type: \"problem\"\n+model: \"purpose@0.1\"\n+question: \"What is wrong today, and for whom?\"\n+source: \"inferred\"\n+lifecycle: \"proposed\"\n+evidence: \"hypothesis\"\n+date: \"2026-11-15\"\n+---\n+\n+## Suspected problem\n+\n+The bakery may discard bread and leave customer questions unanswered. These are inferred concerns from the supplied wants, not observed facts.\n+"
+    },
+    {
+      "hash": "742fad229d48b495469cb0291b27c6a37cb5ad65",
+      "message": "vision(add): describe the proposed outcome",
+      "why": "connect the supplied purpose and wants",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:27+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/vision.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/vision.md b/objects/vision.md\nnew file mode 100644\nindex 0000000..943f400\n--- /dev/null\n+++ b/objects/vision.md\n@@ -0,0 +1,19 @@\n+---\n+type: \"vision\"\n+model: \"purpose@0.1\"\n+question: \"What does the world look like if we succeed?\"\n+source: \"inferred\"\n+lifecycle: \"proposed\"\n+evidence: \"open\"\n+date: \"2026-11-15\"\n+serves: \"objects/why.md\"\n+serves-source: \"inferred\"\n+serves-model: \"standard@0.2-draft\"\n+---\n+\n+# A bakery the street can rely on\n+\n+The street has good bread each morning. Bread finds a use, and every customer gets an answer that day.\n+\n+This vision is inferred from the supplied wants.\n+"
+    },
+    {
+      "hash": "7f3e6966a3ad4dbec5725fec8b376aaa7edfe24d",
+      "message": "goal(add): state the no-waste outcome",
+      "why": "make the supplied want measurable without inventing observations",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:27+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/goals/no-waste.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/goals/no-waste.md b/objects/goals/no-waste.md\nnew file mode 100644\nindex 0000000..cea3c73\n--- /dev/null\n+++ b/objects/goals/no-waste.md\n@@ -0,0 +1,21 @@\n+---\n+type: \"goal\"\n+model: \"goals@0.1\"\n+question: \"What do we want now, and how will we know?\"\n+source: \"inferred\"\n+lifecycle: \"active\"\n+evidence: \"open\"\n+date: \"2026-11-15\"\n+serves: \"objects/vision.md\"\n+serves-source: \"inferred\"\n+serves-model: \"standard@0.2-draft\"\n+---\n+\n+## Want\n+\n+> my bakery to throw no bread away.\n+\n+## How we will know\n+\n+Proposed measure: a daily tally records zero loaves discarded. A missing tally is unknown, not zero. The observation period remains to be chosen.\n+"
+    },
+    {
+      "hash": "54f7c2d6df852d2232c6743118b978e9cbb39d7d",
+      "message": "project(add): propose a daily tally",
+      "why": "test a table in a possible means for the goal",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:28+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/projects/bread-tally.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/projects/bread-tally.md b/objects/projects/bread-tally.md\nnew file mode 100644\nindex 0000000..278918d\n--- /dev/null\n+++ b/objects/projects/bread-tally.md\n@@ -0,0 +1,24 @@\n+---\n+type: \"project\"\n+model: \"work@0.1\"\n+question: \"What are we building for it?\"\n+source: \"inferred\"\n+lifecycle: \"proposed\"\n+evidence: \"open\"\n+date: \"2026-11-15\"\n+serves: \"objects/goals/no-waste.md\"\n+serves-source: \"inferred\"\n+serves-model: \"standard@0.2-draft\"\n+---\n+\n+## Proposed tally\n+\n+A small daily record of baked, sold, reused and discarded loaves.\n+\n+| Field | Meaning |\n+| --- | --- |\n+| discarded | Loaves thrown away |\n+| missing | No observation recorded |\n+\n+This is a proposed means, not a business commitment.\n+"
+    },
+    {
+      "hash": "30b68e910775a1bc0ea203659f5cc574f5646940",
+      "message": "task(add): propose counting leftovers",
+      "why": "test a next step with checkboxes and code",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:28+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/tasks/count-loaves.md b/objects/tasks/count-loaves.md\nnew file mode 100644\nindex 0000000..5870a2d\n--- /dev/null\n+++ b/objects/tasks/count-loaves.md\n@@ -0,0 +1,24 @@\n+---\n+type: \"task\"\n+model: \"work@0.1\"\n+question: \"What are we doing next?\"\n+source: \"inferred\"\n+lifecycle: \"proposed\"\n+evidence: \"open\"\n+date: \"2026-11-15\"\n+serves: \"objects/projects/bread-tally.md\"\n+serves-source: \"inferred\"\n+serves-model: \"standard@0.2-draft\"\n+---\n+\n+## Next step\n+\n+- [ ] Count leftover loaves at closing.\n+- [ ] Record their destination.\n+\n+```text\n+discarded = counted loaves thrown away\n+```\n+\n+No measurement has been performed.\n+"
+    },
+    {
+      "hash": "7cde5c71043028f86ef9c78d6e588251c14b9bed",
+      "message": "decision(add): keep missing counts unknown",
+      "why": "avoid treating missing observations as zero",
+      "source": "inferred",
+      "date": "2026-11-15T17:25:28+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/decisions/missing-is-unknown.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/decisions/missing-is-unknown.md b/objects/decisions/missing-is-unknown.md\nnew file mode 100644\nindex 0000000..f9deb29\n--- /dev/null\n+++ b/objects/decisions/missing-is-unknown.md\n@@ -0,0 +1,23 @@\n+---\n+type: \"decision\"\n+model: \"loop@0.1\"\n+question: \"What did we choose, why, and who answers for it?\"\n+source: \"inferred\"\n+lifecycle: \"proposed\"\n+evidence: \"by-construction\"\n+date: \"2026-11-15\"\n+serves: \"objects/goals/no-waste.md\"\n+serves-source: \"inferred\"\n+serves-model: \"standard@0.2-draft\"\n+---\n+\n+## Proposed choice\n+\n+Keep an absent tally as unknown, because zero would claim an observation.\n+\n+- Chosen by: the trial agent, as a proposal.\n+- Answers for it: the fictional bakery owner, if adopted.\n+- Affected: the fictional bakery's reporting.\n+\n+**Not accepted by a real person.**\n+"
+    },
+    {
+      "hash": "2c6502f073dcfe6569383737f31c3261b1e55318",
+      "message": "goal(add): keep the same-day answer want",
+      "why": "preserve the second supplied want as a separate question instance",
+      "source": "inferred",
+      "date": "2026-11-15T17:27:36+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/goals/same-day-answers.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/goals/same-day-answers.md b/objects/goals/same-day-answers.md\nnew file mode 100644\nindex 0000000..ff040b3\n--- /dev/null\n+++ b/objects/goals/same-day-answers.md\n@@ -0,0 +1,21 @@\n+---\n+type: \"goal\"\n+model: \"goals@0.1\"\n+question: \"What do we want now, and how will we know?\"\n+source: \"inferred\"\n+lifecycle: \"active\"\n+evidence: \"open\"\n+date: \"2026-11-15\"\n+serves: \"objects/vision.md\"\n+serves-source: \"inferred\"\n+serves-model: \"standard@0.2-draft\"\n+---\n+\n+## Want\n+\n+> every customer answered the same day.\n+\n+## How we will know\n+\n+Proposed measure: compare each fictional inquiry's received date with its first answer date. Every pair must match. No customer records are collected in this trial.\n+"
+    },
+    {
+      "hash": "dc0712738d2020ad2f8e0deb2a612ce77eff6bd6",
+      "message": "task(revise): import the Notion review proposal",
+      "why": "trial N4 changed Lifecycle in Notion; the edit supplied no native why",
+      "source": "inferred",
+      "date": "2026-11-15T17:28:22+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/tasks/count-loaves.md b/objects/tasks/count-loaves.md\nindex 5870a2d..3465f69 100644\n--- a/objects/tasks/count-loaves.md\n+++ b/objects/tasks/count-loaves.md\n@@ -3,7 +3,7 @@ type: \"task\"\n model: \"work@0.1\"\n question: \"What are we doing next?\"\n source: \"inferred\"\n-lifecycle: \"proposed\"\n+lifecycle: \"review\"\n evidence: \"open\"\n date: \"2026-11-15\"\n serves: \"objects/projects/bread-tally.md\""
+    },
+    {
+      "hash": "997f6d8f9c9372d527f94228be85941858fc4a4d",
+      "message": "task(merge): accept the controlled review proposal",
+      "why": "complete trial N4 after inspecting the one-property incoming change",
+      "source": "inferred",
+      "date": "2026-11-15T17:29:06+01:00",
+      "author": "Trial Agent",
+      "files": [],
+      "status": "accepted",
+      "patch": "diff --git a/objects/tasks/count-loaves.md b/objects/tasks/count-loaves.md\nindex 5870a2d..3465f69 100644\n--- a/objects/tasks/count-loaves.md\n+++ b/objects/tasks/count-loaves.md\n@@ -3,7 +3,7 @@ type: \"task\"\n model: \"work@0.1\"\n question: \"What are we doing next?\"\n source: \"inferred\"\n-lifecycle: \"proposed\"\n+lifecycle: \"review\"\n evidence: \"open\"\n date: \"2026-11-15\"\n serves: \"objects/projects/bread-tally.md\""
+    },
+    {
+      "hash": "86313dca139419a94d949fe8577020ea6b936828",
+      "message": "task(revise): create the local conflict side",
+      "why": "trial N5 deliberately diverges Lifecycle from the shared review base",
+      "source": "inferred",
+      "date": "2026-11-15T17:30:16+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "status": "accepted",
+      "patch": "diff --git a/objects/tasks/count-loaves.md b/objects/tasks/count-loaves.md\nindex 3465f69..53c226c 100644\n--- a/objects/tasks/count-loaves.md\n+++ b/objects/tasks/count-loaves.md\n@@ -3,7 +3,7 @@ type: \"task\"\n model: \"work@0.1\"\n question: \"What are we doing next?\"\n source: \"inferred\"\n-lifecycle: \"review\"\n+lifecycle: \"active\"\n evidence: \"open\"\n date: \"2026-11-15\"\n serves: \"objects/projects/bread-tally.md\""
+    },
+    {
+      "hash": "d3fb261482612191acdd2fb524663d740f940965",
+      "message": "task(revise): retain the incoming conflict proposal",
+      "why": "trial N5 imported the divergent Notion Lifecycle; remote body drift blocks body sync",
+      "source": "inferred",
+      "date": "2026-11-15T17:30:53+01:00",
+      "author": "Trial Agent",
+      "files": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "status": "proposed",
+      "patch": "diff --git a/objects/tasks/count-loaves.md b/objects/tasks/count-loaves.md\nindex 3465f69..ae4e622 100644\n--- a/objects/tasks/count-loaves.md\n+++ b/objects/tasks/count-loaves.md\n@@ -3,7 +3,7 @@ type: \"task\"\n model: \"work@0.1\"\n question: \"What are we doing next?\"\n source: \"inferred\"\n-lifecycle: \"review\"\n+lifecycle: \"dropped\"\n evidence: \"open\"\n date: \"2026-11-15\"\n serves: \"objects/projects/bread-tally.md\""
+    }
+  ],
+  "projected_changes": [
+    {
+      "hash": "f356d2184366d4421701e9d830736e4a33bbfa9f",
+      "message": "why(add): keep the supplied purpose",
+      "why": "preserve the fixture wording",
+      "source": "from-me",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/why.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "7f3e6966a3ad4dbec5725fec8b376aaa7edfe24d",
+      "message": "goal(add): state the no-waste outcome",
+      "why": "make the supplied want measurable without inventing observations",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/goals/no-waste.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "705bbd2be5a551cefc5d7377b092906320344898",
+      "message": "space(add): set up the fictional bakery",
+      "why": "isolate the authorized Notion adapter trial",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [],
+      "read": []
+    },
+    {
+      "hash": "e4bbe623fe0cea4a95645ae1514f08646da07bb7",
+      "message": "problem(add): name the suspected concerns",
+      "why": "make the inferred problem reviewable",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/problem.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "742fad229d48b495469cb0291b27c6a37cb5ad65",
+      "message": "vision(add): describe the proposed outcome",
+      "why": "connect the supplied purpose and wants",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/vision.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "54f7c2d6df852d2232c6743118b978e9cbb39d7d",
+      "message": "project(add): propose a daily tally",
+      "why": "test a table in a possible means for the goal",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/projects/bread-tally.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "30b68e910775a1bc0ea203659f5cc574f5646940",
+      "message": "task(add): propose counting leftovers",
+      "why": "test a next step with checkboxes and code",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "7cde5c71043028f86ef9c78d6e588251c14b9bed",
+      "message": "decision(add): keep missing counts unknown",
+      "why": "avoid treating missing observations as zero",
+      "source": "inferred",
+      "date": "2026-11-15 16:25:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/decisions/missing-is-unknown.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "2c6502f073dcfe6569383737f31c3261b1e55318",
+      "message": "goal(add): keep the same-day answer want",
+      "why": "preserve the second supplied want as a separate question instance",
+      "source": "inferred",
+      "date": "2026-11-15 16:27:00Z",
+      "author": "Trial Agent",
+      "operation": "add",
+      "status": "accepted",
+      "objects": [
+        "objects/goals/same-day-answers.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "dc0712738d2020ad2f8e0deb2a612ce77eff6bd6",
+      "message": "task(revise): import the Notion review proposal",
+      "why": "trial N4 changed Lifecycle in Notion; the edit supplied no native why",
+      "source": "inferred",
+      "date": "2026-11-15 16:28:00Z",
+      "author": "Trial Agent",
+      "operation": "revise",
+      "status": "accepted",
+      "objects": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "997f6d8f9c9372d527f94228be85941858fc4a4d",
+      "message": "task(merge): accept the controlled review proposal",
+      "why": "complete trial N4 after inspecting the one-property incoming change",
+      "source": "inferred",
+      "date": "2026-11-15 16:29:00Z",
+      "author": "Trial Agent",
+      "operation": "merge",
+      "status": "accepted",
+      "objects": [],
+      "read": []
+    },
+    {
+      "hash": "86313dca139419a94d949fe8577020ea6b936828",
+      "message": "task(revise): create the local conflict side",
+      "why": "trial N5 deliberately diverges Lifecycle from the shared review base",
+      "source": "inferred",
+      "date": "2026-11-15 16:30:00Z",
+      "author": "Trial Agent",
+      "operation": "revise",
+      "status": "accepted",
+      "objects": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "read": []
+    },
+    {
+      "hash": "d3fb261482612191acdd2fb524663d740f940965",
+      "message": "task(revise): retain the incoming conflict proposal",
+      "why": "trial N5 imported the divergent Notion Lifecycle; remote body drift blocks body sync",
+      "source": "inferred",
+      "date": "2026-11-15 16:30:00Z",
+      "author": "Trial Agent",
+      "operation": "revise",
+      "status": "proposed",
+      "objects": [
+        "objects/tasks/count-loaves.md"
+      ],
+      "read": []
+    }
+  ],
+  "property_checks": [
+    {
+      "path": "objects/why.md",
+      "uri": "street-bakery-trial/objects/why.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/problem.md",
+      "uri": "street-bakery-trial/objects/problem.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/vision.md",
+      "uri": "street-bakery-trial/objects/vision.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/goals/no-waste.md",
+      "uri": "street-bakery-trial/objects/goals/no-waste.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/projects/bread-tally.md",
+      "uri": "street-bakery-trial/objects/projects/bread-tally.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/tasks/count-loaves.md",
+      "uri": "street-bakery-trial/objects/tasks/count-loaves.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/decisions/missing-is-unknown.md",
+      "uri": "street-bakery-trial/objects/decisions/missing-is-unknown.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    },
+    {
+      "path": "objects/goals/same-day-answers.md",
+      "uri": "street-bakery-trial/objects/goals/same-day-answers.md",
+      "uriMatches": true,
+      "propertiesMatch": true,
+      "servesMatches": true
+    }
+  ],
+  "conflict": {
+    "base": "997f6d8f9c9372d527f94228be85941858fc4a4d",
+    "local": "86313dca139419a94d949fe8577020ea6b936828",
+    "remote": "d3fb261482612191acdd2fb524663d740f940965",
+    "merge_exit": 1,
+    "field": "lifecycle",
+    "base_value": "review",
+    "local_value": "active",
+    "remote_value": "dropped",
+    "merge_aborted": true,
+    "remote_body_retained": true,
+    "body_in_local": false
+  },
+  "body_probe": {
+    "base": "## Next step\n\n- [ ] Count leftover loaves at closing.\n- [ ] Record their destination.\n\n```txt\ndiscarded = counted loaves thrown away\n```\n\nNo measurement has been performed.",
+    "remote": "## Next step\n\n- [ ] Count leftover loaves at closing.\n- [ ] Record their destination.\n\n```txt\ndiscarded = counted loaves thrown away\n```\n\nNo measurement has been performed.\n\n## Remote body edit\n\nREMOTE BODY EDIT: retain this Notion-only sentence as trial evidence; it has no local counterpart."
+  },
+  "bundle_sha256": "e0f1bf245e475e927ba8bd4d663d82976c0dd692316c69614f00bf4f7d83735c",
+  "metrics": {
+    "core_calls": 53,
+    "timed_calls": 45,
+    "median_ms": 1449,
+    "min_ms": 1167,
+    "max_ms": 4641,
+    "sum_call_ms": 72443,
+    "start": "2026-11-15T16:21:37.895Z",
+    "end": "2026-11-15T16:31:59.325Z",
+    "rate_errors": 0,
+    "block_errors": 0,
+    "parser_warnings": 3,
+    "created_pages": 24,
+    "object_rows": 8,
+    "change_rows": 13,
+    "databases": 2,
+    "body_baseline_equal": 4,
+    "body_baseline_count": 7,
+    "exact_blocks": null
+  },
+  "core_call_log": [
+    {
+      "step": "create-root",
+      "start": null,
+      "observed_at": "2026-11-15T16:21:37.895Z",
+      "end": null,
+      "elapsed_ms": null
+    },
+    {
+      "step": "read-root",
+      "start": null,
+      "observed_at": "2026-11-15T16:21:57.888Z",
+      "end": null,
+      "elapsed_ms": null
+    },
+    {
+      "step": "create-objects-db",
+      "start": null,
+      "observed_at": "2026-11-15T16:21:59.356Z",
+      "end": null,
+      "elapsed_ms": null
+    },
+    {
+      "step": "read-object-schema",
+      "start": null,
+      "observed_at": "2026-11-15T16:22:25.972Z",
+      "end": null,
+      "elapsed_ms": null
+    },
+    {
+      "step": "add-serves-relation",
+      "start": null,
+      "observed_at": "2026-11-15T16:22:25.973Z",
+      "end": null,
+      "elapsed_ms": null
+    },
+    {
+      "step": "create-changes-db",
+      "start": null,
+      "observed_at": "2026-11-15T16:22:25.973Z",
+      "end": null,
+      "elapsed_ms": null
+    },
+    {
+      "step": "create-proposed-view",
+      "start": "2026-11-15T16:25:46.348Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:47.623Z",
+      "elapsed_ms": 1275
+    },
+    {
+      "step": "push-objects/why.md",
+      "start": "2026-11-15T16:25:47.623Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:49.094Z",
+      "elapsed_ms": 1471
+    },
+    {
+      "step": "push-objects/problem.md",
+      "start": "2026-11-15T16:25:49.095Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:51.791Z",
+      "elapsed_ms": 2696
+    },
+    {
+      "step": "push-objects/vision.md",
+      "start": "2026-11-15T16:25:51.791Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:53.077Z",
+      "elapsed_ms": 1286
+    },
+    {
+      "step": "push-objects/goals/no-waste.md",
+      "start": "2026-11-15T16:25:53.077Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:54.481Z",
+      "elapsed_ms": 1404
+    },
+    {
+      "step": "push-objects/projects/bread-tally.md",
+      "start": "2026-11-15T16:25:54.481Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:55.902Z",
+      "elapsed_ms": 1421
+    },
+    {
+      "step": "push-objects/tasks/count-loaves.md",
+      "start": "2026-11-15T16:25:55.903Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:57.171Z",
+      "elapsed_ms": 1268
+    },
+    {
+      "step": "push-objects/decisions/missing-is-unknown.md",
+      "start": "2026-11-15T16:25:57.172Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:25:58.505Z",
+      "elapsed_ms": 1333
+    },
+    {
+      "step": "baseline-read-objects/why.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.105Z",
+      "elapsed_ms": 1708
+    },
+    {
+      "step": "baseline-read-objects/problem.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.137Z",
+      "elapsed_ms": 1740
+    },
+    {
+      "step": "baseline-read-objects/projects/bread-tally.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.167Z",
+      "elapsed_ms": 1770
+    },
+    {
+      "step": "baseline-read-objects/goals/no-waste.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.189Z",
+      "elapsed_ms": 1792
+    },
+    {
+      "step": "baseline-read-objects/vision.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.231Z",
+      "elapsed_ms": 1834
+    },
+    {
+      "step": "baseline-read-objects/tasks/count-loaves.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.232Z",
+      "elapsed_ms": 1835
+    },
+    {
+      "step": "baseline-read-objects/decisions/missing-is-unknown.md",
+      "start": "2026-11-15T16:26:09.397Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:11.302Z",
+      "elapsed_ms": 1905
+    },
+    {
+      "step": "push-commit-705bbd2be5a551cefc5d7377b092906320344898",
+      "start": "2026-11-15T16:26:49.990Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:51.365Z",
+      "elapsed_ms": 1375
+    },
+    {
+      "step": "push-commit-f356d2184366d4421701e9d830736e4a33bbfa9f",
+      "start": "2026-11-15T16:26:51.366Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:52.828Z",
+      "elapsed_ms": 1462
+    },
+    {
+      "step": "push-commit-e4bbe623fe0cea4a95645ae1514f08646da07bb7",
+      "start": "2026-11-15T16:26:52.830Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:54.420Z",
+      "elapsed_ms": 1590
+    },
+    {
+      "step": "push-commit-742fad229d48b495469cb0291b27c6a37cb5ad65",
+      "start": "2026-11-15T16:26:54.420Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:55.869Z",
+      "elapsed_ms": 1449
+    },
+    {
+      "step": "push-commit-7f3e6966a3ad4dbec5725fec8b376aaa7edfe24d",
+      "start": "2026-11-15T16:26:55.870Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:57.218Z",
+      "elapsed_ms": 1348
+    },
+    {
+      "step": "n6-five-row-snapshot",
+      "start": "2026-11-15T16:26:57.219Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:26:58.478Z",
+      "elapsed_ms": 1259
+    },
+    {
+      "step": "push-commit-54f7c2d6df852d2232c6743118b978e9cbb39d7d",
+      "start": "2026-11-15T16:27:21.524Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:27:23.045Z",
+      "elapsed_ms": 1521
+    },
+    {
+      "step": "push-commit-30b68e910775a1bc0ea203659f5cc574f5646940",
+      "start": "2026-11-15T16:27:23.046Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:27:24.562Z",
+      "elapsed_ms": 1516
+    },
+    {
+      "step": "push-commit-7cde5c71043028f86ef9c78d6e588251c14b9bed",
+      "start": "2026-11-15T16:27:24.563Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:27:25.942Z",
+      "elapsed_ms": 1379
+    },
+    {
+      "step": "push-agent-and-manifest",
+      "start": "2026-11-15T16:27:25.943Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:27:27.231Z",
+      "elapsed_ms": 1288
+    },
+    {
+      "step": "push-second-goal",
+      "start": "2026-11-15T16:28:12.325Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:28:14.355Z",
+      "elapsed_ms": 2030
+    },
+    {
+      "step": "n4-before",
+      "start": "2026-11-15T16:28:14.356Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:28:15.588Z",
+      "elapsed_ms": 1232
+    },
+    {
+      "step": "n4-remote-status-edit",
+      "start": "2026-11-15T16:28:15.589Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:28:16.906Z",
+      "elapsed_ms": 1317
+    },
+    {
+      "step": "n4-after",
+      "start": "2026-11-15T16:28:16.908Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:28:18.075Z",
+      "elapsed_ms": 1167
+    },
+    {
+      "step": "push-commit-2c6502f073dcfe6569383737f31c3261b1e55318",
+      "start": "2026-11-15T16:28:57.289Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:28:58.588Z",
+      "elapsed_ms": 1299
+    },
+    {
+      "step": "push-commit-dc0712738d2020ad2f8e0deb2a612ce77eff6bd6",
+      "start": "2026-11-15T16:28:58.589Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:28:59.979Z",
+      "elapsed_ms": 1390
+    },
+    {
+      "step": "n4-proposal-visible",
+      "start": "2026-11-15T16:28:59.980Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:29:01.384Z",
+      "elapsed_ms": 1404
+    },
+    {
+      "step": "n4-push-merged-property",
+      "start": "2026-11-15T16:29:52.373Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:29:57.014Z",
+      "elapsed_ms": 4641
+    },
+    {
+      "step": "n4-reread-and-n5-base",
+      "start": "2026-11-15T16:29:57.015Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:29:58.600Z",
+      "elapsed_ms": 1585
+    },
+    {
+      "step": "push-commit-997f6d8f9c9372d527f94228be85941858fc4a4d",
+      "start": "2026-11-15T16:30:08.499Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:30:09.976Z",
+      "elapsed_ms": 1477
+    },
+    {
+      "step": "n4-proposal-now-merged",
+      "start": "2026-11-15T16:30:09.978Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:30:11.491Z",
+      "elapsed_ms": 1513
+    },
+    {
+      "step": "n5-remote-conflict-side",
+      "start": "2026-11-15T16:30:17.289Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:30:18.526Z",
+      "elapsed_ms": 1237
+    },
+    {
+      "step": "remote-body-edit",
+      "start": "2026-11-15T16:30:18.527Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:30:20.598Z",
+      "elapsed_ms": 2071
+    },
+    {
+      "step": "n5-remote-state",
+      "start": "2026-11-15T16:30:20.600Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:30:22.388Z",
+      "elapsed_ms": 1788
+    },
+    {
+      "step": "push-commit-86313dca139419a94d949fe8577020ea6b936828",
+      "start": "2026-11-15T16:31:17.971Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:31:20.021Z",
+      "elapsed_ms": 2050
+    },
+    {
+      "step": "push-commit-d3fb261482612191acdd2fb524663d740f940965",
+      "start": "2026-11-15T16:31:20.022Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:31:21.312Z",
+      "elapsed_ms": 1290
+    },
+    {
+      "step": "n5-no-overwrite-read",
+      "start": "2026-11-15T16:31:21.313Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:31:22.549Z",
+      "elapsed_ms": 1236
+    },
+    {
+      "step": "final-object-rows",
+      "start": "2026-11-15T16:31:22.550Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:31:23.975Z",
+      "elapsed_ms": 1425
+    },
+    {
+      "step": "final-change-rows",
+      "start": "2026-11-15T16:31:23.977Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:31:25.897Z",
+      "elapsed_ms": 1920
+    },
+    {
+      "step": "final-object-sql",
+      "start": "2026-11-15T16:31:57.879Z",
+      "observed_at": null,
+      "end": "2026-11-15T16:31:59.325Z",
+      "elapsed_ms": 1446
+    }
+  ],
+  "untimed_schema_reads_outside_log": 2,
+  "coverage": {
+    "independent_judge": false,
+    "repetitions": 1,
+    "ui": false,
+    "direct_rest": false,
+    "stress_limits": false,
+    "block_api_count": false,
+    "exact_model_id": false
+  }
+}
