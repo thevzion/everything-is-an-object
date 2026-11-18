@@ -34,21 +34,22 @@ existing Notion connector; no packaged sync CLI is assumed.
 
 ## Fixed before the trial
 
-Source: *Notion comme adapter : faisabilite concrete*, 2026-11-12, section 5.
+Source: a feasibility study of Notion as an adapter, written in French, 2026-11-12, section 5.
 The study was found locally; Notion search was also performed. Source SHA-256:
 `c3fcac62263853126ee80d2274df4072a8a7af38a08444825811c8b92c2b87bd`.
 Its private location and workspace links are withheld from this public repository.
-The original criteria are copied verbatim below, not defined by this run.
+The original criteria, written in French, are translated below; the French text is in the first
+public commit of this history. They are not defined by this run.
 
-| # | Essai | Reussi si |
+| # | Trial | Passes if |
 |---|---|---|
-| N1 | créer la page d'entrée, la base Objects et la base Log | les trois existent, la base Objects a les champs Type, Serves, Source, Lifecycle, Evidence, Date |
-| N2 | pousser les sept objets du cœur minimal d'un dossier local | sept pages, propriétés justes, corps lisible |
-| N3 | aller-retour : relire chaque page en Markdown et comparer au fichier local | empreintes identiques une fois normalisées, sinon la liste précise des écarts |
-| N4 | modifier un statut dans Notion, puis pull | la modification arrive comme proposition, puis un commit local avec son pourquoi |
-| N5 | modifier le même objet des deux côtés, puis synchroniser | le conflit est détecté, rien n'est écrasé |
-| N6 | projeter cinq commits dans la base Log | cinq lignes, chacune avec empreinte, message, pourquoi et objets touchés |
-| N7 | créer une page avec `markdown` dans une data source | confirme ou infirme le point **à vérifier** |
+| N1 | create the entry page, the Objects database and the Log database | all three exist; Objects has the fields Type, Serves, Source, Lifecycle, Evidence, Date |
+| N2 | push the seven objects of the minimal core of a local folder | seven pages, correct properties, a readable body |
+| N3 | round trip: read each page back as Markdown and compare it with the local file | identical fingerprints once normalized, or else the exact list of differences |
+| N4 | change a status in Notion, then pull | the change arrives as a proposal, then a local commit with its why |
+| N5 | change the same object on both sides, then sync | the conflict is detected; nothing is overwritten |
+| N6 | project five commits into the Log database | five rows, each with its fingerprint, message, why and the objects it touched |
+| N7 | create a page with `markdown` in a data source | confirms or refutes the point marked **to check** |
 
 The current convention calls Log **Changes**. This run uses that name without
 changing N1 or N6. N7 is attempted through the available connector; its result
