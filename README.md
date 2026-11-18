@@ -115,10 +115,11 @@ What looks like a thirteenth word is made of these: a model is a set of question
 plus signals and yeses, Decisions is a view of what waits for a yes, Auto is a role with a time
 trigger.
 
-Three roles are fixed, beside the person: the **assistant**, who answers at once and says what is
-pending; the **materializer**, who turns what was said into objects; the **checker**, who checks
-what others made. Every other role emerges when the work needs it ([roles](convention/roles.md)).
-What a role makes, a plan, a page, code, is written as an object where the work is done.
+Four roles are fixed, beside the person: the **assistant**, who answers at once and says what is
+pending; the **materializer**, who turns what was said into objects; a **maker**, who makes what a
+brief asks; a **checker**, who checks what others made. Every other role emerges when the work
+needs it ([roles](convention/roles.md)). What a role makes, a plan, a page, code, is written as an
+object where the work is done.
 
 ## Try it
 
