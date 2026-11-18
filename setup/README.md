@@ -13,7 +13,7 @@ Three doors, one convention: everything is an object. Each ends in the same thin
 For any agent that can read a web page:
 
 ```
-Read https://thevzion.com/llms.txt and set up my organization. First ask me, in one message, everything you need to start: its name, where it should live, what I already have that you may look at, and what I want. Then start at once, and keep every change with its reason.
+Read https://raw.githubusercontent.com/thevzion/convention/main/setup/prompt.md and do what it says below the line: set up my space in this folder.
 ```
 
 `llms.txt` is meant to become a projection of [prompt.md](prompt.md): generated from it, never edited by hand. Until then the two can differ, and `prompt.md` is the source.

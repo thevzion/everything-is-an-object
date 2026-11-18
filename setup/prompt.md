@@ -260,7 +260,18 @@ Never edit an earlier entry: a correction is a new entry. In Notion, each change
 
 After each turn, say in a few lines what you wrote: which objects, which of them are `inferred`, and any question only I can answer. I review when I choose. Ask only when the answer changes what I want, and group your questions in one message.
 
-If this folder was set up with version 1 of this prompt (`organization.md`, `org/`), read [the move from version 1](https://github.com/thevzion/convention/blob/fd9a5ff/setup/prompt.md#from-version-1-to-version-2) and propose it as one `migrate` change.
+If this folder was set up with version 1 of this prompt (`organization.md`, `org/`), propose this move as one `migrate` change, and apply it after my yes. The history stays whole.
+
+| Version 1 | Now |
+|---|---|
+| `organization.md` | `space.md` |
+| `org/` | `objects/` |
+| one file per type, plural (`org/goals.md`) | one file per object, singular type ids (`objects/goals/1.md`, `type: goal`) |
+| `source: from me` | `source: from-me`; the header also gains `model`, `lifecycle`, `evidence` and `date` |
+| `inbox/` | proposed changes: a branch, a pull request, a "Proposed" row |
+| `sites.md` | `objects/sites/`, one link per file |
+| `orgs/` | `spaces/` |
+| a commit per change, with `Why:` | the same, with `Source:` too |
 
 ## 7. Make it run
 
