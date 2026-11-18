@@ -1,4 +1,3 @@
-<!-- The template of every AGENTS.md, generated from convention/roles.md by `convention-trials template`; never edited by hand. What is in braces comes from the space's own objects. -->
 <!-- Projection · convention 0.3 · {the models it installs, with their versions} · {the space's URI} · {date} -->
 # {The space's name}
 

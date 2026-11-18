@@ -254,9 +254,7 @@ impl Convention {
             "objects/rules/ -->\n\n- {a rule of this space} (`objects/rules/{name}.md`)\n",
             1,
         );
-        format!(
-            "<!-- The template of every AGENTS.md, generated from convention/roles.md by `convention-trials template`; never edited by hand. What is in braces comes from the space's own objects. -->\n{a}"
-        )
+        a
     }
 
     pub fn write_space_files(&self, dir: &Path, s: &SpaceInfo) -> Res<()> {
