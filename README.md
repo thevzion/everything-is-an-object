@@ -75,14 +75,19 @@ foundations are plain on purpose, so that anything can be brought onto them and 
 them: a person, any intelligence, any app. It grows as files and git grow; the trials run at 100,
 1,000 and 10,000 objects ([proof](#proof)).
 
-## What it solves
+## What it aims to solve
 
 The root cause: what anyone wants is lost every time it is passed on, from a person to a tool,
 from one session to the next, from one agent to another, so it is rebuilt again and again
 ([the problem](https://github.com/thevzion/source/blob/main/objects/problem.md)). Written once as
 objects, it is kept, and everyone reads the same thing.
 
-| Problem | What changes | Shown by |
+Each line below is a hypothesis, and an ambitious one. A trial shows what a few agents did in a
+fictional space; it does not show a problem solved. None of these is solved by a file alone, and
+two of them, shared meaning and the commons, cannot be solved by one space: they need many spaces,
+and the people who use them.
+
+| Problem | The hypothesis | Tested so far by |
 |---|---|---|
 | **Continuity**: each new session, tool or person starts from zero | anyone resumes from the folder alone | [another session resumes from the source](tests/runs/03-resume/) |
 | **Shared meaning**: each tool keeps its own idea of what you want | a type is a question, word for word, and a repeated want enriches the object already there | [a repeated signal enriches the existing object](tests/runs/02-reuse/) |
@@ -90,6 +95,26 @@ objects, it is kept, and everyone reads the same thing.
 | **Delegation**: you repeat yourself and watch the agent work | work goes out with a brief that stands alone, comes back as objects, and nothing leaves before your yes | [what goes out waits for a yes](tests/runs/10-goes-out/) |
 | **Verification**: you review everything, or nothing | every change keeps its reason, and a correction touches only what was wrong | [a correction keeps the history](tests/runs/29-correction/) |
 | **The commons**: what one space learns stays there | a local type returns across spaces, becomes a seed, then a model others install | not tested yet |
+
+## Why it may work
+
+An agent works from what it reads. Here, it reads objects that were already discerned: one
+question each, typed, dated, linked to what they serve, with what was said kept apart from what was
+inferred. A conversation holds the same facts mixed with repetitions, detours and what was said
+then reversed. So the agent should discern better from the objects than from the history, and
+spend less to read them. What it writes is discerned in turn, so the next reader, a person or
+another agent, starts from a cleaner source than the last one did. If the hypothesis holds, each
+pass improves the source.
+
+None of it is new. Builders of agents call the first half context engineering: what a model does
+depends on what is put before it, and a long, noisy context degrades it. Long before agents,
+knowledge management called the second half making tacit knowledge explicit; a Zettelkasten keeps
+one idea per note; and termites, then the blackboard systems of early AI, coordinate many workers
+through what they leave in a shared place rather than through messages. The convention puts these
+at the source, in files that any intelligence reads, a person included.
+
+**Not tested yet**: the same facts given to two agents, one as objects and one as the conversation
+they came from, comparing what each answers and what each spends.
 
 ## Twelve words
 
