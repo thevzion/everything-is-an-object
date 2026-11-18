@@ -51,7 +51,7 @@ The trace the run writes follows [changes](../../convention/changes.md) and [tra
 
 ## Fixed before the trial
 
-Source: the identity proposal dated 2026-11-15, the section on its criteria, fixed before the trial, in French, not published yet. Source SHA-256: `771c241954851c6c7117278686bc733484e11f23a59a7d0e247e393dfd42768e`. Its private location is withheld from this public repository. The criteria are translated below; where the translation and the French differ, the French holds.
+Source: the identity proposal dated 2026-11-15, the section on its criteria, fixed before the trial, in French, not published yet. Source SHA-256: `771c241954851c6c7117278686bc733484e11f23a59a7d0e247e393dfd42768e`. Its private location is withheld from this public repository. The criteria are translated below; where the translation and the French differ, the French holds. The French original is kept outside this repository, with the source above.
 
 | # | Criterion | Passes if |
 |---|---|---|
