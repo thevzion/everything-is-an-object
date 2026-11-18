@@ -1,3 +1,5 @@
+<p align="center"><img src="images/hero.svg" width="100%" alt="A folder named objects holds what was said, decided and made, each a small file with a header: a problem, a goal, a decision, a local type, a deliverable, and the history of every change. A person, an agent and an app read and write the same objects."></p>
+
 # Everything is an object.
 
 **[Simple](#twelve-words)** · **[Yours](#try-it)** · **[Readable](tests/runs/03-resume/)** · **[Kept](tests/runs/README.md#each-check)** · **[Open](#license)**
@@ -50,47 +52,35 @@ That is the idea. This repository is **the Convention**: one way to write it dow
 and agents read and act on the same things. As "everything is a file" is an idea and POSIX one way
 to encode it, "everything is an object" is the idea, and the convention one encoding of it.
 
+It is meant to look obvious. Files, a header, links and git are all old. What is new is that every
+object says which question it answers, so every space has the same shape: you can read anyone's
+space, and so can any agent and any app.
+
 Convention 0.3, draft · setup prompt 3.1, draft
 
 ## Bring your intelligence. Bring your application.
 
-The convention fixes the middle: `AGENTS.md` and `objects/`, plain files in a folder you own. Both
-ends stay open.
+<p align="center"><img src="images/layers.svg" width="100%" alt="Four layers. Your application, any app or view built on the objects. Your intelligence, any person and any assistant from any provider. AGENTS.md, the same rules in every space. At the bottom, the source: the objects in a folder you own, with git. The tools above change; the source stays."></p>
 
-- **Your intelligence.** Any person, and any assistant from any provider, that can read and write
-  files. `AGENTS.md` is the file assistants already read first; the rest is folders. Change
-  assistants, or use several: they read the same objects, so none starts from zero. Only the
-  features differ from one tool to another, such as starting other units; the rules are the same.
+- **Your intelligence.** Any person, and any assistant from any provider that can read and write
+  files. Each reads `AGENTS.md` first, then the objects, so none starts from zero. Only the
+  features differ from one tool to another; the rules are the same.
 - **Your application.** Any assistant can build the apps and views you want on the objects: a page,
-  a board, a widget, a dashboard. Each reads the objects and writes back as changes to them; the
-  files stay the source, so any app can be thrown away and built again. The objects can also live
-  elsewhere, through an adapter: git keeps every change with its reason, offline and without an
-  account, and is the default; Notion shows the same objects as pages, on your phone
-  ([adapters](convention/adapters.md)).
+  a board, a dashboard. They read the objects and write back to them, so any app can be thrown away
+  and built again.
+- **The source stays.** Plain files in a folder you own. git keeps every change with its reason,
+  and is the default; Notion shows the same objects as pages, through an
+  [adapter](convention/adapters.md).
 
-## A layer below
-
-Agents, agent operating systems, second brains, note apps, frameworks: each keeps its own idea of
-what you want, in its own format, and it is lost when you change tools. The convention sits one
-layer below them, at the source: plain files in a folder you own, each with a header that says what
-it is. A second brain lets each person file in their own way, so only its owner, or its own app,
-can read it. Here everything is an object with the same header, so any person, any intelligence and
-any app can read any space. None of it is new: files, a header, git, and a convention rather than a configuration. The
-foundations are plain on purpose, so that anything can be brought onto them and anyone can read
-them: a person, any intelligence, any app. It grows as files and git grow; the trials run at 100,
-1,000 and 10,000 objects ([proof](#proof)).
+Agents, agent operating systems and second brains each keep their own idea of what you want, in
+their own format. The convention sits one layer below them, where all of them can read it.
 
 ## What it aims to solve
 
-The root cause: what anyone wants is lost every time it is passed on, from a person to a tool,
-from one session to the next, from one agent to another, so it is rebuilt again and again
-([the problem](https://github.com/thevzion/source/blob/main/objects/problem.md)). Written once as
-objects, it is kept, and everyone reads the same thing.
-
-Each line below is a hypothesis, and an ambitious one. A trial shows what a few agents did in a
-fictional space; it does not show a problem solved. None of these is solved by a file alone, and
-two of them, shared meaning and the commons, cannot be solved by one space: they need many spaces,
-and the people who use them.
+What anyone wants is lost each time it is passed on: from a person to a tool, from one session to
+the next, from one agent to another ([the problem](https://github.com/thevzion/source/blob/main/objects/problem.md)).
+Written once as objects, it is kept. Each line is an ambitious hypothesis, not a result: a trial
+shows what a few agents did in a fictional space.
 
 | Problem | The hypothesis | Tested so far by |
 |---|---|---|
@@ -101,43 +91,31 @@ and the people who use them.
 | **Verification**: you review everything, or nothing | every change keeps its reason, and a correction touches only what was wrong | [a correction keeps the history](tests/runs/29-correction/) |
 | **The commons**: what one space learns stays there | a local type returns across spaces, becomes a seed, then a model others install | not tested yet |
 
+Shared meaning and the commons cannot be solved by one space: they need many spaces, and the people
+who use them.
+
 ## Why it may work
 
-An agent works from what it reads. Here, it reads objects that were already discerned: one
-question each, typed, dated, linked to what they serve, with what was said kept apart from what was
-inferred. A conversation holds the same facts mixed with repetitions, detours and what was said
-then reversed. So the agent should discern better from the objects than from the history, and
-spend less to read them. What it writes is discerned in turn, so the next reader, a person or
-another agent, starts from a cleaner source than the last one did. If the hypothesis holds, each
-pass improves the source.
+<p align="center"><img src="images/loop.svg" width="100%" alt="A hypothesis, not tested yet: an agent reads objects already discerned, discerns what exists and what was said, and writes objects discerned in turn, so the next reader starts from a cleaner source."></p>
 
-None of it is new. Builders of agents call the first half context engineering: what a model does
-depends on what is put before it, and a long, noisy context degrades it. Long before agents,
-knowledge management called the second half making tacit knowledge explicit; a Zettelkasten keeps
-one idea per note; and termites, then the blackboard systems of early AI, coordinate many workers
-through what they leave in a shared place rather than through messages. The convention puts these
-at the source, in files that any intelligence reads, a person included.
-
-**Not tested yet**: the same facts given to two agents, one as objects and one as the conversation
-they came from, comparing what each answers and what each spends.
+An agent works from what it reads. Here it reads objects already discerned, so it should discern
+better, and spend less, than from a long conversation; what it writes is discerned in turn. None of
+it is new: [what came before](convention/README.md#prior-art).
 
 ## Where it goes
 
-What a common format makes possible, and what we want to build on it. None of it is built yet.
+What a common format makes possible. None of it is built yet.
 
-- **An app you download.** A desktop app that opens any space: point it at your folder, and it
-  shows your objects, the views, and what waits for your yes, with no account and no copy of your
-  files. One app can read every space, because every space has the same shape; an app made for one
-  second brain reads only that one.
+- **An app you download**, that opens any space: point it at a folder, and see your objects, the
+  views and what waits for your yes. One app reads every space, because every space has the same
+  shape.
 - **Interoperability.** Every tool that reads the format reads your space and writes back to the
-  same objects: an assistant, an app, Notion, a script. Change tools, and nothing is converted or
-  lost.
-- **A network of spaces.** A space points to another's objects by their URI, proposes a change
-  there, and receives the answer as an object ([two spaces](tests/runs/05-two-spaces/)). A type
-  that returns across many spaces becomes a model anyone installs: the commons.
+  same objects. Change tools, and nothing is converted or lost.
+- **A network of spaces.** Spaces link to each other's objects and propose changes to each other
+  ([two spaces](tests/runs/05-two-spaces/)); a type that returns across many becomes a model anyone
+  installs.
 
-The convention is the part that has to come first. The apps, the adapters and the network can come
-from anyone, and they all read the same spaces.
+The convention comes first. The apps, the adapters and the network can come from anyone.
 
 ## Try it
 
@@ -167,11 +145,10 @@ The folder you get is yours: plain files, in your folder, readable without any t
 
 ## Proof
 
-Each question below is put to a real agent, in a fictional space built the same way every time,
-several times. The criteria were fixed before the first counted run (one rule was widened after a
-smoke run, and its trial says so; a criterion that follows a change of the convention is a new
-version, fixed before the next batch); the checks are computed (files, headers, git), and a decision model answers the few closed questions that need reading. "Passed"
-counts the runs that met every criterion. Each run is an object, with its trace.
+Each question is put to a real agent five times, in a fictional space built the same way every
+time. The criteria are fixed before the first run, and the checks are computed on files, headers
+and git ([how a run is made](tests/README.md#how-a-canonical-run-is-made)). Each run is an object,
+with its trace.
 
 <!-- proof:begin -->
 | Question | Batch 3 | Batch 2 | Batch 1 | Trace |
@@ -197,12 +174,8 @@ counts the runs that met every criterion. Each run is an object, with its trace.
 - **Reading the counts**: the commit ids, the versions of the criteria, and the counts read again are in [the runs](tests/runs/README.md#reading-the-counts).
 <!-- proof:end -->
 
-What each batch shows, read in its traces, and the runs before this version:
-[the reading of the batches](tests/README.md#what-the-batches-show).
-
-How it runs: [`tests/runner`](tests/runner/), in Rust; `convention-trials run all` replays every
-trial, and `convention-trials table` regenerates this table from the run objects in
-[`tests/runs/`](tests/runs/README.md).
+What each batch shows: [the reading of the batches](tests/README.md#what-the-batches-show). Replay
+them: [`tests/runner`](tests/runner/), in Rust.
 
 **Not tested yet**: a person, rather than an agent, setting up a space; that what an agent makes is
 kept as an object, and line 9 of the doctrine; the units of section 5 of `AGENTS.md`, and what is
@@ -234,6 +207,7 @@ object where the work is done.
 | [`models/`](models/README.md) | the library of types, each a question: Purpose, Goals, Work, Loop, Knowledge, Agreements, Capital, and Organization and Home, which assemble them; seeds; how a local type is promoted |
 | [`setup/`](setup/README.md) | the setup prompt, and the other ways to start |
 | [`tests/`](tests/README.md) | the trials, each a question with its criteria; [`tests/runner/`](tests/runner/), the runner; [`tests/runs/`](tests/runs/README.md), every run as an object |
+| [`images/`](images/) | the images of this README, in SVG |
 | [`CHANGELOG.md`](CHANGELOG.md) | what changed, version by version |
 | `git log` | every change, with its `Why:` and `Source:` |
 
@@ -260,7 +234,7 @@ a commit. For an assistant working on this repository: [`AGENTS.md`](AGENTS.md).
 
 ## License
 
-Text and models, the run objects of [`tests/runs/`](tests/runs/README.md) included: [CC BY 4.0](LICENSE) · Code, including the runner in [`tests/runner/`](tests/runner/): [Apache 2.0](LICENSE-CODE) · Attribution: TheVZion contributors
+Text, images and models, the run objects of [`tests/runs/`](tests/runs/README.md) included: [CC BY 4.0](LICENSE) · Code, including the runner in [`tests/runner/`](tests/runner/): [Apache 2.0](LICENSE-CODE) · Attribution: TheVZion contributors
 
 [The decision](https://github.com/thevzion/source/blob/main/objects/decisions/license.md), in
 TheVZion's source.

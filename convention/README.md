@@ -108,3 +108,7 @@ Three doors, one convention:
 ## Prior art
 
 No piece is new: the journal and the ledger come from Pacioli, history from git, events from event sourcing, URIs and federation from the web, objectives from OKRs, `AGENTS.md` from coding agents. The assembly is new, applied to what nobody writes yet: what we want, why, and how we will know, at every size.
+
+Why it may work comes from older ideas too. Builders of agents call it context engineering: what a model does depends on what is put before it, and a long, noisy context degrades it. Long before agents, knowledge management called it making tacit knowledge explicit; a Zettelkasten keeps one idea per note; and termites, then the blackboard systems of early AI, coordinate many workers through what they leave in a shared place rather than through messages. Closest, and recent: the [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) pattern (April 2026) keeps raw sources a model reads but does not change, a wiki the model writes, and a schema file that says how. The convention adds what gives every space the same shape: each object answers one fixed question and carries its header, what a person said keeps their words, and every change keeps its reason.
+
+What would show it: the same facts given to two agents, one as objects and one as the conversation they came from, comparing what each answers and what each spends. Not tested yet.

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540" role="img" aria-labelledby="t d">
+  <title id="t">A layer below</title>
+  <desc id="d">Four layers. At the top, your application: any app or view built on the objects. Below it, your intelligence: any person and any assistant from any provider. Then AGENTS.md, the same rules in every space, read first by every unit. At the bottom, the source: the objects, plain files in a folder you own, with git keeping every change. The tools above change; the source stays.</desc>
+  <defs>
+    <style>
+      .sans{font-family:Saira,'Segoe UI','Helvetica Neue',Arial,sans-serif}
+      .mono{font-family:'Geist Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace}
+      .row{fill:#0a1426;stroke:#1d2c47;stroke-width:1.2}
+      .title{font-size:20px;fill:#eaf1fb}
+      .sub{font-size:12px;fill:#8195b3}
+      .chip{fill:none;stroke:#26385a;stroke-width:1.2}
+      .chipt{font-size:12px;fill:#a3b3ca}
+      .side{font-size:11px;letter-spacing:2px;fill:#5d7090}
+      .mini{fill:#0d1b33;stroke:#1d2c47;stroke-width:1}
+      .minit{font-size:12px;fill:#a3b3ca}
+    </style>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#0d1a30" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="edge" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#25bcdd"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="650" cy="440" r="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563eb" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#25bcdd"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="540" rx="24" fill="#060d1a"/>
+  <rect width="1200" height="540" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="540" rx="24" fill="url(#glow)"/>
+
+  <!-- what changes, what stays -->
+  <line x1="120" y1="52" x2="120" y2="264" stroke="#26385a" stroke-width="1.4"/>
+  <text transform="translate(100 158) rotate(-90)" class="mono side" text-anchor="middle">TOOLS CHANGE</text>
+  <line x1="120" y1="364" x2="120" y2="496" stroke="#25bcdd" stroke-width="1.4"/>
+  <text transform="translate(100 430) rotate(-90)" class="mono side" text-anchor="middle" fill="#25bcdd">STAYS</text>
+
+  <!-- your application -->
+  <rect x="150" y="48" width="1000" height="100" rx="14" class="row"/>
+  <text x="176" y="90" class="sans title">Your application</text>
+  <text x="176" y="116" class="mono sub">any app or view, built on the objects; throw one away, nothing is lost</text>
+  <g transform="translate(720 83)">
+    <rect width="67" height="30" rx="15" class="chip"/><text x="33.5" y="19.5" class="mono chipt" text-anchor="middle">a page</text>
+    <rect x="77" width="74" height="30" rx="15" class="chip"/><text x="114" y="19.5" class="mono chipt" text-anchor="middle">a board</text>
+    <rect x="161" width="103" height="30" rx="15" class="chip"/><text x="212.5" y="19.5" class="mono chipt" text-anchor="middle">a dashboard</text>
+    <rect x="274" width="67" height="30" rx="15" class="chip"/><text x="307.5" y="19.5" class="mono chipt" text-anchor="middle">Notion</text>
+    <rect x="351" width="74" height="30" rx="15" class="chip"/><text x="388" y="19.5" class="mono chipt" text-anchor="middle">any app</text>
+  </g>
+
+  <!-- your intelligence -->
+  <rect x="150" y="168" width="1000" height="100" rx="14" class="row"/>
+  <text x="176" y="210" class="sans title">Your intelligence</text>
+  <text x="176" y="236" class="mono sub">any person, and any assistant from any provider</text>
+  <g transform="translate(740 203)">
+    <rect width="82" height="30" rx="15" class="chip"/><text x="41" y="19.5" class="mono chipt" text-anchor="middle">a person</text>
+    <rect x="92" width="67" height="30" rx="15" class="chip"/><text x="125.5" y="19.5" class="mono chipt" text-anchor="middle">a team</text>
+    <rect x="169" width="110" height="30" rx="15" class="chip"/><text x="224" y="19.5" class="mono chipt" text-anchor="middle">an assistant</text>
+    <rect x="289" width="110" height="30" rx="15" class="chip"/><text x="344" y="19.5" class="mono chipt" text-anchor="middle">its units</text>
+  </g>
+
+  <!-- read, and write back -->
+  <line x1="1064" y1="270" x2="1064" y2="358" stroke="#25bcdd" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <line x1="1110" y1="358" x2="1110" y2="270" stroke="#25bcdd" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="1071" y="318" class="mono" font-size="11" fill="#7fd3ff">read</text>
+
+  <!-- AGENTS.md -->
+  <rect x="150" y="290" width="890" height="50" rx="12" fill="#0b1a33" stroke="#25bcdd" stroke-opacity=".6" stroke-width="1.2"/>
+  <text x="176" y="321" class="mono" font-size="15" fill="#7fd3ff">AGENTS.md</text>
+  <text x="290" y="321" class="sans" font-size="15" fill="#a3b3ca">how to work here: the same rules in every space, read first by every unit</text>
+  <text x="1117" y="318" class="mono" font-size="11" fill="#7fd3ff">write</text>
+
+  <!-- the source -->
+  <rect x="150" y="360" width="1000" height="140" rx="16" fill="#0a1426" stroke="url(#edge)" stroke-width="1.6"/>
+  <text x="176" y="398" class="sans title">The source</text>
+  <text x="176" y="422" class="mono sub">objects/, plain files in a folder you own; git keeps every change with its why</text>
+  <g transform="translate(176 442)">
+    <rect width="150" height="40" rx="8" class="mini"/><rect width="4" height="40" rx="2" fill="#a3b3ca"/><text x="18" y="25" class="mono minit">problem</text>
+    <rect x="164" width="150" height="40" rx="8" class="mini"/><rect x="164" width="4" height="40" rx="2" fill="#6b97ff"/><text x="182" y="25" class="mono minit">goal</text>
+    <rect x="328" width="150" height="40" rx="8" class="mini"/><rect x="328" width="4" height="40" rx="2" fill="#3fbf8a"/><text x="346" y="25" class="mono minit">decision</text>
+    <rect x="492" width="150" height="40" rx="8" class="mini"/><rect x="492" width="4" height="40" rx="2" fill="#25bcdd"/><text x="510" y="25" class="mono minit">deliverable</text>
+    <rect x="656" width="150" height="40" rx="8" class="mini"/><rect x="656" width="4" height="40" rx="2" fill="#e58fc0"/><text x="674" y="25" class="mono minit">a local type</text>
+  </g>
+  <text x="1012" y="448" class="mono" font-size="11" fill="#8195b3">history</text>
+  <line x1="1016" y1="468" x2="1120" y2="468" stroke="#26385a" stroke-width="1.4"/>
+  <circle cx="1020" cy="468" r="4" fill="#6b97ff"/>
+  <circle cx="1052" cy="468" r="4" fill="#3fbf8a"/>
+  <circle cx="1084" cy="468" r="4" fill="#25bcdd"/>
+  <circle cx="1116" cy="468" r="4" fill="#e3b341"/>
+
+  <text x="1150" y="528" class="mono" font-size="11" fill="#5d7090" text-anchor="end">agents, agent OSes and second brains sit above; the convention sits below</text>
+</svg>
