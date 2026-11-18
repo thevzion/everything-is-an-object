@@ -226,6 +226,39 @@ impl Convention {
     }
 
     /// Writes `space.md`, `AGENTS.md`, `CLAUDE.md` and `.gitignore` into `dir`.
+    /// The template every space's `AGENTS.md` follows: the norm texts in place, and each part that
+    /// comes from the space shown in angle brackets, with its source. Written to
+    /// `setup/AGENTS.template.md` by `convention-trials template`; a self-test keeps it in sync.
+    pub fn agents_template(&self) -> String {
+        let s = SpaceInfo {
+            name: "{handle}",
+            uri: "{the space's URI}",
+            title: "{The space's name}",
+            models: &["{the models it installs, with their versions}"],
+            members: "{who may read}",
+            deciders: "{who may decide}",
+            proposers: "{who may propose}",
+            why_line: "{Why the space exists, in one line, from objects/why.md}",
+            why: vec![
+                ("Why", "{why the space exists}", "objects/why.md"),
+                ("Problem", "{the problem it answers}", "objects/problem.md"),
+                ("Vision", "{what the world looks like when it is solved}", "objects/vision.md"),
+            ],
+            goals: vec![("{a goal, and how we will know}", "objects/goals/{name}.md")],
+            sites: vec![("{another space it points to}", "objects/sites/{name}.md")],
+        };
+        let a = self.agents_md(&s);
+        let a = a.replacen(" · 2026-11-01 -->", " · {date} -->", 1);
+        let a = a.replacen(
+            "objects/rules/ -->\n\nNone yet.\n",
+            "objects/rules/ -->\n\n- {a rule of this space} (`objects/rules/{name}.md`)\n",
+            1,
+        );
+        format!(
+            "<!-- The template of every AGENTS.md, generated from convention/roles.md by `convention-trials template`; never edited by hand. What is in braces comes from the space's own objects. -->\n{a}"
+        )
+    }
+
     pub fn write_space_files(&self, dir: &Path, s: &SpaceInfo) -> Res<()> {
         write(&dir.join("space.md"), &self.space_md(s))?;
         write(&dir.join("AGENTS.md"), &self.agents_md(s))?;

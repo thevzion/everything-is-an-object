@@ -32,6 +32,7 @@ fn usage() -> ! {
          \n  fixture <id> <dir>            build a trial's fixture in <dir>, to look at it\
          \n  table                         regenerate the README's proof table and tests/runs/README.md\
          \n  links                         check every relative link and anchor\
+         \n  template                      regenerate setup/AGENTS.template.md from convention/roles.md\
          \n  exclude <reason> <files...>   mark runs as not counted, with the reason; they stay as written"
     );
     std::process::exit(2)
@@ -79,6 +80,11 @@ fn main() {
             write(&readme_path, &updated).unwrap_or_else(|e| fail(&e));
             write(&repo.join("tests/runs/README.md"), &detail).unwrap_or_else(|e| fail(&e));
             println!("README.md and tests/runs/README.md regenerated from the run objects");
+        }
+        "template" => {
+            let c = Convention::load(&repo).unwrap_or_else(|e| fail(&e));
+            write(&repo.join("setup/AGENTS.template.md"), &c.agents_template()).unwrap_or_else(|e| fail(&e));
+            println!("setup/AGENTS.template.md regenerated from convention/roles.md");
         }
         "fixture" => {
             let (Some(id), Some(dir)) = (args.get(1), args.get(2)) else { usage() };

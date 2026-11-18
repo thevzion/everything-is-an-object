@@ -103,6 +103,14 @@ fn the_convention_reads_the_same_from_a_crlf_checkout() {
 }
 
 #[test]
+fn the_agents_template_is_in_sync_with_the_roles() {
+    let r = repo();
+    let c = Convention::load(&r).unwrap();
+    let on_disk = read(&r.join("setup/AGENTS.template.md")).replace("\r\n", "\n");
+    assert_eq!(c.agents_template(), on_disk, "run `convention-trials template`");
+}
+
+#[test]
 fn fixture_agents_md_carries_the_norm_texts() {
     let e = env("agentsmd");
     let t = trial("02-reuse");
