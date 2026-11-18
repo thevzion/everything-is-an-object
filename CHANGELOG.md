@@ -17,6 +17,9 @@ What changed, version by version. Every change is also in `git log`, with its `W
   space. Since every request, and what is done for it, is an object, view, action, binding and
   trigger are compositions; the history is the changes in order, and its atom, change, is the
   primitive ([primitives](convention/primitives.md)).
+- **The template of every `AGENTS.md`**, generated from `roles.md`:
+  [`setup/AGENTS.template.md`](setup/AGENTS.template.md), with the norm texts in place and braces
+  for what comes from the space; the setup prompt points to it, and a self-test keeps it in sync.
 - **A rule can be drawn**: every rule and norm text is written in the primitives, so it can be
   drawn and tested; one that cannot is rewritten ([writing](convention/writing.md#a-rule-can-be-drawn-proposed)).
 - **`AGENTS.md` in ten sections, one per capability**, each opened by its reason: make it
