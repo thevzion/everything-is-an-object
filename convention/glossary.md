@@ -8,7 +8,7 @@ Each word of the convention, and the established term closest to it. The establi
 
 An object is anything made explicit that answers one question: what someone said, decided or wants, and what was made for it, a plan, a page, code. A few header lines say which question it answers, what it serves, who said or made it, and where it stands. What a person said keeps their words. Everything else is a link, a view or a change.
 
-The established term nearest to it: a record, or a row, whose schema is a question; in the web's words, a resource with a URI. What it adds: the question its type asks, the words of the one who said it, and its provenance. The twelve words it is made with are in [primitives](primitives.md).
+The established term nearest to it: a record, or a row, whose schema is a question; in the web's words, a resource with a URI. What it adds: the question its type asks, the words of the one who said it, and its provenance. The eight words it is made with are in [primitives](primitives.md).
 
 ## The words
 
@@ -37,7 +37,7 @@ The established term nearest to it: a record, or a row, whose schema is a questi
 | a result | an observed state | the [Loop model](../models/loop/model.md) |
 | the loop | a reconciliation loop: desired state, observed state, and the work that closes the gap | [questions](questions.md) |
 | lifecycle, evidence | finite state machines: states, transitions, guards | [structure](structure.md#the-axes-as-state-machines-proposed) |
-| the changes | an event log, append-only (event sourcing) | [changes](changes.md) |
+| a change, the history | a commit, an event; the history is an event log, append-only (event sourcing) | [primitives](primitives.md), [changes](changes.md) |
 | a projection | a read model (CQRS) | [truth](truth.md), [questions](questions.md) |
 | propose, decide | commands (CQRS) | [spaces](spaces.md) |
 | `source: from-me`, `source: inferred` | attribution, in W3C PROV: to a person, or to a software agent | [structure](structure.md#the-object-header), [trial 17](../tests/trials/17-projection-to-prov.md) |

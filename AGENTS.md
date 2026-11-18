@@ -6,7 +6,7 @@ repository's mandates. When they differ, the source wins: correct it there.
 ## Read first
 
 1. [convention/README.md](convention/README.md): what the convention is, its levels, words and index.
-2. [convention/primitives.md](convention/primitives.md): the twelve words everything is made of.
+2. [convention/primitives.md](convention/primitives.md): the eight words everything is made of.
 3. [convention/doctrine.md](convention/doctrine.md): how any intelligence behaves here.
 4. [convention/roles.md](convention/roles.md): the roles, and what every `AGENTS.md` holds.
 5. The model you change: `models/<id>/model.md`, after [models/README.md](models/README.md).

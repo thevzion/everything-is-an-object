@@ -2,7 +2,7 @@
 
 # Everything is an object.
 
-**[Simple](#twelve-words)** · **[Yours](#try-it)** · **[Readable](tests/runs/03-resume/)** · **[Kept](tests/runs/README.md#each-check)** · **[Open](#license)**
+**[Simple](#eight-words)** · **[Yours](#try-it)** · **[Readable](tests/runs/03-resume/)** · **[Kept](tests/runs/README.md#each-check)** · **[Open](#license)**
 
 An object is anything made explicit that answers one question: what someone said, decided or
 wants, and what was made for it, a plan, a page, code. A few header lines say which question it
@@ -203,14 +203,14 @@ the Notion adapter beyond [one partial run](tests/trials/04-notion-adapter.md); 
 of [`tests/`](tests/README.md). Small samples show what happened in these runs; they do not
 promise what happens in yours.
 
-## Twelve words
+## Eight words
 
-Everything is made of twelve primitives, each with an effect you can point at: **person**,
-**signal**, **object**, **link**, **question**, **space**, **role**, **binding**, **trigger**,
-**action**, **view**, **history** ([what each one is, and what you see of it](convention/primitives.md#the-twelve)).
-What looks like a thirteenth word is made of these: a model is a set of questions, an app is views
-plus signals and yeses, Decisions is a view of what waits for a yes, Auto is a role with a time
-trigger.
+Everything is made of eight primitives, each with an effect you can point at: **object**,
+**question**, **link**, **change**, **signal**, **person**, **role**, **space**
+([what each one is, and what you see of it](convention/primitives.md#the-eight)). What looks like a
+ninth word is made of these: a view is a question asked of many objects, an action is a brief
+handed to a role, a trigger is a change or a date that wakes a role, the history is the changes in
+order, a model is a set of questions, an app is views plus signals and yeses.
 
 Four roles are fixed, beside the person: the **assistant**, who answers at once and says what is
 pending; the **materializer**, who turns what was said into objects; a **maker**, who makes what a

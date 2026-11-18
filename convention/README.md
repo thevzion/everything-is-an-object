@@ -2,7 +2,7 @@
 
 Convention 0.3 · draft
 
-Everything is an object. The convention is one way to write that down: the doctrine and the structure, the same for everything. Models plug into it. Spaces are its instances. Its words are in [primitives](primitives.md): twelve, from which everything else is made.
+Everything is an object. The convention is one way to write that down: the doctrine and the structure, the same for everything. Models plug into it. Spaces are its instances. Its words are in [primitives](primitives.md): eight, from which everything else is made.
 
 Current release: `0.1`, candidate. `0.2` was a draft of the rules in normative form ([writing](writing.md)), the status axes as state machines, a [glossary](glossary.md) and a first [conformance](../tests/README.md#conformance) section. `0.3`, this draft, adds the [primitives](primitives.md), the fixed core of [roles](roles.md), the default [views](views.md), and what the first runs showed; the [doctrine](doctrine.md) gains a ninth line, proposed. The [trials](../tests/README.md) decide what holds; their runs are counted in the [README](../README.md#proof).
 
@@ -71,7 +71,7 @@ Three doors, one convention:
 
 | File | What it holds |
 |---|---|
-| [primitives.md](primitives.md) | the twelve primitives, each with its visible effect; their compositions; what an object is |
+| [primitives.md](primitives.md) | the eight primitives, each with its visible effect; their compositions; what an object is |
 | [writing.md](writing.md) | how to read the convention: normative keywords (RFC 2119, RFC 8174), normative and explanatory text |
 | [doctrine.md](doctrine.md) | level 0: the doctrine and its notes, the invariant, the gates |
 | [structure.md](structure.md) | level 1: objects, links, changes; the meta-model; layout; header; recursion |
