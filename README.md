@@ -58,6 +58,18 @@ space, and so can any agent and any app.
 
 Convention 0.3, draft · setup prompt 3.1, draft
 
+## Why objects
+
+A file holds bytes and a path. A page holds text and a place in a tree. An object holds meaning:
+which question it answers, what it serves, who said or made it, and where it stands. A person and
+an intelligence can both read that, check it and act on it, so it becomes a common language between
+them. An object can live in a file or in a Notion page: its header is what makes it an object.
+
+The tools that lasted started from one simple object: the file in Unix, the cell in a spreadsheet,
+the page and its link on the web, the commit in git. Any signal, a message, a voice note, a meeting,
+an issue, becomes objects, linked to the ones already there. What people want, decide and make had
+no such object that people and agents share.
+
 ## Bring your intelligence. Bring your application.
 
 <p align="center"><img src="images/layers.svg" width="100%" alt="Four layers. Your application, any app or view built on the objects. Your intelligence, any person and any assistant from any provider. AGENTS.md, the same rules in every space. At the bottom, the source: the objects in a folder you own, with git. The tools above change; the source stays."></p>
@@ -102,20 +114,27 @@ An agent works from what it reads. Here it reads objects already discerned, so i
 better, and spend less, than from a long conversation; what it writes is discerned in turn. None of
 it is new: [what came before](convention/README.md#prior-art).
 
-## Where it goes
+## What it makes possible
 
-What a common format makes possible. None of it is built yet.
+<p align="center"><img src="images/graph.svg" width="100%" alt="A view of a bike workshop's space, drawn from its links: a goal serves a problem, which serves a why; a decision and two projects serve the goal; a result answers it; a project draws on a local type. Below, the history from 1 to 18 November, replayed on 12 November: what was written later is not there yet."></p>
 
-- **An app you download**, that opens any space: point it at a folder, and see your objects, the
-  views and what waits for your yes. One app reads every space, because every space has the same
-  shape.
-- **Interoperability.** Every tool that reads the format reads your space and writes back to the
-  same objects. Change tools, and nothing is converted or lost.
-- **A network of spaces.** Spaces link to each other's objects and propose changes to each other
-  ([two spaces](tests/runs/05-two-spaces/)); a type that returns across many becomes a model anyone
-  installs.
+From what works today to what we want to build, each with where it stands.
 
-The convention comes first. The apps, the adapters and the network can come from anyone.
+| What you can do | Where it stands |
+|---|---|
+| **Resume anywhere.** Any session, tool or person picks up from the folder alone, with no briefing | tested ([trace](tests/runs/03-resume/)) |
+| **Ask why.** "What did we decide about Saturdays, and why?" returns the object, its reason and its author | partly tested: quotes exact, the inferred marked ([trace](tests/runs/15-quotes/)) |
+| **Delegate.** Work goes out with a brief and comes back as objects; nothing leaves before your yes | partly tested: what goes out waits for a yes ([trace](tests/runs/10-goes-out/)); handing work to other units, no trial yet |
+| **Correct one thing.** Reverse the one object that is wrong, and keep the rest and the reason | tested ([trace](tests/runs/29-correction/)) |
+| **Trace and replay.** Follow any object back to who said it, when and why it changed; replay the whole space as it was on any date | works with git; no trial yet |
+| **See it drawn.** A graph of what serves what, a board of goals, what waits for your yes | the views are specified ([views](convention/views.md)); any assistant can build them; no trial yet |
+| **Open it anywhere.** The same space in a folder, in git, in Notion, in any app that reads the format | git, in every trial; Notion, [one partial run](tests/trials/04-notion-adapter.md) |
+| **An app you download.** Point it at a folder and see your objects, the views and what waits for your yes, with no account | not built yet |
+| **A network of spaces.** Spaces link to each other's objects and propose changes to each other; a type that returns across many becomes a model anyone installs | [two spaces](tests/runs/05-two-spaces/), in a trial; the commons, not built yet |
+| **An operating system for intelligence.** Roles as processes, objects as files, triggers as the scheduler, your yes as the permission: units that wake, work and hand back, on any space | an ambition |
+
+The convention comes first. The apps, the adapters, the network and the rest can come from anyone.
+It is a testbed that already works: [try it](#try-it), break it, and [propose what is missing](#contribute).
 
 ## Try it
 
