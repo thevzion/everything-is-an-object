@@ -105,7 +105,8 @@ where things are, and its own rules ([the ten sections](convention/roles.md#agen
 
 Each capability is written in the eight words, so it can be drawn, followed and tested. Below,
 sections 3 and 5, drawn from their own lines. A rule that cannot be drawn is rewritten until it can
-([writing](convention/writing.md#a-rule-can-be-drawn-proposed)).
+([writing](convention/writing.md#a-rule-can-be-drawn-proposed)). The whole file, as every space
+starts from it: [`setup/AGENTS.template.md`](setup/AGENTS.template.md).
 
 <p align="center"><img src="images/explicit.svg" width="100%" alt="Make it explicit, animated: Sam says to open on Saturdays from March. The materializer finds the existing goal, picks the type decision, and keeps the words as said. A decision object appears with its header, links to the goal, and a commit records it with its why; the assistant answers what was written."></p>
 
@@ -248,7 +249,7 @@ object where the work is done.
 |---|---|
 | [`convention/`](convention/README.md) | the primitives, the doctrine, the structure, roles, views, spaces, changes, truth, trace, adapters, the glossary, and how the rules are written |
 | [`models/`](models/README.md) | the library of types, each a question: Purpose, Goals, Work, Loop, Knowledge, Agreements, Capital, and Organization and Home, which assemble them; seeds; how a local type is promoted |
-| [`setup/`](setup/README.md) | the setup prompt, and the other ways to start |
+| [`setup/`](setup/README.md) | the setup prompt, the template of every `AGENTS.md`, and the other ways to start |
 | [`tests/`](tests/README.md) | the trials, each a question with its criteria; [`tests/runner/`](tests/runner/), the runner; [`tests/runs/`](tests/runs/README.md), every run as an object |
 | [`images/`](images/) | the images of this README, in SVG |
 | [`CHANGELOG.md`](CHANGELOG.md) | what changed, version by version |
