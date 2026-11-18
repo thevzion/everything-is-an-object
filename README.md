@@ -218,6 +218,8 @@ with its trace.
 - **Reading the counts**: the commit ids, the versions of the criteria, and the counts read again are in [the runs](tests/runs/README.md#reading-the-counts).
 <!-- proof:end -->
 
+Batches 1 to 3 ran on the text of the first public commit: `AGENTS.md` in its earlier nine sections, before it was
+written by capability, and the models at `0.1`. They stay true of that text; batch 4 will run on this one.
 What each batch shows: [the reading of the batches](tests/README.md#what-the-batches-show). Replay
 them: [`tests/runner`](tests/runner/), in Rust.
 
