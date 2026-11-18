@@ -145,7 +145,7 @@ adapters:
 - For a home: `space: home`, `uri: <handle>/home`, `models: - home@0.1`, and Access names only me unless I say otherwise.
 - Access has three verbs: read, propose, decide.
 
-`AGENTS.md` is a projection, in the nine sections of [`convention/roles.md`](https://github.com/thevzion/convention/blob/main/convention/roles.md), in their order. Copy its norm texts word for word, in English; write the rest from this space's objects, in the language I write to you in, each line naming its object. Regenerate it when its sources change; do not edit it by hand. If the folder already has an `AGENTS.md` or another agent file, keep what it says, add the nine sections after it, and tell me.
+`AGENTS.md` is a projection, in the ten sections of [`convention/roles.md`](https://github.com/thevzion/convention/blob/main/convention/roles.md), in their order. Copy its norm texts word for word, in English; write the rest from this space's objects, in the language I write to you in, each line naming its object. Regenerate it when its sources change; do not edit it by hand. If the folder already has an `AGENTS.md` or another agent file, keep what it says, add the ten sections after it, and tell me.
 
 The first commit is `space(add): set up the space`, with `space.md`, `AGENTS.md` and `.gitignore`.
 
@@ -276,5 +276,6 @@ echo "commit refused: end the message with Why: and Source: in one trailer block
 exit 1
 ```
 
+- **Give the roles to your tool** (proposed). If your tool lets you define agents (Claude Code reads `.claude/agents/<role>.md`), write one per role of section 5 of `AGENTS.md` that the assistant starts: `materializer`, `maker`, `checker`. A few lines each: the role, from section 5; what it writes, and what it never writes; and "Read `AGENTS.md` first." Commit them. A tool without such definitions starts a unit with the same text in its brief.
 - **Keep going.** If your tool can keep tasks or follow-ups, propose one for the next step, and create it only on my yes.
-- **Prove it loads.** Tell me how to check: open a new session in this folder and ask for the title of section 9 of `AGENTS.md`.
+- **Prove it loads.** Tell me how to check: open a new session in this folder and ask for the title of section 10 of `AGENTS.md`.
