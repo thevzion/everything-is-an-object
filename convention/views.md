@@ -6,7 +6,7 @@ A view is a question asked of objects: read-only, regenerated when its sources c
 
 ## The default views (proposed)
 
-Every space gets seven views, each a question asked of the objects; a model keeps its own views on top ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/canonical-views.md)). What each one reads is proposed.
+Every space gets seven views, each a question asked of the objects; a model keeps its own views on top (decision in TheVZion's source, not published yet). What each one reads is proposed.
 
 | View | Its question | What it reads |
 |---|---|---|
@@ -44,7 +44,7 @@ A dashboard shows the state, and lets you operate on it. It promises nothing and
 - **The same in Notion**: views and charts on the Objects and Changes databases. The same measures, in two adapters.
 - **The seven default views** are [above](#the-default-views-proposed); the dashboard shows them, in a folder and in Notion.
 - **Operating** from the dashboard writes a change at the source, with its author and its why, as with any adapter.
-- **A graph of meaning** (proposed), one realization: the source shown as a graph computed from the headers, never drawn. Typed objects, `serves` pointing up so the layout follows meaning (the why at the top), each node with its provenance, and the changes replayed in time. It needs nothing but the structure, and it is stamped with the commit it comes from. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-graph-is-a-projection.md))
+- **A graph of meaning** (proposed), one realization: the source shown as a graph computed from the headers, never drawn. Typed objects, `serves` pointing up so the layout follows meaning (the why at the top), each node with its provenance, and the changes replayed in time. It needs nothing but the structure, and it is stamped with the commit it comes from. (decision in TheVZion's source, not published yet)
 
 Trial: [11](../tests/trials/11-dashboard.md). Open: [dashboard stack](https://github.com/thevzion/source/blob/main/objects/questions/dashboard-stack.md).
 
@@ -98,7 +98,7 @@ From the models:
 
 ## By world stake (proposed)
 
-The same canonical measures, grouped by what is at stake in the world. Defined, not measured yet; the trailers they read are candidates. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/world-stakes.md))
+The same canonical measures, grouped by what is at stake in the world. Defined, not measured yet; the trailers they read are candidates. (decision in TheVZion's source, not published yet)
 
 | Stake | Canonical measure | Reads |
 |---|---|---|
@@ -166,7 +166,7 @@ What the system adds: **upkeep**, which grows with the space (the upkeep measure
 yield of intelligence = tokens that left something kept / tokens spent
 ```
 
-A token left something kept when the change it paid for rests on a want (said or anchored, not generic) and is reused later (a later change links to it or revises it). Its curve: tokens per want, against the number of wants already in the source; the thesis predicts it falls with a source and stays flat without one. It reads `Cost:` for the tokens, the label for the want, and `git log` for reuse. Nothing is computable until `Cost:` is recorded. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-yield-of-intelligence.md))
+A token left something kept when the change it paid for rests on a want (said or anchored, not generic) and is reused later (a later change links to it or revises it). Its curve: tokens per want, against the number of wants already in the source; the thesis predicts it falls with a source and stays flat without one. It reads `Cost:` for the tokens, the label for the want, and `git log` for reuse. Nothing is computable until `Cost:` is recorded. (decision in TheVZion's source, not published yet)
 
 How it is measured: the "without" can no longer be observed for an intent already done. Two means: trials with two conditions ([10](../tests/trials/10-commit-or-ask.md), [13](../tests/trials/13-genericity.md), [14](../tests/trials/14-review.md)), which measure both times on the same intents; and, day to day, indicators the dashboard computes (review load, iterations and corrections per intent, the share of upkeep), which the trials tie to time.
 

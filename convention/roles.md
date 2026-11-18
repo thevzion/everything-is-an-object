@@ -42,7 +42,7 @@ Every other role emerges when the load needs it, is named by what it turns into 
 
 ## AGENTS.md: the file every unit reads first
 
-What every `AGENTS.md` holds. Every unit of a space reads it first: one structure in every space, ten sections in a fixed order. Sections 3 to 7 are capabilities, the same word for word in every space, each opened by why it is there; the others come from the space's objects. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-working-composition.md))
+What every `AGENTS.md` holds. Every unit of a space reads it first: one structure in every space, ten sections in a fixed order. Sections 3 to 7 are capabilities, the same word for word in every space, each opened by why it is there; the others come from the space's objects. (decision in TheVZion's source, not published yet)
 
 ### The ten sections
 

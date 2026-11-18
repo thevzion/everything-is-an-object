@@ -288,8 +288,7 @@ a commit. For an assistant working on this repository: [`AGENTS.md`](AGENTS.md).
 
 Text, images and models, the run objects of [`tests/runs/`](tests/runs/README.md) included: [CC BY 4.0](LICENSE) · Code, including the runner in [`tests/runner/`](tests/runner/): [Apache 2.0](LICENSE-CODE) · Attribution: TheVZion contributors
 
-[The decision](https://github.com/thevzion/source/blob/main/objects/decisions/license.md), in
-TheVZion's source.
+The decision is in TheVZion's source, not published yet.
 
 ---
 

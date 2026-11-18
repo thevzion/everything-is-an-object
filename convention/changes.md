@@ -38,7 +38,7 @@ Every field of a change already exists in git, except two, which become trailers
 | the cost (candidate) | the `Cost:` trailer: tokens, and time where known | the cost |
 | what it ratifies (candidate) | on a person's `from-me` change, the `Ratifies:` trailer: the `inferred` change it confirms | a relation to the confirmed change |
 
-Why these candidates: the measures read them. Tokens per want, the share resolved per lane, the yield of responses and the rate of ratification cannot be computed without them. The version id is exact, because the same model name behaves differently across versions. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-trace-names-what-acted.md))
+Why these candidates: the measures read them. Tokens per want, the share resolved per lane, the yield of responses and the rate of ratification cannot be computed without them. The version id is exact, because the same model name behaves differently across versions. (decision in TheVZion's source, not published yet)
 
 Open: [commit trailers](https://github.com/thevzion/source/blob/main/objects/questions/commit-trailers.md), [the `Intent:` trailer](https://github.com/thevzion/source/blob/main/objects/questions/intent-trailer.md), [where `read` lives](https://github.com/thevzion/source/blob/main/objects/questions/where-read-lives.md).
 
@@ -93,7 +93,7 @@ A holder that delivers work MUST list the decisions it inferred while doing it, 
 - Where the list lives is open: in the body of the change that delivers the work, in a file next to the work, or as decision objects that serve the deliverable.
 - [Accuracy](views.md#canonical-measures-candidate) reads it at the grain of a decision.
 
-([decision](https://github.com/thevzion/source/blob/main/objects/decisions/a-work-lists-its-inferred-decisions.md))
+(decision in TheVZion's source, not published yet)
 
 ## Result is not Change
 

@@ -7,7 +7,7 @@ tests: [https://github.com/thevzion/source/blob/main/objects/hypotheses/it-carri
 
 # Trial 25: identity
 
-This trial answers an open question of TheVZion's source: [how does a person stay the author of their work, across organizations, without being exposed?](https://github.com/thevzion/source/blob/main/objects/questions/identity.md) It tests a proposal dated 2026-11-15, not published yet, whose criteria are fixed below. The principle is already in [access](../../convention/spaces.md): "Your work is shared, not you."
+This trial answers an open question of TheVZion's source: how does a person stay the author of their work, across organizations, without being exposed? (not published yet) It tests a proposal dated 2026-11-15, not published yet, whose criteria are fixed below. The principle is already in [access](../../convention/spaces.md): "Your work is shared, not you."
 
 A fingerprint says what (a content), a signature says who (a key), identity says whose key it is. Identity and integrity have the same answer: what a person says is signed with their key.
 
@@ -123,11 +123,11 @@ And two of this trial:
 - **A key within an agent's reach.** An agent that can read the home can sign `from-me`. Delegation holds only while the root and the member keys stay out of the agent's reach.
 - **Erasure with derived keys.** A member key derived from the root can be recomputed, so erasing the map in the home does not detach a pseudonym while the root remains.
 
-Open: [identity](https://github.com/thevzion/source/blob/main/objects/questions/identity.md), [privacy-boundary](https://github.com/thevzion/source/blob/main/objects/questions/privacy-boundary.md), [commit-trailers](https://github.com/thevzion/source/blob/main/objects/questions/commit-trailers.md), [where-read-lives](https://github.com/thevzion/source/blob/main/objects/questions/where-read-lives.md).
+Open: identity (not published yet), [privacy-boundary](https://github.com/thevzion/source/blob/main/objects/questions/privacy-boundary.md), [commit-trailers](https://github.com/thevzion/source/blob/main/objects/questions/commit-trailers.md), [where-read-lives](https://github.com/thevzion/source/blob/main/objects/questions/where-read-lives.md).
 
 ## Normative text to propose after the trial
 
-Not applied. Each change below is a candidate: it lands only after this trial runs, through a decision recorded in TheVZion's source on [identity](https://github.com/thevzion/source/blob/main/objects/questions/identity.md). Quoted text is the proposed wording; its links point from this sheet, and point from the target file once applied.
+Not applied. Each change below is a candidate: it lands only after this trial runs, through a decision recorded in TheVZion's source on identity (not published yet). Quoted text is the proposed wording; its links point from this sheet, and point from the target file once applied.
 
 ### In [access](../../convention/spaces.md)
 

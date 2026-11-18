@@ -103,7 +103,7 @@ Three doors, one convention:
 | **home** | a person's own space: the root of their tree, and the space of their organization of one |
 | **intelligence** | the capacity to understand and to produce: what writes, links, marks and responds, whatever runs it |
 | **holder** | what holds a role and acts in it: a person, a model, a rule, a machine ([roles](roles.md)) |
-| **agent** | only in its technical sense (an AI agent working in a folder, an agent over MCP) and in the W3C PROV mapping, where an agent includes people ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/intelligence-and-holders.md)) |
+| **agent** | only in its technical sense (an AI agent working in a folder, an agent over MCP) and in the W3C PROV mapping, where an agent includes people (decision in TheVZion's source, not published yet) |
 
 ## Prior art
 

@@ -168,8 +168,8 @@ Each axis is a finite state machine: its states are the values above; a transiti
 | `review` | `active` | changes are requested | the one who answers |
 | any state | `dropped` | the one who answers decides | the one who answers |
 
-- A holder MAY perform any transition. A transition a holder performs on an object it does not answer for MUST be marked `inferred`, and the object stays `inferred` until the one who answers confirms it ([changes](changes.md#accepted-by-default)). Validation is the provenance mark, not the lifecycle. ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-state-tells-the-truth.md))
-- A holder MUST NOT treat silence as ratification: until the one who answers makes a `from-me` change that confirms it, an inferred object stays `inferred`. (proposed) ([decision](https://github.com/thevzion/source/blob/main/objects/decisions/silence-is-not-ratification.md))
+- A holder MAY perform any transition. A transition a holder performs on an object it does not answer for MUST be marked `inferred`, and the object stays `inferred` until the one who answers confirms it ([changes](changes.md#accepted-by-default)). Validation is the provenance mark, not the lifecycle. (decision in TheVZion's source, not published yet)
+- A holder MUST NOT treat silence as ratification: until the one who answers makes a `from-me` change that confirms it, an inferred object stays `inferred`. (proposed) (decision in TheVZion's source, not published yet)
 - Invariant: the state tells the truth. At every moment, a reader MUST be able to tell what was said by the one who answers from what was inferred; the state never says more than what happened.
 - Invariant: an object in `done` or `dropped` has its transitions in the changes, each with its why.
 - Open: who "the one who answers" is in a shared space. Proposed: whoever holds the decide capability for the object, derived from mandates, by default whoever the space's access table names for decide.
@@ -197,7 +197,7 @@ An inferred claim that reaches others MUST be ratified, if it is a want, or sour
 - Inference is enough for what stays in the space and can be corrected precisely ([doctrine](doctrine.md), rule 7 and the gates).
 - Inferred is not a fault: it is the output of an inference from the premises in its trace (`draws on`). It is generic when no premise comes from the space, and generic is a fault only where the question was the person's.
 
-([decision](https://github.com/thevzion/source/blob/main/objects/decisions/inference-and-its-premises.md))
+(decision in TheVZion's source, not published yet)
 
 ### The response (proposed)
 
@@ -207,7 +207,7 @@ An object MAY carry a response: what an intelligence answers to it, so that it m
 - A response MUST NOT change the object it answers. Acting on it is a separate change: the one who answers ratifies, revises or drops it.
 - It lives as a section headed `## Response` in the object's body, or as a separate object that `serves` it.
 
-([decision](https://github.com/thevzion/source/blob/main/objects/decisions/the-response.md))
+(decision in TheVZion's source, not published yet)
 
 ## Recursion
 
