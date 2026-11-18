@@ -93,8 +93,8 @@ Three doors, one convention:
 | **convention** | the doctrine and the structure, the same for every space |
 | **model** | a versioned set of types, with their views and checks (for example, the Goals model) |
 | **type** | a question, a horizon, fields; defined by a model, or locally by a space |
-| **object** | a short text that answers one question, in the words of whoever said it, with its header; one file or one page, one URI ([glossary](glossary.md#an-object)) |
-| **link** | a relation of a given kind between two objects (`serves`, answers, replaces, `draws on`) |
+| **object** | anything made explicit that answers one question, with its header: what was said, decided or made; one file, one folder or one page, one URI ([glossary](glossary.md#an-object)) |
+| **link** | a relation of a given kind between two objects (`serves`, answers, replaces, `draws on`, `delivers`) |
 | **change** | an event on objects and links, with when, who, why and status; a commit |
 | **trace** | what a change read (`read`) and what an object draws on (`draws on`) |
 | **projection** | a copy or an answer generated from sources; regenerated, never edited |

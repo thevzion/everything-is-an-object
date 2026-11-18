@@ -8,9 +8,10 @@ can point at in the folder, the page or the history.
 
 ## An object
 
-An object is a short text that answers one question, in the words of whoever said it. A few header
-lines say which question it answers, what it serves, who said it, and where it stands. Everything
-else is a link, a view or a change.
+An object is anything made explicit that answers one question: what someone said, decided or
+wants, and what was made for it, a plan, a page, code. A few header lines say which question it
+answers, what it serves, who said or made it, and where it stands. What a person said keeps their
+words. Everything else is a link, a view or a change.
 
 ```markdown
 ---
@@ -33,8 +34,8 @@ Repair fifty bikes a month by June. We will know when the logbook shows fifty fo
 |---|---|---|---|
 | **person** | the one who wants, and says yes. Not a role: wanting cannot be handed over | `source: from-me` on what they said; the `decide` verb in `space.md`; nothing goes out before their yes | [doctrine](doctrine.md#the-invariant) |
 | **signal** | anything said or sent toward a space, not yet turned into objects: a message, a voice note, an issue, a note typed in an app | the words kept as said: an intent's "as said", a proposed change, an issue | [truth](truth.md) |
-| **object** | a short text that answers one question, with its header | one file in `objects/`, or one page; its header | [structure](structure.md#the-object-header) |
-| **link** | a relation between two objects: `serves`, `draws-on`, answers, replaces, contradicts, or a local kind | a header line that points to a path or a URI; the graph drawn from them | [structure](structure.md#three-sets), [trace](trace.md) |
+| **object** | anything made explicit that answers one question, with its header: what was said, decided or made | one file in `objects/`; a folder for a made thing with files of its own, its header in `README.md`; or one page | [structure](structure.md#the-object-header) |
+| **link** | a relation between two objects: `serves`, `draws-on`, `delivers`, answers, replaces, contradicts, or a local kind | a header line that points to a path or a URI; the graph drawn from them | [structure](structure.md#three-sets), [trace](trace.md) |
 | **question** | the fixed question of a type, word for word. A type is its question | the `question:` line of every header; a local type named by its question | [questions](questions.md) |
 | **space** | a source with its own authority: a folder or a page, its objects and their history | `space.md`: its URI, the convention version, its models, truth and access | [spaces](spaces.md) |
 | **role** | a function held by a person or an intelligence: what it turns into what, and what it answers for | section 4 of every `AGENTS.md`; the author of each change | [roles](roles.md) |
@@ -62,8 +63,8 @@ What looks like a thirteenth word is made of these.
 ## In one line
 
 A person wants; a signal carries it; the materializer writes objects that answer questions, linked
-to what they serve; a trigger wakes roles, which act through briefs; every change goes into the
-history; views and apps show it; the person says yes.
+to what they serve; a trigger wakes roles, which act through briefs and hand back what they made,
+as objects; every change goes into the history; views and apps show it; the person says yes.
 
 ## Why these twelve
 

@@ -89,6 +89,7 @@ What can change status or be cited alone has its own file and its own page.
 |---|---|---|
 | a single object (the vision) | a file: `vision.md` | a page, a row of type Vision |
 | a set (the projects) | a folder, one file per item | a view of the Objects database, one page per item |
+| a made thing with files of its own (a page, code, an image) (proposed) | a folder in its set, `objects/deliverables/<name>/`: its header in `README.md`, its files beside it | a page of type Deliverable, its files attached or linked |
 | a child space | a folder with the same tree, in `spaces/` | a child page with the same shape |
 
 The reduced tree: a manifest, the two sets, and nothing else ([trial 07](../tests/trials/07-reduced-tree.md)).
@@ -99,6 +100,7 @@ The reduced tree: a manifest, the two sets, and nothing else ([trial 07](../test
 ├─ objects/              the state, one file per object, typed by its model
 │  ├─ problem.md  why.md  vision.md ...
 │  ├─ goals/  projects/  tasks/  decisions/ ...
+│  ├─ deliverables/     what was made: a file, or a folder with its header and its files
 │  ├─ sites/             links to other spaces
 │  └─ types/             local types, each with its question
 ├─ spaces/               child spaces, same tree

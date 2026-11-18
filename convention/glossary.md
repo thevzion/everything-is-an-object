@@ -6,7 +6,7 @@ Each word of the convention, and the established term closest to it. The establi
 
 ## An object
 
-An object is a short text that answers one question, in the words of whoever said it. A few header lines say which question it answers, what it serves, who said it, and where it stands. Everything else is a link, a view or a change.
+An object is anything made explicit that answers one question: what someone said, decided or wants, and what was made for it, a plan, a page, code. A few header lines say which question it answers, what it serves, who said or made it, and where it stands. What a person said keeps their words. Everything else is a link, a view or a change.
 
 The established term nearest to it: a record, or a row, whose schema is a question; in the web's words, a resource with a URI. What it adds: the question its type asks, the words of the one who said it, and its provenance. The twelve words it is made with are in [primitives](primitives.md).
 
