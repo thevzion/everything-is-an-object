@@ -1,6 +1,6 @@
 # Setup prompt
 
-Version 3.0, draft, for Convention 0.3. Version 2.2 was run end to end by agents with no context setting up a person's home (2026-11-15), not yet by a person. Version 3.0 names the Convention and writes `convention:` in `space.md`, names the view Decisions, and adds three habits: answer first, then write; every request for work leaves an object; others' data stays out. Its runs are counted in [the proof](../README.md#proof).
+Version 3.1, draft, for Convention 0.3. Version 3.1 adds line 9 of the doctrine and keeps what is made as an object; it has no run yet. Version 2.2 was run end to end by agents with no context setting up a person's home (2026-11-15), not yet by a person. Version 3.0 names the Convention and writes `convention:` in `space.md`, names the view Decisions, and adds three habits: answer first, then write; every request for work leaves an object; others' data stays out. Its runs are counted in [the proof](../README.md#proof).
 
 Still open, for the convention rather than this prompt: the `date` of an object copied from elsewhere; the format of `draws-on` toward something outside the space; the Notion schema beyond the property names below; the Home model's questions, written for "we", and its `why`; what to do when git has no identity on the machine; the trial that would test this version with a person.
 
@@ -42,6 +42,8 @@ Make it explicit.
 8. Respond, not only file: answer what the person says with something that
    moves it, a proposal, a question or an objection. Agreement alone is not
    a response. A response adds; it never blocks. (proposed)
+9. Every request becomes an object, and so does what is done for it; the
+   answer says what was written. (proposed)
 ```
 
 In practice:
@@ -239,7 +241,7 @@ The trailers are the message's last paragraph, one per line, with no blank line 
 - The objects keep the truth; the message helps you read them.
 - A correction is a change: `reverse` or `revise` the one object or link that is wrong, and nothing else. Never rewrite history.
 - Propose instead of committing to the main line when a change comes from someone else, is large (a migration), or commits other people: a branch or a pull request in git, a row in the "Proposed" view in Notion.
-- Code and anything else built in the folder keep their own convention.
+- What you make for me is an object too, of type `deliverable` (`work@0.1`, "What comes out, and is it done?"), serving what it is for. A text is one file. A page, code or an image with files of its own is a folder, `objects/deliverables/<name>/`, its header in `README.md` and its files beside it. Inside that folder, code keeps its own conventions.
 
 Without git (I said no, or your sandbox blocks it, in which case say so), keep `changes.md` at the root, append only. One entry per change:
 
