@@ -57,14 +57,23 @@ Convention 0.3, draft · setup prompt 3.1, draft
 The convention fixes the middle: `AGENTS.md` and `objects/`, plain files in a folder you own. Both
 ends stay open.
 
-- **Your intelligence.** Any assistant that can read and write files in a folder. It reads
-  `AGENTS.md` first, then works from the objects. Change assistants, or use several: they read the
-  same objects, so none starts from zero. Tested so far with one model, Claude Sonnet; other
-  providers are [a hypothesis](https://github.com/thevzion/source/blob/main/objects/hypotheses/the-prompt-works-with-any-agent.md).
-- **Your application.** Anything that reads files can show the objects and write changes back: the
-  folder itself, GitHub, Notion through an adapter, or an app your assistant builds on them. An app
-  is views of the objects plus the yeses you give; the files stay the source. The adapters
-  beyond git and Notion are in a kit, not published yet.
+- **Your intelligence.** Any person, and any assistant from any provider, that can read and write
+  files. `AGENTS.md` is the file assistants already read first; the rest is folders. Change
+  assistants, or use several: they read the same objects, so none starts from zero. Only the
+  features differ from one tool to another, such as starting other units; the rules are the same.
+- **Your application.** Any assistant can build the apps and views you want on the objects: a page,
+  a board, a widget, a dashboard. Each reads the objects and writes back as changes to them; the
+  files stay the source, so any app can be thrown away and built again.
+
+## A layer below
+
+Agents, agent operating systems, second brains, note apps, frameworks: each keeps its own idea of
+what you want, in its own format, and it is lost when you change tools. The convention sits one
+layer below them, at the source: plain files in a folder you own, each with a header that says what
+it is. None of it is new: files, a header, git, and a convention rather than a configuration. The
+foundations are plain on purpose, so that anything can be brought onto them and anyone can read
+them: a person, any intelligence, any app. It grows as files and git grow; the trials run at 100,
+1,000 and 10,000 objects ([proof](#proof)).
 
 ## What it solves
 
@@ -95,7 +104,7 @@ Everything is made of twelve primitives. Each one has an effect you can point at
 | **link** | `serves`, `draws-on`, `delivers`, answers, replaces, contradicts | a header line that points to a path or a URI |
 | **question** | the fixed question of a type, word for word | the `question:` line of every header |
 | **space** | a source with its own authority | `space.md`: its URI, its models, who decides |
-| **role** | a function: what it turns into what, and what it answers for | section 4 of `AGENTS.md` |
+| **role** | a function: what it turns into what, and what it answers for | section 5 of `AGENTS.md`, Delegate |
 | **binding** | a role held on an object, under a mandate | a mandate; "notify me" on an object |
 | **trigger** | what wakes a role: a change, or a time | a routine's "when" |
 | **action** | work handed over with a brief that stands alone | the brief, and what comes back: result, evidence, limits |
@@ -207,8 +216,7 @@ project tried version 2 of the prompt and stopped after a long wait
 since version 2.1, the prompt asks everything in one message.
 
 **Not tested yet**: a person, rather than an agent, setting up a space; that what an agent makes is
-kept as an object, and line 9 of the doctrine (both proposed in this version, no trial yet); agents from other
-providers ([any assistant is a hypothesis](https://github.com/thevzion/source/blob/main/objects/hypotheses/the-prompt-works-with-any-agent.md));
+kept as an object, and line 9 of the doctrine (both proposed in this version, no trial yet);
 the Notion adapter beyond [one partial run](tests/trials/04-notion-adapter.md); the other trials
 of [`tests/`](tests/README.md). Small samples show what happened in these runs; they do not
 promise what happens in yours.
@@ -222,7 +230,7 @@ chosen by your agent when it fits ([adapters](convention/adapters.md)):
 |---|---|
 | git | every change with its reason, offline, without an account; the default |
 | Notion | the same objects as pages, on your phone; the default views as pages |
-| an app, a status bar, a command line, an MCP server | reading views and saying yes without the chat; in a separate kit, not published yet |
+| an app or a view your assistant builds on the objects | reading and saying yes without the chat |
 
 ## What is here
 
@@ -241,7 +249,6 @@ chosen by your agent when it fits ([adapters](convention/adapters.md)):
 |---|---|---|
 | **the source** | TheVZion's own space, the first written with the convention: its problem, why, goals, decisions, hypotheses and open questions | [thevzion/source](https://github.com/thevzion/source) |
 | **the site** | the organization's site | [thevzion.com](https://thevzion.com) |
-| **the kit** | the app, the status bar, a command line, an MCP server, the Notion adapter: optional adapters | not published yet |
 
 ## Contribute
 
