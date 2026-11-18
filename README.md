@@ -103,6 +103,10 @@ where things are, and its own rules ([the ten sections](convention/roles.md#agen
 | **6. Build on the objects** | any page, view or app reads the objects and writes back to them |
 | **7. Keep every change** | one commit per change, with its why; a correction reverses only what was wrong |
 
+Each capability is written in the eight words, so it can be drawn, followed and tested. Below,
+sections 3 and 5, drawn from their own lines. A rule that cannot be drawn is rewritten until it can
+([writing](convention/writing.md#a-rule-can-be-drawn-proposed)).
+
 <p align="center"><img src="images/explicit.svg" width="100%" alt="Make it explicit, animated: Sam says to open on Saturdays from March. The materializer finds the existing goal, picks the type decision, and keeps the words as said. A decision object appears with its header, links to the goal, and a commit records it with its why; the assistant answers what was written."></p>
 
 <p align="center"><img src="images/delegate.svg" width="100%" alt="Delegate, animated: signals arrive; the assistant answers at once and gives each piece to a unit with its role, a materializer, a maker, a checker that did not make it. As more signals arrive, the materializer starts more of itself, then they fold. Every unit reads the same AGENTS.md and hands back objects."></p>
