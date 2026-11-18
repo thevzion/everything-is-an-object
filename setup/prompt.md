@@ -145,7 +145,7 @@ adapters:
 - For a home: `space: home`, `uri: <handle>/home`, `models: - home@0.1`, and Access names only me unless I say otherwise.
 - Access has three verbs: read, propose, decide.
 
-`AGENTS.md` is a projection, in the ten sections of [`convention/roles.md`](https://github.com/thevzion/convention/blob/main/convention/roles.md), in their order. Copy its norm texts word for word, in English; write the rest from this space's objects, in the language I write to you in, each line naming its object. Regenerate it when its sources change; do not edit it by hand. If the folder already has an `AGENTS.md` or another agent file, keep what it says, add the ten sections after it, and tell me.
+`AGENTS.md` is a projection, in the ten sections of [`convention/roles.md`](https://github.com/thevzion/convention/blob/main/convention/roles.md), in their order. The whole file, with the norm texts in place and braces for what comes from this space, is [`setup/AGENTS.template.md`](https://github.com/thevzion/convention/blob/main/setup/AGENTS.template.md). Copy its norm texts word for word, in English; write the rest from this space's objects, in the language I write to you in, each line naming its object. Regenerate it when its sources change; do not edit it by hand. If the folder already has an `AGENTS.md` or another agent file, keep what it says, add the ten sections after it, and tell me.
 
 The first commit is `space(add): set up the space`, with `space.md`, `AGENTS.md` and `.gitignore`.
 
